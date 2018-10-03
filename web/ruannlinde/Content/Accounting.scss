@@ -1,0 +1,30 @@
+﻿$body-background-color: #fff;
+$header-background-color: #595959;
+$body-color: dodgerblue;
+$footer-height: 40px;
+
+
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    display: block;
+    background-image: none;
+    background-color: $body-background-color;
+    margin-bottom: $footer-height !important;
+    color: $body-color;
+    min-height: 100%;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    line-height: $footer-height;
+    background-color: $header-background-color !important;
+    color: $body-color !important;
+    height: $footer-height;
+}

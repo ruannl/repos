@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title Ruann LINDE</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("Scripts", required: false)
+    @Styles.Render("~/content/bootstrap")
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="~/Content/animate.min.css" rel="stylesheet" />
+    @Styles.Render("~/content/main")
+    @Styles.Render("~/content/cv")
+    <base href="/">
+</head>
+<body ng-app="rlApp">
+    <div ng-controller="baseController">
+        <main class="body-content {{layout}}" role="main" ng-class="">
+            @RenderBody()
+            <div ng-include src="template"></div>
+
+            @RenderSection("SPAViews", required: false)
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">
+                    &copy; @DateTime.Now.Year
+                    <a href="" ng-click="redirectToTemplate('home.htm')" class="nav-link">Home</a>
+                    <a href="" ng-click="redirectToTemplate('timesheet.htm')" class="footer-link">Timesheet</a>
+                    <a href="" ng-click="redirectToTemplate('cv.htm')" class="nav-link">Curriculum Vitae</a>
+
+                    @Html.ActionLink("Accounting", "Index", "Home", new { area = "Accounting" }, new { @class = "nav-link" })
+                    @Html.ActionLink("Quick Books", "Index", "Home", new { area = "Intuit" }, new { @class = "nav-link" })
+                </span>
+            </div>
+        </footer>
+
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/app")
+    @Scripts.Render("~/bundles/file-upload")
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Intuit</title>
+    @Styles.Render("~/Content/Bootstrap")
+    @Styles.Render("~/Content/fontawesome")
+
+    @Styles.Render("~/Content/Intuit")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+<div class="wrapper">
+
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3></h3>
+            <img src="~/Content/Images/quick-books-logo-w.png" alt="home"/>
+        </div>
+        <ul class="list-unstyled components">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Page</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <div id="content">
+        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+            <i class="glyphicon glyphicon-align-left"></i>
+            Toggle Sidebar
+        </button>
+        <main>
+            <div class="container body-content">
+                @RenderBody()
+            </div>
+        </main>
+        
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <span class="text-muted">
+                &copy; @DateTime.Now.Year
+            </span>
+        </div>
+    </footer>
+</div>
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/chart")
+    @Scripts.Render("~/bundles/file-upload")
+
+
+    @Scripts.Render("~/bundles/intuit")
+    @RenderSection("scripts" ,required: false)
+</body>
+</html>

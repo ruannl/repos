@@ -1,0 +1,356 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800');
+$color-primary: #808080;
+$color-light: #ccc;
+$spacing: 50px;
+$radius: 4px;
+$date: 150px;
+$dotborder: 4px;
+$dot: 12px;
+$line: 4px;
+$font-title: 'Saira', sans-serif;
+$font-text: 'Chivo', sans-serif;
+$background: #ccc;
+
+body {
+    font-family: $font-text;
+    font-weight: 100;
+    color: $color-primary;
+}
+
+h1 {
+    font-family: $font-title;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 1.4em;
+}
+
+h2, h3 {
+    font-family: $font-title;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+h4 {
+    font-family: $font-title;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    font-size: 1em;
+    font-style: italic;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+header[role=banner] {
+    background: #fff;
+    border-bottom: 4px solid #33a4c9;
+    padding: 19px 0;
+    overflow: hidden;
+}
+
+header figure {
+    border: 3px solid #eee;
+    border-radius: 78px;
+    height: 156px;
+    width: 156px;
+}
+
+header figure img {
+    position: relative;
+    border-radius: 75px;
+    height: 150px;
+    width: 150px;
+}
+
+header hgroup {
+    float: left;
+    padding: 42px 0;
+}
+
+header hgroup h1 {
+    color: #555;
+    font-family: 'DroidSansBold', Arial, sans-serif;
+}
+
+header hgroup h2 {
+    color: #cecece;
+    font-style: italic;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+}
+
+p {
+    line-height: 25px;
+}
+
+.icon {
+    color: #33a4c9;
+    font-size: 40px;
+    float: left;
+    position: relative;
+    margin-top: -10px;
+    overflow: hidden;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.icon:after {
+    animation: shine 5s ease-in-out infinite;
+    animation-fill-mode: forwards;
+    content: "";
+    position: absolute;
+    top: -110%;
+    left: -210%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100% );
+}
+
+.icon:active:after {
+    opacity: 0;
+}
+
+.media {
+    .icon {
+        font-size: 60px !important;
+        color: $color-primary !important;
+    }
+}
+
+.timeline {
+    border-left: $line solid $color-primary;
+    border-bottom-right-radius: $radius;
+    border-top-right-radius: $radius;
+    font-family: $font-text;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    position: relative;
+    list-style: none;
+    margin-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 42px;
+
+    .event {
+        border-bottom: 1px dashed $color-primary;
+        padding-bottom: ($spacing * 0.5);
+        margin-bottom: $spacing;
+        position: relative;
+        text-align: justify;
+
+        p {
+            padding: 10px;
+        }
+
+        &:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: none;
+        }
+
+        &:before, &:after {
+            position: absolute;
+            display: block;
+            top: 0;
+        }
+
+        &:before {
+            /*left: ((($date * 0.6) + $spacing + $line + $dot + ($dotborder * 2)) * 1.5) * -1;*/
+            left: -180px;
+            content: attr(data-date);
+            text-align: left;
+            font-weight: 100;
+            font-size: 0.9em;
+            font-family: $font-title;
+        }
+
+        &:after {
+            /*left: ($spacing + $line + ($dot * 0.35)) * -1;*/
+            left: -20px;
+            background: #C5C5C5;
+            border-radius: 50%;
+            border: solid 2px white;
+            height: $dot;
+            width: $dot;
+            content: "";
+            top: 5px;
+            left: -50px;
+            z-index: 2;
+        }
+    }
+}
+
+.view-more {
+    padding: 10px;
+    color: #33a4c9 !important;
+    font-family: $font-title;
+    font-size: 14px;
+}
+
+.job-description {
+    font-family: $font-title;
+    color: $color-primary;
+}
+
+.context-menu-item {
+    min-width: 250px;
+    min-height: 60px;
+    padding-left: 15px;
+    padding-top: 15px;
+    background-color: #fff;
+    border: 1px dashed #ccc;
+    color: #ddd;
+
+    &:hover {
+        background-color: #ccc;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.context-menu-item-text {
+    float: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+
+.context-menu-item-image {
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+
+.jse {
+    background-image: url(Images/jse.png) !important;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 80px;
+    border-bottom: dashed 1px #ccc;
+
+    p {
+        text-align: justify;
+    }
+
+    .list-group-item {
+        border: none !important;
+    }
+
+    .jse-view-more {
+        display: block;
+    }
+}
+
+.g-connect {
+    background-image: url(Images/gconnect.png) !important;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 150px;
+    border-bottom: dashed 1px #ccc;
+
+    p {
+        text-align: justify;
+    }
+}
+
+.bytes {
+    background-image: url(Images/bytes-logo.png) !important;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 150px;
+    border-bottom: dashed 1px #ccc;
+
+    p {
+        text-align: justify;
+    }
+}
+
+.iti {
+    background-image: url(Images/image-placeholder.jpg) !important;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100px;
+    border-bottom: dashed 1px #ccc;
+}
+
+.crux-it {
+    background-image: url(Images/image-placeholder.jpg) !important;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100px;
+    border-bottom: dashed 1px #ccc;
+}
+
+.pluralsight {
+    background-image: url(Images/pluralsight1.png) !important;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 180px;
+}
+
+.microsoft {
+    background-image: url(Images/microsoft_certified_professional.png) !important;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100px;
+}
+
+.ultracomp {
+    background-image: url(Images/image-placeholder.jpg) !important;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100px;
+}
+
+.high-school {
+    background-image: url(Images/brandwag-logo.jpg) !important;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100px;
+    min-height: 100px;
+}
+
+.jse,
+.g-connect,
+.bytes,
+.iti,
+.crux-it,
+.pluralsight,
+.microsoft,
+.ultracomp,
+.high-school {
+    h2 {
+        color: #33a4c9 !important;
+    }
+}
+
+
+@media (min-width: 576px) {
+   
+}
+
+@media (min-width: 768px) {
+   
+}
+
+@media (min-width: 992px) {
+    .jse {
+        .view-more {
+            display: none !important;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .jse {
+        .view-more {
+            display: none !important;
+        }
+    }
+}

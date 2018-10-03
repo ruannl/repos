@@ -1,0 +1,393 @@
+﻿@-webkit-keyframes typing {
+  from {
+    width: 0; } }
+
+@-webkit-keyframes blink-caret {
+  50% {
+    border-color: transparent; } }
+
+@keyframes shine {
+  10% {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease; }
+  100% {
+    opacity: 0;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity; } }
+
+html {
+  position: relative;
+  min-height: 100%;
+  margin: 0; }
+
+body {
+  display: block;
+  background-image: none;
+  margin-bottom: 40px !important;
+  min-height: 100%;
+  font-size: 12px; }
+
+/*header {
+    display: none;
+    height: 0;
+}*/
+.header-image {
+  background-image: none; }
+
+.navbar-brand {
+  text-shadow: 0 0 15px dodgerblue, 0 0 15px indigo !important;
+  box-shadow: 0 0 15px dodgerblue, 0 0 15px indigo !important;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+  min-width: 50px;
+  text-align: center;
+  border-radius: 3px; }
+
+.nav-item {
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+  min-width: 100px;
+  text-align: center; }
+  .nav-item a :hover {
+    color: white;
+    text-shadow: 0 0 15px dodgerblue, 0 0 15px indigo !important; }
+  .nav-item :hover {
+    border-bottom: 1px solid dodgerblue;
+    background-color: dodgerblue;
+    border-radius: 3px; }
+  .nav-item .active {
+    background-color: dodgerblue;
+    color: white; }
+
+.bg-dark {
+  background-color: #fff !important;
+  border-bottom: 1px solid indigo !important; }
+
+.fas {
+  font-weight: 400 !important; }
+
+.title {
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+  font-size: 40px;
+  text-align: left;
+  text-shadow: 0 0 15px dodgerblue, 0 0 15px indigo; }
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  line-height: 40px;
+  background-color: #595959 !important;
+  color: #ccc !important;
+  height: 40px; }
+  .footer a {
+    display: block;
+    padding: 5px;
+    color: #5c5c5c; }
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+  padding: 20px; }
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+  white-space: normal; }
+
+/* Set width on the form input elements since they're 100% wide by default */
+.no-padding {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+/* Set padding to display errors that occur during databinding */
+.padding-error {
+  padding-top: 20px; }
+
+.profile {
+  color: dodgerblue;
+  border: solid;
+  border-width: 1px;
+  border-color: dodgerblue;
+  box-shadow: -15px 15px 10px dodgerblue; }
+  .profile p {
+    padding: 10px;
+    text-align: justify; }
+
+.carousel {
+  width: 160px !important;
+  height: 160px !important;
+  float: right;
+  border: solid 2px dodgerblue !important;
+  margin-top: -25px; }
+
+.home .row {
+  padding-top: 5px !important; }
+
+.scramble-container {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #ccc;
+  padding-top: 5px;
+  border-radius: 3px;
+  min-height: 70px;
+  box-shadow: 5px 5px 10px #ccc;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 99.5% 50%;
+  background-size: 60px 60px; }
+
+.scramble-item {
+  position: relative;
+  float: left;
+  color: #808080;
+  font-size: 20px;
+  padding-top: 15px;
+  min-height: 60px;
+  min-width: 100%; }
+  .scramble-item span {
+    background-repeat: no-repeat;
+    padding: 15px;
+    background-size: 50px 50px !important;
+    background-position: top right !important;
+    min-width: 200px !important; }
+
+.c-sharp {
+  background-image: url(Images/c-sharp.png) !important; }
+
+.angular {
+  background-image: url(Images/angular.png) !important; }
+
+.javascript {
+  background-image: url(Images/javascript.png); }
+
+.jquery {
+  background-image: url(Images/jquery.png);
+  background-size: 120px 60px; }
+
+.sql {
+  background-image: url(Images/sql.png);
+  background-size: 120px 60px; }
+
+.mysql {
+  background-image: url(Images/mysql.jpg);
+  background-size: 100px 60px; }
+
+.sql-lite {
+  background-image: url(Images/sql-lite.png);
+  background-size: 100px 60px; }
+
+.bootstrap {
+  background-image: url(Images/bootstrap.png); }
+
+.azure {
+  background-image: url(Images/azure-logo.png);
+  background-size: 150px 60px; }
+
+.quick-books {
+  background-image: url(Images/quick-books-logo.png);
+  background-size: 150px 60px; }
+
+.html5 {
+  background-image: url(Images/html5.png); }
+
+.css3 {
+  background-image: url(Images/css3.png); }
+
+.kendo {
+  background-image: url(Images/kendo-logo.png);
+  background-size: 150px 60px; }
+
+.nodejs {
+  background-image: url(Images/nodejs-logo.png);
+  background-size: 150px 60px; }
+
+.webapi {
+  background-image: url(Images/webapi-logo.png);
+  background-size: 100px 60px; }
+
+.wcf {
+  background-image: url(Images/wcf-logo.png);
+  background-size: 100px 60px; }
+
+.google-developers {
+  background-image: url(Images/google_developers_logo.png);
+  background-size: 200px 60px; }
+
+.micros-fidelio {
+  background-image: url(Images/micros-fidelio-logo.png);
+  background-size: 100px 60px; }
+
+.itext {
+  background-image: url(Images/itext-logo.png);
+  background-size: 120px 60px; }
+
+.micros-fidelio {
+  background-image: url(Images/micros-fidelio-logo.png);
+  background-size: 100px 60px; }
+
+.msoffice {
+  background-image: url(Images/msoffice.png);
+  background-size: 100px 60px; }
+
+.input-group-prepend {
+  border-style: none;
+  font-family: 'Share Tech Mono', monospace; }
+
+/*.input-group > .custom-select:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}*/
+.input-group > .form-control:not(:last-child), .input-group > .custom-select:not(:last-child) {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
+
+.input-group input {
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-left: none !important;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  text-shadow: 0 0 20px dodgerblue, 0 0 20px indigo; }
+  .input-group input :active {
+    border-left: none !important; }
+
+.day-label {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 20px !important;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 0 20px dodgerblue, 0 0 20px indigo; }
+
+.total-hours {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 30px !important;
+  padding-top: 15px; }
+
+.ts-icon {
+  color: #fff;
+  font-size: 40px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 50px;
+  padding-top: 10px;
+  padding-left: 10px; }
+
+.icon-green {
+  text-shadow: 0 0 15px green, 0 0 15px green !important; }
+
+.icon-blue {
+  text-shadow: 0 0 15px dodgerblue, 0 0 15px dodgerblue !important; }
+
+.icon-indigo {
+  text-shadow: 0 0 15px indigo, 0 0 15px indigo !important; }
+
+.icon-orange {
+  text-shadow: 0 0 15px orangered, 0 0 15px orangered !important; }
+
+.content {
+  margin-top: 0px;
+  margin-left: 60px;
+  min-height: 60px;
+  padding-top: 10px; }
+
+.clock {
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 0 20px dodgerblue, 0 0 20px indigo;
+  padding-left: 100px; }
+  .clock .clock-time {
+    letter-spacing: 0.05em;
+    font-size: 40px;
+    padding: 5px 0; }
+  .clock .clock-date {
+    letter-spacing: 0.1em;
+    font-size: 24px; }
+  .clock .clock-seconds {
+    letter-spacing: 0.1em;
+    font-size: 40px;
+    padding: 20px 0 0; }
+  .clock .clock-text {
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    padding: 20px 0 0; }
+
+.dud {
+  color: #808080; }
+
+.timesheet {
+  background-color: #595959 !important;
+  padding: 20px;
+  border-radius: 5px; }
+  .timesheet input,
+  .timesheet select,
+  .timesheet textarea {
+    max-width: 280px;
+    font-family: "Chivo", sans-serif;
+    border-style: solid !important;
+    border-color: dodgerblue !important;
+    background-color: #555 !important;
+    color: #fff;
+    text-shadow: 0 0 20px dodgerblue, 0 0 20px indigo;
+    text-align: center; }
+  .timesheet .input-group-text {
+    font-family: 'Share Tech Mono', monospace;
+    border-style: solid !important;
+    border-color: dodgerblue !important;
+    background-color: #555 !important;
+    color: #fff;
+    min-width: 110px; }
+  .timesheet .custom-select {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 14px;
+    border-left: 0;
+    border-right: 1px;
+    border-top: 1px !important;
+    border-bottom: 1px;
+    border-style: solid !important;
+    border-color: dodgerblue !important;
+    background-color: #555 !important;
+    color: #fff;
+    border-radius: 3px; }
+  .timesheet .btn-custom {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #555 !important;
+    color: #fff;
+    border-radius: 3px;
+    border-color: dodgerblue !important;
+    box-shadow: 0 0 3px dodgerblue, 0 0 3px dodgerblue;
+    cursor: pointer;
+    max-height: 30px; }
+    .timesheet .btn-custom :hover {
+      text-shadow: 20px 12px 2px dodgerblue; }
+
+.timesheet-item {
+  text-align: center !important; }
+  .timesheet-item .day {
+    color: #fff !important;
+    font-size: 14px !important;
+    text-shadow: 0 0 20px dodgerblue, 0 0 20px indigo; }
+  .timesheet-item .hours {
+    color: dodgerblue !important; }
+
+.total-hours {
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 0 0 5px indigo, 0 0 2px indigo; }
+
+.context-menu {
+  width: 250px; }
+
+.cell-highlight {
+  border: solid 1px red; }
+

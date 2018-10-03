@@ -1,0 +1,366 @@
+﻿<script type="text/ng-template" id="cv.htm">
+    <ul id="context1" class="context-menu" role='menu'>
+        <li class="context-menu-item">
+            <div class="context-menu-item-text">Download CV</div>
+            <div class="context-menu-item-image">
+                <span class="icon"><i class="fa fa-file-download"></i></span>
+            </div>
+        </li>
+    </ul>
+    @*context="context1" rl-right-click="ShowContextMenu()"*@
+    <div>
+        <span id="top"></span>
+        <div ng-controller="homeController" ng-cloak>
+            <header role="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <hgroup>
+                                <h1>Ruann LINDE</h1>
+                                <h2>Software Development</h2>
+                            </hgroup>
+                        </div>
+                        <div class="col-sm-3">
+                            <figure>
+                                <img src="/rl/content/Images/avatar0.jpg" alt="Ruann LINDE">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <scrambler scramble-items="titles"></scrambler>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <br />
+            <section role="main" class="container clearfix">
+                @*about*@
+                <div class="row">
+                    <div class="col-12">
+                        <span class="icon"><i class="fa fa-user"></i></span>
+                        <div class="content">
+                            <h3>About Me</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p style="text-align: justify;">
+                            I am looking to advance my experience yet further and am searching for an opportunity to exploit my professional passion. I am passionate about learning new technologies, the ability to apply my knowledge to practical applications to I have the capability of improving and enhancing any organization.
+                            I’ve gained 18+ years’ experience in programming with both enterprise and start up environments.
+                            <br />
+                            <br />
+                            Proficient in many software development methodologies, I have proven expertise in developing and managing complex projects. I have excellent technical and communication skills, am a proactive problem solver, self-motivated and highly driven. Most importantly. I love what I do.
+                            <br />
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12"><br /></div>
+                </div>
+                @*experience*@
+                <div class="row">
+                    <div class="col-12">
+                        <span class="icon"><i class="fa fa-briefcase"></i></span>
+                        <div class="content">
+                            <h3>Experience</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="jse">
+                            <h3>Senior Developer</h3>
+                            <h2>JSE</h2>
+                            <h4>March 2013 – Present</h4>
+                            <p>
+                                Contracted to the JSE as senior C# programmer, I’ve worked on two major projects. With these projects, I’ve gained a great
+                                deal of experience in agile methodologies and working with complex code.
+                            </p>
+                            <div class="jse-view-more">
+                                <div class="list-group filter-wrap">
+                                    <article class="list-group-item">
+                                        <header class="filter-header">
+                                            <a href="#" data-toggle="collapse" data-target="#collapse-jse" aria-expanded="true" class="view-more">
+                                                <i class="icon-action fa fa-chevron-down"></i>
+                                                <span>&nbsp;View more...</span>
+                                            </a>
+                                            <div class="filter-content collapse" id="collapse-jse" style="">
+                                                <br />
+                                                <h3>Duties</h3>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt deserunt mollit anim id est laborum.
+                                                </p>
+                                                <h3>Technology</h3>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt deserunt mollit anim id est laborum.
+                                                </p>
+                                            </div>
+                                        </header>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="g-connect">
+                            <h3>Software Development Manager</h3>
+                            <h2>G-Connect</h2>
+                            <h4>2012 – Feb 2013</h4>
+                            <h3>Technical Lead</h3>
+                            <h4>2009 – 2011</h4>
+                            <h3>Senior Developer</h3>
+                            <h4>March 2006 – 2009</h4>
+                            <p>
+                                Founded in 2002, WirelessG is a South African Wi-Fi Hotspot Service Provider, enabling internet access on a large number of Wi-Fi hotspot locations locally as well as internationally, and also provides Wi-Fi products, on a commercial basis, to the Vodacom subscriber base. G-Connect
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bytes">
+                            <h3>Senior Programmer</h3>
+                            <h2>Bytes Technology Group</h2>
+                            <h4>2004 – Feb 2006</h4>
+                            <h3>Programmer</h3>
+                            <h4>July 2000 - 2004</h4>
+                            <p>
+                                Working in the Microsoft department of Bytes Technologies I was contracted out to various companies like Investec, Rand Merchant Bank and E&Y to assist on development projects
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="iti">
+                            <h3>Programmer</h3>
+                            <h2>ITI-Holdings</h2>
+                            <h4>March 2000 – June 2000</h4>
+                            <p>
+                                Was part of a small team creating a CRM interface.
+                                ITI Holdings merged with Idion Solutions and then later was acquired by CS Holdings and then Bytes Technology group
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="crux-it">
+                            <h3>Graduate Programmer</h3>
+                            <h2>Crux-IT</h2>
+                            <h4>Sept 1999 – Feb 2000</h4>
+                            <p>
+                                Was contracted to the South African Post Office developing a point of sale system
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                @*education*@
+                <div class="row">
+                    <div class="col-12">
+                        <span class="icon"><i class="fa fa-graduation-cap"></i></span>
+                        <div class="content">
+                            <h3>Education</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="pluralsight">
+                            <h2>Pluralsight</h2>
+                            <h4>2018 - Present</h4>
+                            <ul>
+                                <li>
+                                    <h3>AngularJS Displaying Data: Data Binding, Directives, and Pipes</h3>
+                                    <p>
+                                        By John Pappa
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>Security Constructs Within AngularJS</h3>
+                                    <p>
+                                        By John Pappa
+                                    </p>
+                                </li>
+                            </ul>
+                            <h4>2017</h4>
+                            <ul>
+                                <li>
+                                    <h3>Angular Best Practices</h3>
+                                    <p>
+                                        By Jim Cooper
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>Play by Play: Angular 2 Quick Start</h3>
+                                    <p>
+                                        with John Papa and Ward Bell
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>C# Best Practices: Collections and Generics</h3>
+                                    <p>
+                                        by Deborah Kurata
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>Become a Full-stack .NET Developer</h3>
+                                    <p>
+                                        by Mosh Hamedani
+                                    </p>
+                                </li>
+                            </ul>
+                            <h4>2016</h4>
+                            <ul>
+                                <li>
+                                    <h3>SOLID Principles of Object Oriented Design</h3>
+                                    <p>
+                                        by Steve Smith
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>C# Generics</h3>
+                                    <p>
+                                        by Scott Allen
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>C# Best Practices: Improving on the Basics</h3>
+                                    <p>
+                                        by Deborah Kurata
+                                    </p>
+                                </li>
+                            </ul>
+                            <h4>2014</h4>
+                            <ul>
+                                <li>
+                                    <h3>AngularJS for .NET Developers</h3>
+                                    <p>
+                                        by Joe Eames and Jim Cooper
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="microsoft">
+                            <h2>Microsoft</h2>
+                            <h4>2002</h4>
+                            <ul>
+                                <li>
+                                    <h3>Building XML based web applications</h3>
+                                </li>
+                                <li>
+                                    <h3>Designing distributed applications</h3>
+                                </li>
+                            </ul>
+                            <h4>2000</h4>
+                            <ul>
+                                <li>
+                                    <h3>Microsoft SQL Server 7 (MCP ID # 2204784)</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="ultracomp">
+                            <h2>Ultracomp</h2>
+                            <h4>1999</h4>
+                            <ul>
+                                <li>
+                                    <h3>Certificate in Programming</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="high-school">
+                            <h2>Matriculated</h2>
+                            <h4>1997</h4>
+                            <ul>
+                                <li>
+                                    <h3>Brandwag</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        @*<ul class="timeline">
+                <li class="event" data-date="March 2013 – Present">
+                    <h3>Senior Software Developer</h3>
+                    <div class="media">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">JSE</h5>
+                            <p style="text-align: justify;">
+                                Contracted to the JSE as senior C# programmer, I’ve worked on two major projects. With these projects, I’ve gained a great
+                                deal of experience in agile methodologies and working with complex code.
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="event" data-date="March 2006 - March 2013">
+                    <div class="media">
+                        <h3>Senior Software Developer</h3>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">G-Connect</h5>
+                            <p style="text-align: justify; padding:5px;">
+                                Founded in 2002, WirelessG is a South African Wi-Fi Hotspot Service Provider, enabling internet access on a large number of Wi-Fi hotspot locations locally as well as internationally, and also provides Wi-Fi products, on a commercial basis, to the Vodacom subscriber base. G-Connect
+                            </p>
+                        </div>
+                        <span class="icon"><i class="fa fa-building"></i></span>
+                    </div>
+                    <ul class="h-timeline">
+                        <li class="h-event" data-date="2012 - March 2013">
+                            <span>Development Manager</span>
+                        </li>
+                        <li class="h-event" data-date="2009 - 2011">
+                            <span>Senior Developer</span>
+                        </li>
+                        <li class="h-event" data-date="March 2006 - 2009">
+                            <span>Technical Team Lead</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="event" data-date="July 2000 - Feb 2006">
+                    <h3>Software Developer</h3>
+                    <div class="media">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Bytes Technology</h5>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="event" data-date="">
+                    <h3>Software Developer</h3>
+                    <div class="media">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Bytes</h5>
+                        </div>
+                    </div>
+                </li>
+            </ul>*@
+    </div>
+</script>

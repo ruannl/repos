@@ -1,0 +1,130 @@
+﻿<script type="text/ng-template" id="timesheet.htm">
+    <ul id="context1" class="context-menu" role='menu'>
+        <li class="context-menu-item">
+            <div class="context-menu-item-text">Add Week</div>
+            <div class="context-menu-item-image">
+                <span class="ts-icon"><i class="fa fa-calendar"></i></span>
+            </div>
+        </li>
+    </ul>
+    @*rl-right-click="ShowContextMenu()"*@
+    <div context="context1" class="timesheet">
+        <div ng-controller="timesheetController" ng-cloak>
+            <span id="top"></span>
+            <section>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-3">
+                                <span class="ts-icon icon-green">
+                                    <i class="fa fa-home"></i>
+                                </span>
+                                <div class="clock">
+                                    <span class="clock-time"><span ng-if="!model.hoursCompleted">&nbsp;</span>{{model.endTime | date : 'HH:mm'}}</span><br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <span class="ts-icon" ng-class="{'icon-orange' : model.hoursCompleted == false, 'icon-green': model.hoursCompleted}">
+                                    <i class="fa fa-clock-o"></i>
+                                </span>
+                                <div class="clock">
+                                    <span class="clock-time"><span ng-if="!model.hoursCompleted">-</span>{{model.remainingTime | date : 'HH:mm'}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <span class="ts-icon icon-blue">
+                                    <i class="fa fa-laptop"></i>
+                                </span>
+                                <div class="clock">
+                                    <span class="clock-time"><span ng-if="!model.hoursCompleted">&nbsp;</span>{{model.totalTime | date : 'HH:mm'}}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 text-right">
+                        <span class="ts-icon">
+                            <i class="fa fa-clock"></i>
+                        </span>
+                        <clock></clock>
+                    </div>
+                </div>
+                <div class="row" style="padding: 10px;">
+                    <div class="col-12">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" for="time-select" id="start-time-group">Start Time:</span>
+                            </div>
+                            <select class="custom-select custom-select-sm" id="time-select" aria-label="Start Time" aria-describedby="start-time-group" ng-model="model.defaultTime">
+                                <option ng-repeat="time in model.times">{{time}}</option>
+                            </select><br />
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="padding: 10px;">
+                    <div class="col-12">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" for="lunch-time" id="lunch-time-group">Lunch Time:</span>
+                            </div>
+                            <input type="text" class="text-sm-centre form-control-sm" id="lunch-time" ng-model="model.lunchTime" aria-describedby="lunch-time-group" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="padding: 10px;">
+                    <div class="col-12">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" for="week-select" id="week-group">Week:</span>
+                            </div>
+                            <select class="custom-select custom-select-sm" id="week-select" aria-label="Week" aria-describedby="week-group" ng-model="model.week" ng-options="x.start for x in model.weeks">
+                                <option value="{{x}}">{{x.start}}</option>
+                            </select>&nbsp;&nbsp;
+                            <button class="btn-sm btn-custom" ng-click="timesheetController.SaveTimesheet()">{{model.addButtonText}}</button>&nbsp;&nbsp;
+                            <button class="btn-sm btn-custom" ng-click="timesheetController.ResetWeek()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="padding: 10px;">
+                    <div ng-repeat="item in model.timesheetWeek" class="col-sm text-center">
+                        <span class="day-label">{{item.day.dayName}}</span><br />
+                        <span class="day-label">{{item.day.day}}</span><br />
+                        <input type="text" class="text-sm-centre form-control-sm" id="hours-worked" ng-model="item.day.hours" style="width: 50px;" placeholder="0" />
+                    </div>
+                    <div class="col-1">
+                        <span class="total-hours">{{timesheetController.WeekTotal(item)}}</span>
+                    </div>
+                </div>
+                <div class="row" style="padding: 10px;">
+                    <div class="col-1">
+                        <span class="total-hours">{{timesheetController.TimesheetTotal()}}</span>
+                    </div>
+                </div>
+                <div class="row" style="padding: 10px;">
+                    <div class="col-12">
+                        <div ng-repeat="item in model.timesheet.data" class="row">
+                            <div ng-repeat="week in item.week">
+                                <div ng-repeat="entry in week" class="col-sm timesheet-item">
+                                    <span class="day">{{entry.dayName}}</span><br /><span class="hours">{{entry.hours}}</span>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <span class="total-hours">{{week.total}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</script>

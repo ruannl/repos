@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+<div ng-controller="accountingController" ng-cloak>
+    <h2>Home</h2>
+    <div class="row">
+        <div class="col-md-3 col-sm-2">
+            <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" for="bank-select" id="bank-group">Bank:</span>
+                </div>
+                <select class="custom-select custom-select-sm" id="bank-select" aria-label="Bank" aria-describedby="bank-group" ng-model="model.bank" ng-options="x.Name for x in model.banks">
+                    <option value="{{x}}">{{x.Name}}</option>
+                </select>&nbsp;
+            </div>
+        </div>
+    </div>
+
+    <h4>Upload on file select</h4>
+    <button class="btn-custom btn-sm" ngf-select="uploadFiles($files, $invalidFiles)" ngf-multiple="true" ngf-pattern="application/x-zip-compressed" ngf-max-height="1000" ngf-max-size="1MB">Select Files</button>
+    <br><br>
+    Files:
+    <ul>
+        <li class="text-success" ng-repeat="f in files">
+            {{f.name}} {{f.$errorParam}}
+            <span class="progress" ng-show="f.progress >= 0">
+                <div style="width:{{f.progress}}%"
+                     ng-bind="f.progress + '%'"></div>
+            </span>
+        </li>
+       
+        <li ng-repeat="f in errFiles" class="text-danger">
+            {{f.name}} {{f.$error}} {{f.$errorParam}}
+        </li>
+    </ul>
+    @*<span class="text-danger">{{errorMsg}}</span><br/>*@
+    <div ng-bind-template="{{errorMsg}}"></div>
+    <button class="btn btn-sm btn-custom" ng-click="SubmitFiles()">Submit</button>
+</div>
