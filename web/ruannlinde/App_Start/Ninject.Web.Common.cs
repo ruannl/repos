@@ -1,6 +1,7 @@
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(RL.App_Start.NinjectWebCommon), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(RL.App_Start.NinjectWebCommon), "Stop")]
+using WebActivatorEx;
 
+[assembly: PreApplicationStartMethod(typeof(NinjectConfig), "Start")]
+[assembly: ApplicationShutdownMethod(typeof(NinjectConfig), "Stop")]
 namespace RL.App_Start
 {
     using System;
@@ -12,8 +13,7 @@ namespace RL.App_Start
     using Ninject.Web.Common;
     using Ninject.Web.Common.WebHost;
 
-    public static class NinjectWebCommon 
-    {
+    public static class NinjectConfig {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
 
         /// <summary>

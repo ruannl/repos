@@ -1,77 +1,67 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using System.Web;
 using System.Web.Http;
+
 using log4net;
+using log4net.Config;
+
 using Microsoft.Owin.Security.OAuth;
 
 using Newtonsoft.Json.Serialization;
+
+using Ninject;
 using Ninject.Extensions.Logging;
 using Ninject.Extensions.Logging.Log4net.Infrastructure;
-using Ninject.Extensions.NamedScope;
-using Ninject.Web.Common;
-using Ninject.Web.WebApi.OwinHost;
 
+using Owin;
 
 namespace RL {
-    using System;
-    using Ninject;
-    using Owin;
+	public partial class Startup {
 
-    public partial class Startup {
+		public void ConfigureNinject(IAppBuilder app) {
+			//DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule));
+			//DynamicModuleUtility.RegisterModule(typeof(NinjectHttpModule));
 
-        public void ConfigureNinject(IAppBuilder app) {
+			XmlConfigurator.Configure();
 
+			var config = new HttpConfiguration();
+			config.SuppressDefaultHostAuthentication();
+			config.MapHttpAttributeRoutes();
 
-            //DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule));
-            //DynamicModuleUtility.RegisterModule(typeof(NinjectHttpModule));
+			config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
+			config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+			config.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{id}", new {id = RouteParameter.Optional, controller = "values"});
 
-            log4net.Config.XmlConfigurator.Configure();
+			//config.DependencyResolver = new NinjectDependencyResolver();
+			//config.DependencyResolver = new OwinNinjectDependencyResolver(CreateKernel());
+			//app.UseNinjectWebApi(config);
+		}
 
-            var config = new HttpConfiguration();
-            config.SuppressDefaultHostAuthentication();
-            config.MapHttpAttributeRoutes();
+		private static bool HasHttpContext() {
+			if (HttpContext.Current != null) return true;
 
-            config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
-            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-            config.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{id}", new { id = RouteParameter.Optional, controller = "values" });
+			return false;
+		}
 
-            //config.DependencyResolver = new NinjectDependencyResolver();
-            //config.DependencyResolver = new OwinNinjectDependencyResolver(CreateKernel());
-            //app.UseNinjectWebApi(config);
-        }
+		private static IKernel CreateKernel() {
+			var kernel = new StandardKernel(new NinjectSettings {InjectNonPublic = true, InjectParentPrivateProperties = true});
 
-        private static bool HasHttpContext() {
-            if (HttpContext.Current != null) return true;
+			try {
+				RegisterServices(kernel);
+				return kernel;
+			}
+			catch (Exception exception) {
+				Console.WriteLine(exception);
+				kernel.Dispose();
+				throw;
+			}
+		}
 
-            return false;
-        }
-
-        private static IKernel CreateKernel() {
-            var kernel = new StandardKernel(new NinjectSettings {
-                InjectNonPublic = true,
-                InjectParentPrivateProperties = true
-            });
-
-            try {
-                RegisterServices(kernel);
-                return kernel;
-            }
-            catch (Exception exception) {
-                Console.WriteLine(exception);
-                kernel.Dispose();
-                throw;
-            }
-        }
-
-        private static void RegisterServices(IKernel kernel) {
-            kernel.Load(Assembly.GetExecutingAssembly());
-
-            //kernel.Bind<ServiceHost>().To<NinjectServiceHost>();
-            //log4net
-            kernel.Bind<ILogger>().To<Log4NetLogger>().InSingletonScope();
-            kernel.Bind<ILog>().ToMethod(context => LogManager.GetLogger(context.Request.ParentContext?.Request.Service.FullName)).InSingletonScope();
-
-         
-        }
-    }
+		private static void RegisterServices(IKernel kernel) {
+			kernel.Load(Assembly.GetExecutingAssembly());
+			kernel.Bind<ILogger>().To<Log4NetLogger>().InSingletonScope();
+			kernel.Bind<ILog>().ToMethod(context => LogManager.GetLogger(context.Request.ParentContext?.Request.Service.FullName)).InSingletonScope();
+		}
+	}
 }

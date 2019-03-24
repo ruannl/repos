@@ -22,14 +22,6 @@
 			return View();
 		}
 
-		[HttpPost]
-		public JsonResult SubmitMessage(string name, string surname, string email, string message) {
-			return Json(new {
-				name
-			  , surname
-			  , email
-			  , message
-			});
-		}
+		
 	}
 }

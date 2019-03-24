@@ -7,14 +7,17 @@ namespace RL.Database.Models {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		[Column(Order = 0)]
-		public int LookupTypeId { get; set; }
+		public virtual int LookupTypeId { get; set; }
 
 		[Required]
 		[Column(Order = 1)]
 		[DataType(DataType.Text)]
-		public string Name { get; set; }
+		public virtual string Name { get; set; }
 
-		public IList<CompanyIdentifier> CompanyIdentifiers { get; set; }
-		public IList<PaymentTypeIdentifier> PaymentTypeIdentifiers { get; set; }
+		[Column(Order = 2)]
+		public virtual IList<CompanyIdentifier> CompanyIdentifiers { get; set; }
+
+		[Column(Order = 3)]
+		public virtual IList<PaymentTypeIdentifier> PaymentTypeIdentifiers { get; set; }
 	}
 }

@@ -1,24 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Web;
 
 namespace RL.Database.Models {
 	public class BudgetItem {
-		[Required]
-		public string BudgetDescription { get; set; }
-
-		[Required]
-		public double BudgetItemAmount { get; set; }
 
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		[Column(Order = 0)]
-		public int BudgetItemId { get; set; }
+		public virtual int BudgetItemId { get; set; }
 
-		[InverseProperty("BudgetItemCategoryId")]
-		public int? BudgetItemCategoryId { get; set; }
+		[Required]
+		[Column(Order = 1)]
+		public virtual string BudgetDescription { get; set; }
+
+		[Required]
+		[Column(Order = 2)]
+		public virtual double BudgetItemAmount { get; set; }
+		
+		[Column(Order = 3)]
+		public virtual BudgetItemCategory  BudgetItemCategory { get; set; }
 	}
 }

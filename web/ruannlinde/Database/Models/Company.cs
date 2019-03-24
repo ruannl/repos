@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Web;
 
 namespace RL.Database.Models {
 	public class Company {
@@ -22,8 +19,10 @@ namespace RL.Database.Models {
 		[DataType(DataType.Text)]
 		public virtual string Code { get; set; }
 
-		[Column("TransactionId", Order = 3)] public virtual IList<Transaction> Transactions { get; set; }
+		[Column(Order = 3)]
+		public virtual IList<Transaction> Transactions { get; set; }
 
-		[Column("CompanyIdentifierId", Order = 4)] public virtual IList<CompanyIdentifier> CompanyIdentifiers { get; set; }
+		[Column(Order = 4)]
+		public virtual IList<CompanyIdentifier> CompanyIdentifiers { get; set; }
 	}
 }

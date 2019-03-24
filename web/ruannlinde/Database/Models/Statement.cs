@@ -9,26 +9,33 @@ namespace RL.Database.Models {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		[Column(Order = 0)]
-		public int StatementId { get; set; }
+		public virtual int StatementId { get; set; }
 
 		[Required]
 		[Column(Order = 1)]
 		[DataType(DataType.Text)]
-		public string FileName { get; set; }
+		public virtual string FileName { get; set; }
 
-		[Required] [Column(Order = 2)] public int FileSize { get; set; }
+		[Required] [Column(Order = 2)]
+		public virtual int FileSize { get; set; }
 
-		[Column(Order = 3)] public int ItemCount { get; set; }
+		[Column(Order = 3)]
+		public virtual int ItemCount { get; set; }
 
-		[Column(Order = 4)] public decimal Accuracy { get; set; }
+		[Column(Order = 4)]
+		public virtual decimal Accuracy { get; set; }
 
-		[Column(Order = 5)] [Required] public DateTime UploadDate { get; set; }
+		[Column(Order = 5)]
+		[Required]
+		public virtual DateTime UploadDate { get; set; }
 
-		[Column(Order = 6)] public bool Processed { get; set; }
+		[Column(Order = 6)]
+		public virtual bool Processed { get; set; }
 
-		[Column(Order = 7)] public ICollection<Transaction> Transactions { get; set; }
+		[Column(Order = 7)]
+		public virtual ICollection<Transaction> Transactions { get; set; }
 		
 		[Column(Order = 8)]
-		public BankAccount  BankAccount { get; set; }
+		public virtual BankAccount  BankAccount { get; set; }
 	}
 }

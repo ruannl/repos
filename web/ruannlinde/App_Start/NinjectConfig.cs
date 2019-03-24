@@ -1,5 +1,6 @@
 ﻿using RL;
 using RL.Database;
+using RL.Database.Providers.CurriculumVitae;
 using RL.Database.Providers.Lookup;
 using WebActivatorEx;
 
@@ -7,66 +8,67 @@ using WebActivatorEx;
 [assembly: ApplicationShutdownMethod(typeof(NinjectConfig), "Stop")]
 
 namespace RL {
-    using System;
-    using System.Diagnostics.CodeAnalysis;
-    using System.Reflection;
-    using System.Web;
-    
-    using log4net;
-    using Microsoft.Web.Infrastructure.DynamicModuleHelper;
-    using Ninject;
-    using Ninject.Extensions.Logging;
-    using Ninject.Extensions.Logging.Log4net.Infrastructure;
-    using Ninject.Web.Common;
-    using Ninject.Web.Common.WebHost;
+	using System;
+	using System.Diagnostics.CodeAnalysis;
+	using System.Reflection;
+	using System.Web;
 
-    [ExcludeFromCodeCoverage]
-    public static class NinjectConfig {
-        private static readonly Bootstrapper bootstrapper = new Bootstrapper();
+	using log4net;
+	using Microsoft.Web.Infrastructure.DynamicModuleHelper;
+	using Ninject;
+	using Ninject.Extensions.Logging;
+	using Ninject.Extensions.Logging.Log4net.Infrastructure;
+	using Ninject.Web.Common;
+	using Ninject.Web.Common.WebHost;
 
-        public static void Start() {
-            DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule));
-            DynamicModuleUtility.RegisterModule(typeof(NinjectHttpModule));
+	[ExcludeFromCodeCoverage]
+	public static class NinjectConfig {
+		private static readonly Bootstrapper bootstrapper = new Bootstrapper();
 
-            bootstrapper.Initialize(CreateKernel);
-        }
+		public static void Start() {
+			DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule));
+			DynamicModuleUtility.RegisterModule(typeof(NinjectHttpModule));
 
-        public static void Stop() {
-            bootstrapper.ShutDown();
-        }
+			bootstrapper.Initialize(CreateKernel);
+		}
 
-        private static bool HasHttpContext() {
-            if (HttpContext.Current != null) return true;
+		public static void Stop() {
+			bootstrapper.ShutDown();
+		}
 
-            return false;
-        }
+		private static bool HasHttpContext() {
+			if (HttpContext.Current != null) return true;
 
-        private static IKernel CreateKernel() {
-            var kernel = new StandardKernel(new NinjectSettings {
-                InjectNonPublic = true, InjectParentPrivateProperties = true
-            });
+			return false;
+		}
 
-            try {
-                kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
-                kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
+		private static IKernel CreateKernel() {
+			var kernel = new StandardKernel(new NinjectSettings {
+				InjectNonPublic = true, InjectParentPrivateProperties = true
+			});
 
-                RegisterServices(kernel);
+			try {
+				kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
+				kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
 
-                return kernel;
-            }
-            catch {
-                kernel.Dispose();
-                throw;
-            }
-        }
+				RegisterServices(kernel);
 
-        private static void RegisterServices(IKernel kernel) {
-            kernel.Load(Assembly.GetExecutingAssembly());
-            kernel.Bind<ILogger>().To<Log4NetLogger>().InSingletonScope();
-            kernel.Bind<ILog>().ToMethod(context => LogManager.GetLogger(context.Request.ParentContext?.Request.Service.FullName)).InSingletonScope();
+				return kernel;
+			}
+			catch {
+				kernel.Dispose();
+				throw;
+			}
+		}
 
-            kernel.Bind<ApplicationDatabaseContext>().To<ApplicationDatabaseContext>().InSingletonScope();
-            kernel.Bind<LookupManager>().ToSelf().InSingletonScope();
-        }
-    }
+		private static void RegisterServices(IKernel kernel) {
+			kernel.Load(Assembly.GetExecutingAssembly());
+			kernel.Bind<ILogger>().To<Log4NetLogger>().InSingletonScope();
+			kernel.Bind<ILog>().ToMethod(context => LogManager.GetLogger(context.Request.ParentContext?.Request.Service.FullName)).InSingletonScope();
+
+			kernel.Bind<ApplicationDatabaseContext>().To<ApplicationDatabaseContext>().InSingletonScope();
+			kernel.Bind<ICurriculumVitaeManager>().To<CurriculumVitaeManager>().InSingletonScope();
+			kernel.Bind<LookupManager>().ToSelf().InSingletonScope();
+		}
+	}
 }

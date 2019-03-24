@@ -7,19 +7,20 @@ namespace RL.Database.Models {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		[Column(Order = 0)]
-		public int BankAccountId { get; set; }
+		public virtual int BankAccountId { get; set; }
 
-		[Required] [Column(Order = 1)] public string AccountName { get; set; }
+		[Required] [Column(Order = 1)] public virtual string AccountName { get; set; }
 
-		[Required] [Column(Order = 2)] public string AccountNumber { get; set; }
+		[Required] [Column(Order = 2)] public virtual string AccountNumber { get; set; }
 
 		[Required]
-		[InverseProperty("BankId")]
 		[Column(Order = 3)]
-		public int? BankId { get; set; }
+		public virtual Bank Bank { get; set; }
 
-		[ForeignKey("BankCardId")] public virtual ICollection<BankCard> BankCards { get; set; }
+		[Column(Order = 4)]
+		public virtual ICollection<BankCard> BankCards { get; set; }
 
-		[ForeignKey("StatementId")] public virtual ICollection<Statement> Statements { get; set; }
+		[Column(Order = 5)]
+		public virtual ICollection<Statement> Statements { get; set; }
 	}
 }

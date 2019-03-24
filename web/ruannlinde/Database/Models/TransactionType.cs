@@ -7,10 +7,11 @@ namespace RL.Database.Models {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		[Column(Order = 0)]
-		public int TransactionTypeId { get; set; }
+		public virtual int TransactionTypeId { get; set; }
 
-		[Required] [Column(Order = 1)] public string TransactionTypeName { get; set; }
+		[Required] [Column(Order = 1)] public virtual string TransactionTypeName { get; set; }
 
-		[ForeignKey("TransactionTypeId")] public virtual ICollection<TransactionTypeIdentifier> TransactionTypeIdentifiers { get; set; }
+		[Column(Order = 2)]
+		public virtual ICollection<TransactionTypeIdentifier> TransactionTypeIdentifiers { get; set; }
 	}
 }

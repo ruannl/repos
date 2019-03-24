@@ -8,10 +8,13 @@ namespace RL.Database {
 		}
 
 		public DbSet<Statement> Statements { get; set; }
+
 		public DbSet<Transaction> Transactions { get; set; }
+
 		public DbSet<Company> Companies { get; set; }
 
 		public DbSet<CompanyIdentifier> CompanyIdentifiers { get; set; }
+
 		/// <summary>
 		/// Quickbooks Account Types
 		/// <list type="table">
@@ -33,6 +36,7 @@ namespace RL.Database {
 		public DbSet<Customer> Customers { get; set; }
 
 		public DbSet<PaymentType> PaymentTypes { get; set; }
+
 		public DbSet<PaymentTypeIdentifier> PaymentTypeIdentifierIdentifiers { get; set; }
 
 		/// <summary>
@@ -93,6 +97,7 @@ namespace RL.Database {
 		public DbSet<TransactionType> TransactionTypes { get; set; }
 
 		public DbSet<TransactionTypeIdentifier> TransactionTypeIdentifiers { get; set; }
-		
+
+		public DbSet<ContactMessage> ContactMessages { get; set; }
 	}
 }

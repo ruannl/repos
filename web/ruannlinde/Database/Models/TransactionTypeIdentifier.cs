@@ -6,14 +6,13 @@ namespace RL.Database.Models {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		[Column(Order = 0)]
-		public int TransactionTypeIdentifierId { get; set; }
+		public virtual int TransactionTypeIdentifierId { get; set; }
 
-		[Required] [Column(Order = 1)] public string TransactionTypeIdentifierPrimary { get; set; }
+		[Required] [Column(Order = 1)] public virtual string TransactionTypeIdentifierPrimary { get; set; }
 
-		[Column(Order = 2)] public string TransactionTypeIdentifierSecondary { get; set; }
+		[Column(Order = 2)] public virtual string TransactionTypeIdentifierSecondary { get; set; }
 
-		[InverseProperty("TransactionTypeId")]
 		[Column(Order = 3)]
-		public int? TransactionTypeId { get; set; }
+		public virtual TransactionType TransactionType { get; set; }
 	}
 }

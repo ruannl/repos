@@ -7,46 +7,46 @@ namespace RL.Database.Models {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		[Column(Order = 0)]
-		public int TransactionId { get; set; }
+		public virtual int TransactionId { get; set; }
 
 		[Required]
 		[Column(Order = 1)]
 		[DataType(DataType.DateTime)]
-		public DateTime Date { get; set; }
+		public virtual DateTime Date { get; set; }
 
 		[Required]
 		[Column(Order = 2)]
 		[DataType(DataType.Text)]
-		public string Description { get; set; }
+		public virtual string Description { get; set; }
 
 		[Required]
 		[Column(Order = 3)]
 		[DataType(DataType.Currency)]
-		public decimal Amount { get; set; }
+		public virtual decimal Amount { get; set; }
 
 		[Column(Order = 4)]
 		[DataType(DataType.Text)]
-		public string CleanDescription { get; set; }
+		public virtual string CleanDescription { get; set; }
 
-		[Column("StatementId", Order = 5)] public Statement Statement { get; set; }
+		[Column("StatementId", Order = 5)] public virtual Statement Statement { get; set; }
 
-		[Column("CompanyId", Order = 6)] public Company Company { get; set; }
+		[Column("CompanyId", Order = 6)] public virtual Company Company { get; set; }
 
-		[Column("PaymentTypeId", Order = 7)] public PaymentType PaymentType { get; set; }
+		[Column("PaymentTypeId", Order = 7)] public virtual PaymentType PaymentType { get; set; }
 
-		[Column("BankCardId", Order = 8)] public BankCard BankCard { get; set; }
+		[Column("BankCardId", Order = 8)] public virtual BankCard BankCard { get; set; }
 
-		[Column("RetailerId", Order = 9)] public Retailer Retailer { get; set; }
+		[Column("RetailerId", Order = 9)] public virtual Retailer Retailer { get; set; }
 
-		[Column("BudgetItemId", Order = 10)] public BudgetItem BudgetItem { get; set; }
+		[Column("BudgetItemId", Order = 10)] public virtual BudgetItem BudgetItem { get; set; }
 
 		[Column("TransactionTypeId", Order = 11)]
-		public TransactionType TransactionType { get; set; }
+		public virtual TransactionType TransactionType { get; set; }
 
-		[Column("Failed", Order = 12)] public bool Failed { get; set; }
+		[Column("Failed", Order = 12)] public virtual bool Failed { get; set; }
 
 		[NotMapped]
-		public bool NotAColumn {
+		public virtual bool NotAColumn {
 			get {
 				if (Company == null && PaymentType == null) return true;
 				return false;

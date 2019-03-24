@@ -38,7 +38,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <TypeScriptTarget>ES5</TypeScriptTarget>
     <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
@@ -50,10 +50,10 @@
     <TypeScriptOutDir />
     <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
     <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
-    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
     <TypeScriptMapRoot />
     <TypeScriptSourceRoot />
-    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -107,6 +107,9 @@
     </Reference>
     <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="GzipBundle, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GzipBundle.1.0.0\lib\GzipBundle.dll</HintPath>
     </Reference>
     <Reference Include="Interop.QBFC13, Version=13.0.0.23, Culture=neutral, PublicKeyToken=31d8aec643e18259">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -368,7 +371,7 @@
     <Compile Include="Database\Models\CleanupExpression.cs" />
     <Compile Include="Database\Models\Company.cs" />
     <Compile Include="Database\Models\CompanyIdentifier.cs" />
-    <Compile Include="Database\Models\Contact.cs" />
+    <Compile Include="Database\Models\ContactMessage.cs" />
     <Compile Include="Database\Models\Customer.cs" />
     <Compile Include="Database\Models\Log.cs" />
     <Compile Include="Database\Models\LookupType.cs" />
@@ -378,9 +381,9 @@
     <Compile Include="Database\Models\RetailerIdentifier.cs" />
     <Compile Include="Database\Models\Statement.cs" />
     <Compile Include="Database\Models\Transaction.cs" />
-    <Compile Include="Database\Models\TransactionEntry.cs" />
     <Compile Include="Database\Models\TransactionType.cs" />
     <Compile Include="Database\Models\TransactionTypeIdentifier.cs" />
+    <Compile Include="Database\Providers\CurriculumVitae\CurriculumVitaeManager .cs" />
     <Compile Include="Database\Providers\Lookup\LookupManager.cs" />
     <Compile Include="Database\Providers\Quickbooks\QuickbooksRepository.cs" />
     <Compile Include="Helpers\MyGoogleClaimTypes.cs" />
@@ -561,7 +564,6 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
-    <Content Include="rl.log" />
     <Content Include="Areas\CV\Views\web.config" />
     <Content Include="Areas\CV\Views\_ViewStart.cshtml" />
     <Content Include="Areas\CV\Views\Shared\_Layout.cshtml" />

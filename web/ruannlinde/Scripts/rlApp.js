@@ -50,7 +50,7 @@
 	};
 
 	//controllers
-	var baseController = function ($rootScope, $scope, $route, $document, $window, $anchorScroll) {
+	var baseController = function ($scope, $route, $window, $anchorScroll) {
 		//$scope.template = 'cv.htm';
 		$scope.template = 'cv.htm';
 		$scope.redirectToTemplate = function (template) {
@@ -59,17 +59,11 @@
 			$anchorScroll('top');
 		};
 
-		$rootScope.$on('$viewContentLoaded',
-			function (event) {
-				//$location.hash('top');
-				$anchorScroll('top');
-			});
-		$scope.$on('$stateChangeStart',
-			function (a, b, c) {
-				console.log('a', a);
-				console.log('b', b);
-				console.log('c', c);
-			});
+		$scope.$on('$stateChangeStart', function (a, b, c) {
+			console.log('a', a);
+			console.log('b', b);
+			console.log('c', c);
+		});
 
 		console.log($route.routes);
 
@@ -77,277 +71,335 @@
 		};
 		$scope.ShowContextMenu = function () {
 		};
-		$scope.titles = [];
 
-		var body = $document[0].body;
-		var bodyElement = angular.element(body);
-		bodyElement.removeClass('weather-body');
+		//var body = $document[0].body;
+		//var bodyElement = angular.element(body);
+		//bodyElement.removeClass('weather-body');
 
 		if ($window.innerWidth <= 1024) {
 			$scope.layout = 'container-fluid';
-			$scope.titles = [
-				{
-					name: 'C# development',
-					className: 'c-sharp'
-				}, {
-					name: 'Single page applications',
-					className: 'angular'
-				}, {
-					name: 'JavaScript',
-					className: 'javascript'
-				}, {
-					name: 'Microsoft SQL',
-					className: 'sql'
-				}, {
-					name: 'MySQL',
-					className: 'mysql'
-				}, {
-					name: 'SQL Lite',
-					className: 'sql-lite'
-				}, {
-					name: 'bootstrap',
-					className: 'bootstrap'
-				}, {
-					name: 'jQuery',
-					className: 'jquery'
-				}, {
-					name: 'Office Integration',
-					className: 'msoffice'
-				}, {
-					name: 'Intuit',
-					className: 'quick-books'
-				}, {
-					name: 'Cloud Development',
-					className: 'azure'
-				}, {
-					name: 'HTML 5',
-					className: 'html5'
-				}, {
-					name: 'CSS 3',
-					className: 'css3'
-				}, {
-					name: 'iText pdf',
-					className: 'itext'
-				}, {
-					name: 'Kendo UI',
-					className: 'kendo'
-				}, {
-					name: 'Node JS',
-					className: 'nodejs'
-				}, {
-					name: 'Web API',
-					className: 'webapi'
-				}, {
-					name: 'WCF Services',
-					className: 'wcf'
-				}, {
-					name: 'Apps',
-					className: 'google-developers'
-				}, {
-					name: 'Integration',
-					className: 'micros-fidelio'
-				}
-			];
+			//$scope.titles = [
+			//	{
+			//		name: 'C# development',
+			//		className: 'c-sharp'
+			//	}, {
+			//		name: 'Single page applications',
+			//		className: 'angular'
+			//	}, {
+			//		name: 'JavaScript',
+			//		className: 'javascript'
+			//	}, {
+			//		name: 'Microsoft SQL',
+			//		className: 'sql'
+			//	}, {
+			//		name: 'MySQL',
+			//		className: 'mysql'
+			//	}, {
+			//		name: 'SQL Lite',
+			//		className: 'sql-lite'
+			//	}, {
+			//		name: 'bootstrap',
+			//		className: 'bootstrap'
+			//	}, {
+			//		name: 'jQuery',
+			//		className: 'jquery'
+			//	}, {
+			//		name: 'Office Integration',
+			//		className: 'msoffice'
+			//	}, {
+			//		name: 'Intuit',
+			//		className: 'quick-books'
+			//	}, {
+			//		name: 'Cloud Development',
+			//		className: 'azure'
+			//	}, {
+			//		name: 'HTML 5',
+			//		className: 'html5'
+			//	}, {
+			//		name: 'CSS 3',
+			//		className: 'css3'
+			//	}, {
+			//		name: 'iText pdf',
+			//		className: 'itext'
+			//	}, {
+			//		name: 'Kendo UI',
+			//		className: 'kendo'
+			//	}, {
+			//		name: 'Node JS',
+			//		className: 'nodejs'
+			//	}, {
+			//		name: 'Web API',
+			//		className: 'webapi'
+			//	}, {
+			//		name: 'WCF Services',
+			//		className: 'wcf'
+			//	}, {
+			//		name: 'Apps',
+			//		className: 'google-developers'
+			//	}, {
+			//		name: 'Integration',
+			//		className: 'micros-fidelio'
+			//	}
+			//];
 		} else {
 
 			$scope.layout = 'container';
-			$scope.titles = [
-				{
-					name: 'C# development with a description',
-					className: 'c-sharp'
-				}, {
-					name: 'Single page applications',
-					className: 'angular'
-				}, {
-					name: 'JavaScript',
-					className: 'javascript'
-				}, {
-					name: 'Microsoft SQL',
-					className: 'sql'
-				}, {
-					name: 'MySQL',
-					className: 'mysql'
-				}, {
-					name: 'SQL Lite',
-					className: 'sql-lite'
-				}, {
-					name: 'bootstrap',
-					className: 'bootstrap'
-				}, {
-					name: 'jQuery',
-					className: 'jquery'
-				}, {
-					name: 'Office Integration',
-					className: 'msoffice'
-				}, {
-					name: 'Intuit',
-					className: 'quick-books'
-				}, {
-					name: 'Cloud Development',
-					className: 'azure'
-				}, {
-					name: 'HTML 5',
-					className: 'html5'
-				}, {
-					name: 'CSS 3',
-					className: 'css3'
-				}, {
-					name: 'iText pdf',
-					className: 'itext'
-				}, {
-					name: 'Kendo UI',
-					className: 'kendo'
-				}, {
-					name: 'Node JS',
-					className: 'nodejs'
-				}, {
-					name: 'Web API',
-					className: 'webapi'
-				}, {
-					name: 'WCF Services',
-					className: 'wcf'
-				}, {
-					name: 'Apps',
-					className: 'google-developers'
-				}, {
-					name: 'Integration',
-					className: 'micros-fidelio'
-				}
-			];
+			//$scope.titles = [
+			//	{
+			//		name: 'C# development with a description',
+			//		className: 'c-sharp'
+			//	}, {
+			//		name: 'Single page applications',
+			//		className: 'angular'
+			//	}, {
+			//		name: 'JavaScript',
+			//		className: 'javascript'
+			//	}, {
+			//		name: 'Microsoft SQL',
+			//		className: 'sql'
+			//	}, {
+			//		name: 'MySQL',
+			//		className: 'mysql'
+			//	}, {
+			//		name: 'SQL Lite',
+			//		className: 'sql-lite'
+			//	}, {
+			//		name: 'bootstrap',
+			//		className: 'bootstrap'
+			//	}, {
+			//		name: 'jQuery',
+			//		className: 'jquery'
+			//	}, {
+			//		name: 'Office Integration',
+			//		className: 'msoffice'
+			//	}, {
+			//		name: 'Intuit',
+			//		className: 'quick-books'
+			//	}, {
+			//		name: 'Cloud Development',
+			//		className: 'azure'
+			//	}, {
+			//		name: 'HTML 5',
+			//		className: 'html5'
+			//	}, {
+			//		name: 'CSS 3',
+			//		className: 'css3'
+			//	}, {
+			//		name: 'iText pdf',
+			//		className: 'itext'
+			//	}, {
+			//		name: 'Kendo UI',
+			//		className: 'kendo'
+			//	}, {
+			//		name: 'Node JS',
+			//		className: 'nodejs'
+			//	}, {
+			//		name: 'Web API',
+			//		className: 'webapi'
+			//	}, {
+			//		name: 'WCF Services',
+			//		className: 'wcf'
+			//	}, {
+			//		name: 'Apps',
+			//		className: 'google-developers'
+			//	}, {
+			//		name: 'Integration',
+			//		className: 'micros-fidelio'
+			//	}
+			//];
 		}
 
-		angular.element($window)
-			.bind('resize',
-				function () {
-					if ($window.innerWidth <= 1024) {
-						$scope.layout = 'container-fluid';
-					} else {
-						$scope.layout = 'container';
-					}
-				});
-
+		angular.element($window).bind('resize', function () {
+			if ($window.innerWidth <= 1024) {
+				$scope.layout = 'container-fluid';
+			} else {
+				$scope.layout = 'container';
+			}
+		});
 	};
-	var homeController = function ($scope, dataService, $anchorScroll) {
-		$scope.model = {
-			submitted: false
-		};
+	var cvController = function ($scope, $anchorScroll, dataService) {
 
-		$scope.model.languages = [
-			{
-				id: 'csharp',
-				name: 'C#'
+		$scope.model = {
+			submitted: false,
+			showThankYou: function () {
+				return $scope.model.submitted && $scope.contactForm.$submitted;
+			},
+			titles: [{
+				name: 'C# development',
+				className: 'c-sharp'
 			}, {
-				id: 'aspnet',
-				name: 'Asp.Net'
+				name: 'Single page applications',
+				className: 'angular'
 			}, {
-				id: 'js',
-				name: 'Javascript'
+				name: 'JavaScript',
+				className: 'javascript'
 			}, {
-				id: 'html',
-				name: 'HTML'
+				name: 'Microsoft SQL',
+				className: 'sql'
 			}, {
-				id: 'css',
-				name: 'CSS'
+				name: 'MySQL',
+				className: 'mysql'
 			}, {
-				id: 'sql',
-				name: 'T-SQL'
+				name: 'SQL Lite',
+				className: 'sql-lite'
 			}, {
-				id: 'vb',
-				name: 'Visual Basic 6'
+				name: 'bootstrap',
+				className: 'bootstrap'
 			}, {
-				id: 'vbs',
-				name: 'VB Script'
-			}
-		];
-		$scope.model.tools = [
-			{
-				id: 'visualstudio',
-				name: 'Visual Studio 2010 - 2017'
+				name: 'jQuery',
+				className: 'jquery'
 			}, {
-				id: 'sqlms',
-				name: 'SQL Server Management Studio'
+				name: 'Office Integration',
+				className: 'msoffice'
 			}, {
-				id: 'ps',
-				name: 'Powershell'
+				name: 'Intuit',
+				className: 'quick-books'
 			}, {
-				id: 'iis',
-				name: 'IIS 6 - 7'
+				name: 'Cloud Development',
+				className: 'azure'
 			}, {
-				id: 'mysql',
-				name: 'MySQL Workbench'
+				name: 'HTML 5',
+				className: 'html5'
 			}, {
-				id: 'fb',
-				name: 'Fire Bird'
-			}
-		];
-		$scope.model.packages = [
-			{
-				id: 'core',
-				name: '.Net CORE'
+				name: 'CSS 3',
+				className: 'css3'
 			}, {
-				id: 'net',
-				name: '.Net Framework'
+				name: 'iText pdf',
+				className: 'itext'
 			}, {
-				id: 'ps',
-				name: 'Powershell'
+				name: 'Kendo UI',
+				className: 'kendo'
 			}, {
-				id: 'ef',
-				name: 'Entity Framework'
+				name: 'Node JS',
+				className: 'nodejs'
 			}, {
-				id: 'nh',
-				name: 'N-Hibernate'
+				name: 'Web API',
+				className: 'webapi'
 			}, {
-				id: 'mvc',
-				name: 'MVC'
+				name: 'WCF Services',
+				className: 'wcf'
 			}, {
-				id: 'api',
-				name: 'Web API'
+				name: 'Apps',
+				className: 'google-developers'
 			}, {
-				id: 'wcf',
-				name: 'Wcf Services'
-			}, {
-				id: 'owin',
-				name: 'Owin'
-			}, {
-				id: 'ninject',
-				name: 'Ninject'
-			}, {
-				id: 'itext',
-				name: 'ITEXT Pdf Creation'
-			}, {
-				id: 'angularjs',
-				name: 'AngularJs'
-			}, {
-				id: 'jquery',
-				name: 'JQuery'
-			}, {
-				id: 'signalr',
-				name: 'Signalr'
-			}, {
-				id: 'bootstrap',
-				name: 'bootstrap'
-			}, {
-				id: 'kendo',
-				name: 'Kendo UI'
-			}, {
-				id: 'node',
-				name: 'Node JS'
-			}, {
-				id: 'mstest',
-				name: 'MS TEST'
-			}, {
-				id: 'nunit',
-				name: 'NUnit'
-			}, {
-				id: 'jasmine',
-				name: 'Jasmine'
-			}, {
-				id: 'specflow',
-				name: 'Specflow'
-			}
-		];
-		$scope.model.domain = [
-			{
+				name: 'Integration',
+				className: 'micros-fidelio'
+			}],
+			languages: [
+				{
+					id: 'csharp',
+					name: 'C#'
+				}, {
+					id: 'aspnet',
+					name: 'Asp.Net'
+				}, {
+					id: 'js',
+					name: 'Javascript'
+				}, {
+					id: 'html',
+					name: 'HTML'
+				}, {
+					id: 'css',
+					name: 'CSS'
+				}, {
+					id: 'sql',
+					name: 'T-SQL'
+				}, {
+					id: 'vb',
+					name: 'Visual Basic 6'
+				}, {
+					id: 'vbs',
+					name: 'VB Script'
+				}
+			],
+			tools: [
+				{
+					id: 'visualstudio',
+					name: 'Visual Studio 2010 - 2017'
+				}, {
+					id: 'sqlms',
+					name: 'SQL Server Management Studio'
+				}, {
+					id: 'ps',
+					name: 'Powershell'
+				}, {
+					id: 'iis',
+					name: 'IIS 6 - 7'
+				}, {
+					id: 'mysql',
+					name: 'MySQL Workbench'
+				}, {
+					id: 'fb',
+					name: 'Fire Bird'
+				}
+			],
+			packages: [
+				{
+					id: 'core',
+					name: '.Net CORE'
+				}, {
+					id: 'net',
+					name: '.Net Framework'
+				}, {
+					id: 'ps',
+					name: 'Powershell'
+				}, {
+					id: 'ef',
+					name: 'Entity Framework'
+				}, {
+					id: 'nh',
+					name: 'N-Hibernate'
+				}, {
+					id: 'mvc',
+					name: 'MVC'
+				}, {
+					id: 'api',
+					name: 'Web API'
+				}, {
+					id: 'wcf',
+					name: 'Wcf Services'
+				}, {
+					id: 'owin',
+					name: 'Owin'
+				}, {
+					id: 'ninject',
+					name: 'Ninject'
+				}, {
+					id: 'itext',
+					name: 'ITEXT Pdf Creation'
+				}, {
+					id: 'angularjs',
+					name: 'AngularJs'
+				}, {
+					id: 'jquery',
+					name: 'JQuery'
+				}, {
+					id: 'signalr',
+					name: 'Signalr'
+				}, {
+					id: 'bootstrap',
+					name: 'bootstrap'
+				}, {
+					id: 'kendo',
+					name: 'Kendo UI'
+				}, {
+					id: 'node',
+					name: 'Node JS'
+				}, {
+					id: 'mstest',
+					name: 'MS TEST'
+				}, {
+					id: 'nunit',
+					name: 'NUnit'
+				}, {
+					id: 'jasmine',
+					name: 'Jasmine'
+				}, {
+					id: 'specflow',
+					name: 'Specflow'
+				}
+			],
+			domain: [{
 				id: 'agile',
 				name: 'Agile / Scrum'
 			}, {
@@ -365,10 +417,8 @@
 			}, {
 				id: 'wf',
 				name: 'Warerfall'
-			}
-		];
-		$scope.model.projects = [
-			{
+			}],
+			projects: [{
 				id: 'webstir',
 				name: 'Web Submissions for Issuer Regulation'
 			}, {
@@ -398,18 +448,13 @@
 			}, {
 				id: 'wisp',
 				name: 'WISP - Platform Integration'
+			}],
+			contact: {
+				name: null,
+				surname: null,
+				email: null,
+				message: null
 			}
-		];
-		$scope.model.contact = {
-			name: null,
-			surname: null,
-			email: null,
-			message: null
-			//isValid: contactForm.$valid
-		};
-
-		$scope.model.showThankYou = function () {
-			return $scope.model.submitted && $scope.contactForm.$submitted;
 		};
 
 		$scope.submitContactForm = function (isValid) {
@@ -454,7 +499,12 @@
 
 		$anchorScroll('top');
 
-		console.log('homecontroller.scope.model', $scope.model);
+		console.log('CvController.model', $scope.model);
+	};
+	var homeController = function ($scope) {
+		$scope.model = {
+
+		};
 	};
 	var timesheetController = function ($scope, $storageService, $interval, $filter, $q) {
 		var handleAddWeekResponse = function (response) {
@@ -1491,10 +1541,12 @@
 	};
 	var dataService = function ($http, $q, $location) {
 		'use strict';
+
+		console.log('dataservice',$location.$$absUrl);
 		return {
 			SaveMessage: function (contact) {
 				return $http({
-					url: $location.$$absUrl + '/Home/SubmitMessage',
+					url: $location.$$absUrl + 'Home/SubmitMessage',
 					method: 'POST',
 					data: {
 						name: contact.name,
@@ -1506,7 +1558,6 @@
 			}
 		};
 	};
-
 	var calendarService = function ($http, $location) {
 		'use strict';
 		return {
@@ -1518,7 +1569,6 @@
 			}
 		};
 	};
-
 	var geolocatorService = function ($window, $q, $log) {
 
 		var currentPositionDefer = $q.defer();
@@ -1734,10 +1784,7 @@
 	angular.module('rlApp', ['ngRoute', 'ngStorage', 'ngFileUpload', 'ngAnimate'])
 		.value('settings', settings)
 		.constant('apiUrl', 'api/files/')
-		.config([
-			'$routeProvider', '$httpProvider', '$locationProvider', '$compileProvider', 'openWeatherMapProvider',
-			appConfig
-		])
+		.config(['$routeProvider', '$httpProvider', '$locationProvider', '$compileProvider', 'openWeatherMapProvider', appConfig ])
 		.run(['$location', runApp])
 		.factory('$storageService', ['$localStorage', '$filter', '$q', storage])
 		.factory('accountingService', ['$http', '$location', '$q', 'Upload', accountingService])
@@ -1761,9 +1808,10 @@
 		.directive('timeline', timeline)
 		.directive('cellHighlight', cellHighlight)
 		.directive('rlRightClick', ['$parse', rlRightClick])
-		.controller('BaseController',
-			['$rootScope', '$scope', '$route', '$document', '$window', '$anchorScroll', baseController])
-		.controller('HomeController', ['$scope', 'dataService', '$anchorScroll', homeController])
+		.provider('openWeatherMap', [openWeatherMapProvider])
+		.controller('BaseController', ['$scope', '$route', '$window', '$anchorScroll', baseController])
+		.controller('CvController', ['$scope', '$anchorScroll', 'dataService', cvController])
+		.controller('HomeController', ['$scope', homeController])
 		.controller('TimesheetController',
 			['$scope', '$storageService', '$interval', '$filter', '$q', timesheetController])
 		.controller('AccountingController', ['$scope', '$sce', 'accountingService', accountingController])
@@ -1771,8 +1819,7 @@
 			[
 				'$scope', '$document', '$filter', 'calendarService', 'geolocatorService', 'openWeatherMapService',
 				weatherController
-			])
-		.provider('openWeatherMap', [openWeatherMapProvider]);
+			]);
 
 	angular.module('infinite-scroll').value('THROTTLE_MILLISECONDS', 250);
 

@@ -16,8 +16,7 @@ namespace RL.Areas.Accounting.Models {
         [Required]
         public string BankCardNumber { get; set; }
 
-        [InverseProperty("BankAccountId")]
         [Column(Order = 3)]
-        public int? BankAccountId { get; set; }
+        public BankAccount BankAccount { get; set; }
     }
 }
