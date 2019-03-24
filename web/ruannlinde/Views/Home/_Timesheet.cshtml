@@ -8,9 +8,10 @@
         </li>
     </ul>
     @*rl-right-click="ShowContextMenu()"*@
-    <div context="context1" class="timesheet">
+    <div class="timesheet">
+        @*context="context1"*@
+        <span id="top"></span>
         <div ng-controller="timesheetController" ng-cloak>
-            <span id="top"></span>
             <section>
                 <div class="row">
                     <div class="col-6">
@@ -81,8 +82,8 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" for="week-select" id="week-group">Week:</span>
                             </div>
-                            <select class="custom-select custom-select-sm" id="week-select" aria-label="Week" aria-describedby="week-group" ng-model="model.week" ng-options="x.start for x in model.weeks">
-                                <option value="{{x}}">{{x.start}}</option>
+                            <select class="custom-select custom-select-sm" id="week-select" aria-label="Week" aria-describedby="week-group" ng-model="model.week" ng-options="week.start for week in model.weeks">
+                                <option value="{{week}}">{{week.start}}</option>
                             </select>&nbsp;&nbsp;
                             <button class="btn-sm btn-custom" ng-click="timesheetController.SaveTimesheet()">{{model.addButtonText}}</button>&nbsp;&nbsp;
                             <button class="btn-sm btn-custom" ng-click="timesheetController.ResetWeek()">Reset</button>

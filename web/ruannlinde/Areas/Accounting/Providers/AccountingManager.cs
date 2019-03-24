@@ -8,7 +8,7 @@ using System.IO.Compression;
 using System.Linq;
 using System.Web;
 using Microsoft.Ajax.Utilities;
-using RL.Areas.Accounting.Models;
+using RL.Database.Models;
 
 namespace RL.Areas.Accounting.Providers {
     public class AccountingManager : IDisposable {

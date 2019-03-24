@@ -10,10 +10,9 @@ using Ninject.Extensions.Logging.Log4net.Infrastructure;
 using Ninject.Extensions.NamedScope;
 using Ninject.Web.Common;
 using Ninject.Web.WebApi.OwinHost;
-using RL.Areas.Accounting.Providers;
 
-namespace RL
-{
+
+namespace RL {
     using System;
     using Ninject;
     using Owin;
@@ -34,12 +33,11 @@ namespace RL
 
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-            config.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{id}", new {id = RouteParameter.Optional, controller = "values"});
+            config.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{id}", new { id = RouteParameter.Optional, controller = "values" });
 
             //config.DependencyResolver = new NinjectDependencyResolver();
-
-            config.DependencyResolver = new OwinNinjectDependencyResolver(CreateKernel());
-            app.UseNinjectWebApi(config);
+            //config.DependencyResolver = new OwinNinjectDependencyResolver(CreateKernel());
+            //app.UseNinjectWebApi(config);
         }
 
         private static bool HasHttpContext() {
@@ -50,8 +48,8 @@ namespace RL
 
         private static IKernel CreateKernel() {
             var kernel = new StandardKernel(new NinjectSettings {
-                InjectNonPublic = true
-                , InjectParentPrivateProperties = true
+                InjectNonPublic = true,
+                InjectParentPrivateProperties = true
             });
 
             try {
@@ -73,9 +71,7 @@ namespace RL
             kernel.Bind<ILogger>().To<Log4NetLogger>().InSingletonScope();
             kernel.Bind<ILog>().ToMethod(context => LogManager.GetLogger(context.Request.ParentContext?.Request.Service.FullName)).InSingletonScope();
 
-            kernel.Bind<AccountingContext>().To<AccountingContext>().When(x => !HasHttpContext()).InCallScope();
-            kernel.Bind<AccountingContext>().To<AccountingContext>().When(x => HasHttpContext()).InRequestScope();
-            kernel.Bind<AccountingManager>().ToSelf().InSingletonScope();
+         
         }
     }
 }

@@ -11,8 +11,8 @@ namespace RL.Areas.Accounting.Providers
     {
         public override void InitializeDatabase(AccountingContext context)
         {
-            context.Database.ExecuteSqlCommand(TransactionalBehavior.DoNotEnsureTransaction
-                                               , $"ALTER DATABASE {context.Database.Connection.Database} SET SINGLE_USER WITH ROLLBACK IMMEDIATE");
+            //context.Database.ExecuteSqlCommand(TransactionalBehavior.DoNotEnsureTransaction
+            //                                   , $"ALTER DATABASE {context.Database.Connection.Database} SET SINGLE_USER WITH ROLLBACK IMMEDIATE");
 
             base.InitializeDatabase(context);
         }

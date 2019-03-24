@@ -1,28 +1,27 @@
-﻿namespace RL.Services {
-    using System;
-    using System.Collections;
-    using System.ComponentModel;
-    using System.Text.RegularExpressions;
-    using System.Web.Script.Services;
-    using System.Web.Services;
-    using System.Xml;
+﻿using System;
+using System.Collections;
+using System.ComponentModel;
+using System.Text.RegularExpressions;
+using System.Web.Script.Services;
+using System.Web.Services;
+using System.Xml;
+using log4net;
+using log4net.Config;
 
-    using log4net;
-    using log4net.Config;
-
-    [WebService(Namespace = "http://developer.intuit.com/" , Name = "QBCommunicationService")]
+namespace RL.Services {
+    [WebService(Namespace = "http://developer.intuit.com/", Name = "QBCommunicationService")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [ToolboxItem(false)]
     [ScriptService]
     public class QBCommunicationService : WebService {
-
         private readonly ILog logger;
+
         private readonly ArrayList requests = new ArrayList();
-        private int count;
+        //private int count;
 
         public QBCommunicationService() {
             XmlConfigurator.Configure();
-            this.logger = LogManager.GetLogger(typeof(QBCommunicationService));
+            logger = LogManager.GetLogger(typeof(QBCommunicationService));
         }
 
         /// <summary>
@@ -45,126 +44,11 @@
         [WebMethod]
         public string[] authenticate(string strUserName, string strPassword) {
             var id = Guid.NewGuid().ToString();
-            this.logEvent($"WebMethod: authenticate({strUserName},{strPassword}) returns: {id}");
+            logEvent($"WebMethod: authenticate({strUserName},{strPassword}) returns: {id}");
 
             return new[] {
                              id, string.Empty
                          };
-        }
-
-        private ArrayList buildRequest() {
-            var strRequestXML = string.Empty;
-            XmlDocument inputXMLDoc = null;
-
-            // CustomerQuery
-            inputXMLDoc = new XmlDocument();
-            inputXMLDoc.AppendChild(
-                inputXMLDoc.CreateXmlDeclaration(
-                    "1.0"
-                    , null
-                    , null));
-            inputXMLDoc.AppendChild(
-                inputXMLDoc.CreateProcessingInstruction(
-                    "qbxml"
-                    , "version=\"4.0\""));
-
-            var qbXML = inputXMLDoc.CreateElement("QBXML");
-            inputXMLDoc.AppendChild(qbXML);
-            var qbXMLMsgsRq = inputXMLDoc.CreateElement("QBXMLMsgsRq");
-            qbXML.AppendChild(qbXMLMsgsRq);
-            qbXMLMsgsRq.SetAttribute(
-                "onError"
-                , "stopOnError");
-            var customerQueryRq = inputXMLDoc.CreateElement("CustomerQueryRq");
-            qbXMLMsgsRq.AppendChild(customerQueryRq);
-            customerQueryRq.SetAttribute(
-                "requestID"
-                , "1");
-            var maxReturned = inputXMLDoc.CreateElement("MaxReturned");
-            customerQueryRq.AppendChild(maxReturned).InnerText = "1";
-
-            strRequestXML = inputXMLDoc.OuterXml;
-            this.requests.Add(strRequestXML);
-
-            this.logEvent($"custom query {strRequestXML}");
-
-            // Clean up
-            strRequestXML = string.Empty;
-            inputXMLDoc = null;
-            qbXML = null;
-            qbXMLMsgsRq = null;
-            maxReturned = null;
-
-            // InvoiceQuery
-            inputXMLDoc = new XmlDocument();
-            inputXMLDoc.AppendChild(
-                inputXMLDoc.CreateXmlDeclaration(
-                    "1.0"
-                    , null
-                    , null));
-            inputXMLDoc.AppendChild(
-                inputXMLDoc.CreateProcessingInstruction(
-                    "qbxml"
-                    , "version=\"4.0\""));
-
-            qbXML = inputXMLDoc.CreateElement("QBXML");
-            inputXMLDoc.AppendChild(qbXML);
-            qbXMLMsgsRq = inputXMLDoc.CreateElement("QBXMLMsgsRq");
-            qbXML.AppendChild(qbXMLMsgsRq);
-            qbXMLMsgsRq.SetAttribute(
-                "onError"
-                , "stopOnError");
-            var invoiceQueryRq = inputXMLDoc.CreateElement("InvoiceQueryRq");
-            qbXMLMsgsRq.AppendChild(invoiceQueryRq);
-            invoiceQueryRq.SetAttribute(
-                "requestID"
-                , "2");
-            maxReturned = inputXMLDoc.CreateElement("MaxReturned");
-            invoiceQueryRq.AppendChild(maxReturned).InnerText = "1";
-
-            strRequestXML = inputXMLDoc.OuterXml;
-            //this.requests.Add(strRequestXML);
-            //this.logEvent($"invoice query {strRequestXML}");
-
-            // Clean up
-            strRequestXML = string.Empty;
-            inputXMLDoc = null;
-            qbXML = null;
-            qbXMLMsgsRq = null;
-            maxReturned = null;
-
-            // BillQuery
-            inputXMLDoc = new XmlDocument();
-            inputXMLDoc.AppendChild(
-                inputXMLDoc.CreateXmlDeclaration(
-                    "1.0"
-                    , null
-                    , null));
-            inputXMLDoc.AppendChild(
-                inputXMLDoc.CreateProcessingInstruction(
-                    "qbxml"
-                    , "version=\"4.0\""));
-
-            qbXML = inputXMLDoc.CreateElement("QBXML");
-            inputXMLDoc.AppendChild(qbXML);
-            qbXMLMsgsRq = inputXMLDoc.CreateElement("QBXMLMsgsRq");
-            qbXML.AppendChild(qbXMLMsgsRq);
-            qbXMLMsgsRq.SetAttribute(
-                "onError"
-                , "stopOnError");
-            var billQueryRq = inputXMLDoc.CreateElement("BillQueryRq");
-            qbXMLMsgsRq.AppendChild(billQueryRq);
-            billQueryRq.SetAttribute(
-                "requestID"
-                , "3");
-            maxReturned = inputXMLDoc.CreateElement("MaxReturned");
-            billQueryRq.AppendChild(maxReturned).InnerText = "1";
-
-            strRequestXML = inputXMLDoc.OuterXml;
-            //this.requests.Add(strRequestXML);
-            //this.logEvent($"billing query {strRequestXML}");
-
-            return this.requests;
         }
 
         /// <summary>
@@ -185,15 +69,15 @@
         /// </summary>
         [WebMethod]
         public string clientVersion(string strVersion) {
-            if(string.IsNullOrWhiteSpace(strVersion)) {
-                this.logEvent($"WebMethod: clientVersion() has been called by QBCommunicationService({strVersion}) result: E: Invalid Version");
+            if (string.IsNullOrWhiteSpace(strVersion)) {
+                logEvent($"WebMethod: clientVersion() has been called by QBCommunicationService({strVersion}) result: E: Invalid Version");
 
                 return "E: Invalid Version version may nor be empty\r\n";
             }
 
-            var version = this.ParseForVersion(strVersion);
+            var version = ParseForVersion(strVersion);
 
-            this.logEvent($"WebMethod: clientVersion({strVersion}) version:{version} returns: empty string");
+            logEvent($"WebMethod: clientVersion({strVersion}) version:{version} returns: empty string");
 
             return string.Empty;
         }
@@ -209,7 +93,7 @@
         /// </summary>
         [WebMethod]
         public string closeConnection(string ticket) {
-            this.logEvent($"WebMethod: closeConnection({ticket}) returns: OK");
+            logEvent($"WebMethod: closeConnection({ticket}) returns: OK");
             return "OK";
         }
 
@@ -227,11 +111,9 @@
         ///     - “done” = no further action required from QBCommunicationService
         ///     - any other string value = use this name for company file
         /// </summary>
-        [WebMethod(
-            Description = "This web method facilitates web service to handle connection error between QuickBooks and QBCommunicationService"
-            , EnableSession = true)]
+        [WebMethod(Description = "This web method facilitates web service to handle connection error between QuickBooks and QBCommunicationService", EnableSession = true)]
         public string connectionError(string ticket, string hresult, string message) {
-            this.logEvent($"WebMethod: connectionError({ticket},{hresult},{message})");
+            logEvent($"WebMethod: connectionError({ticket},{hresult},{message})");
             var evLogTxt = string.Empty;
 
             string retVal = null;
@@ -245,17 +127,17 @@
             // 0x80040402 - Unexpected error. Check the qbsdklog.txt file for possible, additional information. 
             const string QB_UNEXPECTED_ERROR = "0x80040402";
 
-            if(hresult.Trim().Equals(QB_ERROR_WHEN_PARSING)) {
+            if (hresult.Trim().Equals(QB_ERROR_WHEN_PARSING)) {
                 evLogTxt = evLogTxt + "HRESULT = " + hresult + "\r\n";
                 evLogTxt = evLogTxt + "Message = " + message + "\r\n";
                 retVal = "DONE";
             }
-            else if(hresult.Trim().Equals(QB_COULDNT_ACCESS_QB)) {
+            else if (hresult.Trim().Equals(QB_COULDNT_ACCESS_QB)) {
                 evLogTxt = evLogTxt + "HRESULT = " + hresult + "\r\n";
                 evLogTxt = evLogTxt + "Message = " + message + "\r\n";
                 retVal = "DONE";
             }
-            else if(hresult.Trim().Equals(QB_UNEXPECTED_ERROR)) {
+            else if (hresult.Trim().Equals(QB_UNEXPECTED_ERROR)) {
                 evLogTxt = evLogTxt + "HRESULT = " + hresult + "\r\n";
                 evLogTxt = evLogTxt + "Message = " + message + "\r\n";
                 retVal = "DONE";
@@ -271,8 +153,8 @@
             evLogTxt = evLogTxt + "Return values: " + "\r\n";
             evLogTxt = evLogTxt + "string retVal = " + retVal + "\r\n";
 
-            this.logEvent(evLogTxt);
-            this.logEvent("return: DONE");
+            logEvent(evLogTxt);
+            logEvent("return: DONE");
 
             return "DONE";
         }
@@ -290,8 +172,8 @@
         /// </summary>
         [WebMethod]
         public string getInteractiveURL(string wcTicket, string sessionID) {
-            this.logEvent($"WebMethod: getInteractiveURL({wcTicket},{sessionID}) returns: http://www.ruannlinde.co.za/intuit/");
-            return @"http://www.ruannlinde.co.za/intuit/"; 
+            logEvent($"WebMethod: getInteractiveURL({wcTicket},{sessionID}) returns: http://www.ruannlinde.co.za/intuit/");
+            return @"http://www.ruannlinde.co.za/intuit/";
         }
 
         /// <summary>
@@ -306,7 +188,7 @@
         /// </summary>
         [WebMethod]
         public string getLastError(string ticket) {
-            this.logEvent($"WebMethod: getLastError({ticket}) returns: Interactive mode");
+            logEvent($"WebMethod: getLastError({ticket}) returns: Interactive mode");
 
             return "Interactive mode";
         }
@@ -321,7 +203,7 @@
         /// </summary>
         [WebMethod]
         public string interactiveDone(string wcTicket) {
-            this.logEvent($"WebMethod: interactiveDone({wcTicket}) returns: empty string");
+            logEvent($"WebMethod: interactiveDone({wcTicket}) returns: empty string");
             return string.Empty;
         }
 
@@ -336,36 +218,9 @@
         /// </summary>
         [WebMethod]
         public string interactiveRejected(string wcTicket, string reason) {
-            this.logEvent($"WebMethod: interactiveRejected({wcTicket},{reason}) returns: empty string");
+            logEvent($"WebMethod: interactiveRejected({wcTicket},{reason}) returns: empty string");
 
             return string.Empty;
-        }
-
-        private void logEvent(string logText) {
-            try {
-                this.logger.Info(logText);
-            }
-            catch(Exception exception) {
-                this.logger.Error(exception.Message);
-            }
-        }
-
-        private string ParseForVersion(string input) {
-            string retVal;
-            var version = new Regex(
-                @"^(?<major>\d+)\.(?<minor>\d+)(\.\w+){0,2}$"
-                , RegexOptions.Compiled);
-            var versionMatch = version.Match(input);
-            if(versionMatch.Success) {
-                var major = versionMatch.Result("${major}");
-                var minor = versionMatch.Result("${minor}");
-                retVal = major + "." + minor;
-            }
-            else {
-                retVal = input;
-            }
-
-            return retVal;
         }
 
         /// <summary>
@@ -382,11 +237,9 @@
         ///     100 = Done. no more request to send
         ///     Less than zero  = Custom Error codes
         /// </summary>
-        [WebMethod(
-            Description = "This web method facilitates web service to receive response XML from QuickBooks via QBCommunicationService"
-            , EnableSession = true)]
+        [WebMethod(Description = "This web method facilitates web service to receive response XML from QuickBooks via QBCommunicationService", EnableSession = true)]
         public int receiveResponseXML(string ticket, string response, string hresult, string message) {
-            this.logEvent($"WebMethod: receiveResponseXML({ticket},{response},{message}) returns: 0");
+            logEvent($"WebMethod: receiveResponseXML({ticket},{response},{message}) returns: 0");
 
             return 0;
         }
@@ -412,9 +265,7 @@
         /// </summary>
         [WebMethod(Description = "This web method facilitates web service to send request XML to QuickBooks via QBCommunicationService", EnableSession = true)]
         public string sendRequestXML(string ticket, string strHCPResponse, string strCompanyFileName, string qbXMLCountry, int qbXMLMajorVers, int qbXMLMinorVers) {
-
-
-            this.logEvent($"WebMethod: sendRequestXML({ticket},{strCompanyFileName},{qbXMLCountry},{qbXMLMajorVers},{qbXMLMinorVers}); returns: null");
+            logEvent($"WebMethod: sendRequestXML({ticket},{strCompanyFileName},{qbXMLCountry},{qbXMLMajorVers},{qbXMLMinorVers}); returns: null");
 
             //if(this.Session["counter"] == null)
             //    this.Session["counter"] = 0;
@@ -444,7 +295,6 @@
 
             //return request;
             return "";
-
         }
 
         /// <summary>
@@ -456,13 +306,134 @@
         ///     Possible values:
         ///     Version string representing server version
         /// </summary>
-        [WebMethod(
-            Description = "This web method facilitates web service to send request XML to QuickBooks via QBCommunicationService"
-            , EnableSession = true)]
+        [WebMethod(Description = "This web method facilitates web service to send request XML to QuickBooks via QBCommunicationService", EnableSession = true)]
         public string serverVersion() {
-            this.logEvent("WebMethod: serverVersion() returns: empty string");
+            logEvent("WebMethod: serverVersion() returns: empty string");
 
             return "1.0.0";
+        }
+
+        private ArrayList buildRequest() {
+            var strRequestXML = string.Empty;
+            XmlDocument inputXMLDoc = null;
+
+            // CustomerQuery
+            inputXMLDoc = new XmlDocument();
+            inputXMLDoc.AppendChild(inputXMLDoc.CreateXmlDeclaration("1.0"
+                                                                     , null
+                                                                     , null));
+            inputXMLDoc.AppendChild(inputXMLDoc.CreateProcessingInstruction("qbxml"
+                                                                            , "version=\"4.0\""));
+
+            var qbXML = inputXMLDoc.CreateElement("QBXML");
+            inputXMLDoc.AppendChild(qbXML);
+            var qbXMLMsgsRq = inputXMLDoc.CreateElement("QBXMLMsgsRq");
+            qbXML.AppendChild(qbXMLMsgsRq);
+            qbXMLMsgsRq.SetAttribute("onError"
+                                     , "stopOnError");
+            var customerQueryRq = inputXMLDoc.CreateElement("CustomerQueryRq");
+            qbXMLMsgsRq.AppendChild(customerQueryRq);
+            customerQueryRq.SetAttribute("requestID"
+                                         , "1");
+            var maxReturned = inputXMLDoc.CreateElement("MaxReturned");
+            customerQueryRq.AppendChild(maxReturned).InnerText = "1";
+
+            strRequestXML = inputXMLDoc.OuterXml;
+            requests.Add(strRequestXML);
+
+            logEvent($"custom query {strRequestXML}");
+
+            // Clean up
+            strRequestXML = string.Empty;
+            inputXMLDoc = null;
+            qbXML = null;
+            qbXMLMsgsRq = null;
+            maxReturned = null;
+
+            // InvoiceQuery
+            inputXMLDoc = new XmlDocument();
+            inputXMLDoc.AppendChild(inputXMLDoc.CreateXmlDeclaration("1.0"
+                                                                     , null
+                                                                     , null));
+            inputXMLDoc.AppendChild(inputXMLDoc.CreateProcessingInstruction("qbxml"
+                                                                            , "version=\"4.0\""));
+
+            qbXML = inputXMLDoc.CreateElement("QBXML");
+            inputXMLDoc.AppendChild(qbXML);
+            qbXMLMsgsRq = inputXMLDoc.CreateElement("QBXMLMsgsRq");
+            qbXML.AppendChild(qbXMLMsgsRq);
+            qbXMLMsgsRq.SetAttribute("onError"
+                                     , "stopOnError");
+            var invoiceQueryRq = inputXMLDoc.CreateElement("InvoiceQueryRq");
+            qbXMLMsgsRq.AppendChild(invoiceQueryRq);
+            invoiceQueryRq.SetAttribute("requestID"
+                                        , "2");
+            maxReturned = inputXMLDoc.CreateElement("MaxReturned");
+            invoiceQueryRq.AppendChild(maxReturned).InnerText = "1";
+
+            strRequestXML = inputXMLDoc.OuterXml;
+            //this.requests.Add(strRequestXML);
+            //this.logEvent($"invoice query {strRequestXML}");
+
+            // Clean up
+            strRequestXML = string.Empty;
+            inputXMLDoc = null;
+            qbXML = null;
+            qbXMLMsgsRq = null;
+            maxReturned = null;
+
+            // BillQuery
+            inputXMLDoc = new XmlDocument();
+            inputXMLDoc.AppendChild(inputXMLDoc.CreateXmlDeclaration("1.0"
+                                                                     , null
+                                                                     , null));
+            inputXMLDoc.AppendChild(inputXMLDoc.CreateProcessingInstruction("qbxml"
+                                                                            , "version=\"4.0\""));
+
+            qbXML = inputXMLDoc.CreateElement("QBXML");
+            inputXMLDoc.AppendChild(qbXML);
+            qbXMLMsgsRq = inputXMLDoc.CreateElement("QBXMLMsgsRq");
+            qbXML.AppendChild(qbXMLMsgsRq);
+            qbXMLMsgsRq.SetAttribute("onError"
+                                     , "stopOnError");
+            var billQueryRq = inputXMLDoc.CreateElement("BillQueryRq");
+            qbXMLMsgsRq.AppendChild(billQueryRq);
+            billQueryRq.SetAttribute("requestID"
+                                     , "3");
+            maxReturned = inputXMLDoc.CreateElement("MaxReturned");
+            billQueryRq.AppendChild(maxReturned).InnerText = "1";
+
+            strRequestXML = inputXMLDoc.OuterXml;
+            //this.requests.Add(strRequestXML);
+            //this.logEvent($"billing query {strRequestXML}");
+
+            return requests;
+        }
+
+        private void logEvent(string logText) {
+            try {
+                logger.Info(logText);
+            }
+            catch (Exception exception) {
+                logger.Error(exception.Message);
+            }
+        }
+
+        private string ParseForVersion(string input) {
+            string retVal;
+            var version = new Regex(@"^(?<major>\d+)\.(?<minor>\d+)(\.\w+){0,2}$"
+                                    , RegexOptions.Compiled);
+            var versionMatch = version.Match(input);
+            if (versionMatch.Success) {
+                var major = versionMatch.Result("${major}");
+                var minor = versionMatch.Result("${minor}");
+                retVal = major + "." + minor;
+            }
+            else {
+                retVal = input;
+            }
+
+            return retVal;
         }
     }
 }

@@ -1,0 +1,84 @@
+﻿ @{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Calendar Index</title>
+</head>
+<body>
+    <div ng-controller="WeatherController" ng-cloak>
+        <div class="row">
+            <div class="col-12 col">
+                <div class="pull-right" ng-show="loaded">
+                    <div style="float: left">
+                        <clock format="24"></clock>
+                    </div>
+                    <div style="float: left; padding: 10px 0 0 25px">
+                        <h1>
+                            <img id="weather2.icon" ng-src="rl/content/images/{{todaysForecast[0].icon}}.png" alt="weather.icon" />
+                            {{todaysForecast[0].temp.now | number : 0}} &#8451;
+                        </h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>{{FiveDayForecast.city}}</h1>
+                @*<div class="wrap">
+                        <div class="cube">
+                            <div class="front">front</div>
+                            <div class="back">back</div>
+                            <div class="top">top</div>
+                            <div class="bottom">bottom</div>
+                            <div class="left">left</div>
+                            <div class="right">right</div>
+
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Today</h2>
+                <h2>{{todaysForecast[0].date  | date: 'EEEE dd MMM'}}</h2>
+            </div>
+            <div class="col">
+                <ul class="weather-forecast">
+                    <li ng-repeat="item in todaysForecast | limitTo:20" class="weather-item">
+                        <div class="weather-content">
+                            <h4>{{item.time}}</h4>
+                            <img id="weather3.icon" class="weather-icon" ng-src="rl/content/images/{{item.icon}}.png" alt="weather.icon" />
+                            <h4>{{item.temp.max | number : 0}} &#8451;</h4>
+                            <h4>H: {{item.humidity}}</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-1">
+                <h2>Tomorrow</h2>
+                <h2>{{tomorrowsForecast[0].date | date: 'EEEE dd MMM'}}</h2>
+            </div>
+            <div class="col">
+                <ul class="weather-forecast">
+                    <li ng-repeat="item in tomorrowsForecast | limitTo:20" class="weather-item">
+                        <div class="weather-content">
+                            <h4>{{item.time}}</h4>
+                            <img id="weather3.icon" class="weather-icon" ng-src="rl/content/images/{{item.icon}}.png" alt="weather.icon" />
+                            <h4>{{item.temp.max | number : 0}} &#8451;</h4>
+                            <h4>H: {{item.humidity}}</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

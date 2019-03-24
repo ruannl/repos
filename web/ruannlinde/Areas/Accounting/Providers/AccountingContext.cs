@@ -6,7 +6,7 @@ namespace RL.Areas.Accounting.Providers
     public class AccountingContext : DbContext {
         public AccountingContext() : base("AccountingContext")
         {
-            Database.SetInitializer(new AccountingInitializer());
+            //Database.SetInitializer(new AccountingInitializer());
         }
 
         public DbSet<Bank> Banks { get; set; }

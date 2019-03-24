@@ -1,9 +1,9 @@
 ﻿<script type="text/ng-template" id="home.htm">
-    <div ng-controller="homeController" class="home" ng-cloak>
+    <div ng-controller="HomeController" class="home" ng-cloak>
         <span id="top"></span>
-       
+        @Html.Partial("_LoginPartial")
+        <h1>Home</h1>
     </div>
-
 </script>
 
 @*<div class="row">

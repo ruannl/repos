@@ -1,34 +1,35 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800');
+﻿
 $color-primary: #808080;
+$acent-color: #33a4c9;
+
 $color-light: #ccc;
-$spacing: 50px;
-$radius: 4px;
+$spacing: 60px;
+$radius: 3px;
 $date: 150px;
-$dotborder: 4px;
+$dotborder: 3px;
 $dot: 12px;
-$line: 4px;
+$line: 3px;
 $font-title: 'Saira', sans-serif;
 $font-text: 'Chivo', sans-serif;
-$background: #ccc;
 
 body {
     font-family: $font-text;
-    font-weight: 100;
+    font-weight: normal;
     color: $color-primary;
 }
 
 h1 {
     font-family: $font-title;
-    letter-spacing: 1.5px;
-    font-weight: 100;
-    font-size: 1.4em;
+    letter-spacing: 1.2px;
+    font-weight: normal;
+    font-size: 1.2em;
 }
 
 h2, h3 {
     font-family: $font-title;
-    letter-spacing: 1.5px;
-    font-weight: 400;
-    font-size: 1.4em;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 h4 {
@@ -45,54 +46,87 @@ ol, ul {
 
 header[role=banner] {
     background: #fff;
-    border-bottom: 4px solid #33a4c9;
-    padding: 19px 0;
+    border-bottom: 3px solid $acent-color;
+    padding: 21px 0;
     overflow: hidden;
 }
 
 header figure {
-    border: 3px solid #eee;
-    border-radius: 78px;
-    height: 156px;
-    width: 156px;
+    border: 3px solid $acent-color;
+    border-radius: 75px;
+    height: 111px;
+    width: 111px;
 }
 
-header figure img {
-    position: relative;
-    border-radius: 75px;
-    height: 150px;
-    width: 150px;
-}
+    header figure img {
+        position: relative;
+        border-radius: 75px;
+        height: 120px;
+        width: 120px;
+    }
 
 header hgroup {
     float: left;
     padding: 42px 0;
 }
 
-header hgroup h1 {
-    color: #555;
-    font-family: 'DroidSansBold', Arial, sans-serif;
-}
+    header hgroup h1 {
+        color: #555;
+        font-family: 'DroidSansBold', Arial, sans-serif;
+    }
 
-header hgroup h2 {
-    color: #cecece;
-    font-style: italic;
-    text-shadow: 1px 1px 0 rgba(0,0,0,.3);
-}
+    header hgroup h2 {
+        color: #cecece;
+        font-style: italic;
+        text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+    }
 
 p {
-    line-height: 25px;
+    line-height: 24px;
+}
+
+.btn-default {
+    background-color: $acent-color !important;
+    color: #fff !important;
+}
+
+.gutter {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.filter-header {
+    padding-bottom: 9px;
+}
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.avatar {
+    background-image: url(Images/avatar0.jpg);
+    background-size: 108px;
+    background-position: top right;
+    background-repeat: no-repeat;
 }
 
 .icon {
-    color: #33a4c9;
-    font-size: 40px;
+    color: $acent-color;
+    font-size: 42px;
     float: left;
     position: relative;
-    margin-top: -10px;
+    margin-top: -9px;
     overflow: hidden;
     text-decoration: none;
-    line-height: 50px;
+    line-height: 51px;
+}
+
+.icon-right {
+    float: right !important;
 }
 
 .icon:after {
@@ -106,7 +140,7 @@ p {
     height: 200%;
     opacity: 0;
     transform: rotate(30deg);
-    background: rgba(255, 255, 255, 0.13);
+    background: rgba(255, 255, 255, 0.12);
     background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100% );
 }
 
@@ -126,15 +160,15 @@ p {
     border-bottom-right-radius: $radius;
     border-top-right-radius: $radius;
     font-family: $font-text;
-    line-height: 1.4em;
-    font-size: 1.03em;
-    font-weight: 100;
-    letter-spacing: 0.5px;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    font-weight: 900;
+    letter-spacing: 0.6px;
     position: relative;
     list-style: none;
-    margin-left: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-left: 51px;
+    padding-top: 51px;
+    padding-bottom: 51px;
     padding-left: 42px;
 
     .event {
@@ -187,10 +221,10 @@ p {
 }
 
 .view-more {
-    padding: 10px;
-    color: #33a4c9 !important;
+    padding: 12px;
+    color: $acent-color !important;
     font-family: $font-title;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .job-description {
@@ -227,35 +261,64 @@ p {
     height: 50px;
 }
 
+.list-group-item {
+    padding-bottom: 0;
+
+    span {
+        min-width: 21px;
+    }
+
+    .icon {
+        margin-bottom: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .text {
+        line-height: 18px;
+    }
+}
+
+.content {
+    h3 {
+        text-shadow: 1px 1px 4px #ccc;
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+}
+
 .jse {
     background-image: url(Images/jse.png) !important;
+    background-size: 90px;
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 80px;
-    border-bottom: dashed 1px #ccc;
 
     p {
         text-align: justify;
-    }
-
-    .list-group-item {
-        border: none !important;
     }
 
     .jse-view-more {
         display: block;
     }
+
+    .jse-more {
+        display: none;
+    }
 }
 
 .g-connect {
     background-image: url(Images/gconnect.png) !important;
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 150px;
-    border-bottom: dashed 1px #ccc;
 
     p {
         text-align: justify;
+    }
+
+    .g-connect-view-more {
+        display: block;
+    }
+
+    .g-connect-more {
+        display: none;
     }
 }
 
@@ -263,28 +326,42 @@ p {
     background-image: url(Images/bytes-logo.png) !important;
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 150px;
-    border-bottom: dashed 1px #ccc;
 
     p {
         text-align: justify;
+    }
+
+    .bytes-view-more {
+        display: block;
+    }
+
+    .bytes-more {
+        display: none;
     }
 }
 
 .iti {
     background-image: url(Images/image-placeholder.jpg) !important;
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 100px;
-    border-bottom: dashed 1px #ccc;
+
+    .iti-view-more {
+        display: block;
+    }
+
+    .iti-more {
+        display: none;
+    }
 }
 
 .crux-it {
     background-image: url(Images/image-placeholder.jpg) !important;
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 100px;
-    border-bottom: dashed 1px #ccc;
+
+    .crux-view-more {
+        display: block;
+    }
+
+    .crux-more {
+        display: none;
+    }
 }
 
 .pluralsight {
@@ -296,24 +373,39 @@ p {
 
 .microsoft {
     background-image: url(Images/microsoft_certified_professional.png) !important;
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 100px;
 }
 
 .ultracomp {
     background-image: url(Images/image-placeholder.jpg) !important;
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 100px;
 }
 
 .high-school {
     background-image: url(Images/brandwag-logo.jpg) !important;
+}
+
+//100
+.g-connect {
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 100px;
-    min-height: 100px;
+    background-size: 36%;
+}
+
+.bytes {
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 33%;
+}
+
+//75
+.iti,
+.crux-it,
+.microsoft,
+.ultracomp,
+.high-school {
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100px !important;
+    min-height: 100px !important;
 }
 
 .jse,
@@ -326,20 +418,263 @@ p {
 .ultracomp,
 .high-school {
     h2 {
-        color: #33a4c9 !important;
+        color: $acent-color !important;
     }
 }
 
+.technology {
+
+    li {
+        list-style: none;
+        min-height: 45px;
+        border-bottom: solid 1px #ccc;
+        line-height: 18px;
+        padding: 6px;
+        padding-top: 12px;
+
+        &:first-of-type {
+            font-weight: bold;
+            color: $acent-color;
+            margin-left: -21px;
+        }
+    }
+}
+
+.tumblr {
+    background: white;
+    border: none;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+    max-height: 250px;
+    min-height: 250px;
+    overflow: hidden;
+}
+
+.tumblr-item {
+    list-style: none;
+    min-height: 42px;
+    border-bottom: solid 1px #ccc;
+    line-height: 18px;
+    padding: 6px;
+    padding-top: 12px;
+}
+
+    .tumblr-item.ng-animate {
+        transition: all linear 1.2s;
+    }
+
+    .tumblr-item.ng-leave {
+        -webkit-transition: all linear 1.2s;
+        transition: all linear 1.2s;
+    }
+
+    .tumblr-item.ng-move,
+    .tumblr-item.ng-enter {
+        -webkit-transition: all linear 1.0s;
+        transition: all linear 1.2s;
+    }
+    
+    .tumblr-item.ng-leave.ng-leave-active,
+    .tumblr-item.ng-move,
+    .tumblr-item.ng-enter {
+        opacity: 0;
+        max-height: 0;
+    }
+
+        .tumblr-item.ng-leave,
+        .tumblr-item.ng-move.ng-move-active,
+        .tumblr-item.ng-enter.ng-enter-active {
+            opacity: 1;
+        }
+
+/*.tumblr-item.ng-enter.ng-enter-active {
+            border: 1px solid blue !important;
+        }
+
+        .tumblr-item.ng-move.ng-move-active {
+            border: 1px solid indigo !important;
+        }
+
+    .tumblr-item.ng-leave.ng-leave-active {
+        border: 1px solid red !important;
+    }*/
+
+.thank-you {
+    min-height: 100px;
+    text-align: center;
+    border: 1px solid $acent-color;
+    border-radius: 3px;
+    box-shadow: 3px 3px 9px $color-primary;
+    padding-top: 20px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateY(200%);
+    }
+
+    100% {
+        transform: translateY(-200%);
+    }
+}
+
+.marquee {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    border: solid 1px red;
+}
+
+    .marquee li {
+        animation: marquee 6s linear infinite;
+    }
+
+        .marquee li:hover {
+            animation-play-state: paused;
+        }
+
+.accomplishments {
+
+    li {
+        list-style: none;
+        min-height: 45px;
+        border-bottom: dotted 1px #808080;
+        line-height: 45px;
+        margin-left: -45px;
+
+        &:last-of-type {
+            border: none !important;
+        }
+    }
+
+    .float-right {
+        color: $acent-color !important;
+        float: right;
+    }
+}
+
+article {
+    border-bottom: 1px dotted $acent-color;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.devider {
+    border-bottom: 2px solid #808080;
+    text-align: center;
+    width: 90%;
+    height: 0;
+    box-shadow: 3px 3px 9px $color-primary;
+    border-radius: 3px;
+}
 
 @media (min-width: 576px) {
-   
 }
 
 @media (min-width: 768px) {
-   
+
+    header figure {
+        border: 3px solid $acent-color;
+        height: 200px;
+        width: 200px;
+        border-radius: 95px;
+    }
+
+        header figure img {
+            position: relative;
+            height: 200px;
+            width: 200px;
+        }
+
+    .avatar {
+        background-size: 200px;
+    }
+
+    .jse {
+        .jse-view-more {
+            display: none !important;
+        }
+
+        .jse-more {
+            display: block !important;
+        }
+    }
+
+    .g-connect {
+        background-size: 21% !important;
+
+        .g-connect-view-more {
+            display: none !important;
+        }
+
+        .g-connect-more {
+            display: block !important;
+        }
+    }
+
+    .bytes {
+        background-size: 21% !important;
+
+        .bytes-view-more {
+            display: none !important;
+        }
+
+        .bytes-more {
+            display: block !important;
+        }
+    }
+
+    .iti {
+        .iti-view-more {
+            display: none !important;
+        }
+
+        .iti-more {
+            display: block !important;
+        }
+    }
+
+    .crux-it {
+
+        .crux-view-more {
+            display: none !important;
+        }
+
+        .crux-more {
+            display: block !important;
+        }
+    }
+
+    .technology {
+
+        li {
+            &:first-of-type {
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    .gutter {
+        padding-left: 42px !important;
+        padding-right: 42px !important;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .list-group-item {
+        .text {
+            line-height: 33px;
+            padding-top: 20px;
+        }
+    }
 }
 
 @media (min-width: 992px) {
+
+
     .jse {
         .view-more {
             display: none !important;

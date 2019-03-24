@@ -1,4 +1,5 @@
 ﻿using Microsoft.Owin;
+
 using RL;
 
 [assembly: OwinStartup(typeof(Startup))]
@@ -9,7 +10,7 @@ namespace RL {
     public partial class Startup {
         public void Configuration(IAppBuilder app) {
             ConfigureAuth(app);
-            // ConfigureNinject(app);
+            ConfigureNinject(app);
         }
     }
 }

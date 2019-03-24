@@ -7,7 +7,7 @@
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include("~/Scripts/jquery-{version}.js"));
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include("~/Scripts/modernizr-{version}.js"));
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/umd/popper.js", "~/Scripts/bootstrap.js", "~/Scripts/respond.js"));
-            bundles.Add(new ScriptBundle("~/bundles/angular").Include("~/Scripts/angular.js", "~/Scripts/angular-route.js", "~/Scripts/angular-animate.js", "~/Scripts/ngStorage.js"));
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include("~/Scripts/angular.js", "~/Scripts/angular-route.js", "~/Scripts/angular-animate.js", "~/Scripts/ngStorage.js", "~/Scripts/ng-infinate-scroll.js"));
             bundles.Add(new ScriptBundle("~/bundles/chart").Include("~/Scripts/Chart.js", "~/Scripts/angular-chart.js"));
             bundles.Add(new ScriptBundle("~/bundles/file-upload").Include("~/Scripts/FileAPI.min.js", "~/Scripts/ng-file-upload.min.js", "~/Scripts/ng-file-upload-shim.min.js"));
 
