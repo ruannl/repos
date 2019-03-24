@@ -1,29 +1,19 @@
 ﻿namespace RL.Controllers {
-    using System;
-    using System.Threading.Tasks;
-    using System.Web;
-    using System.Web.Mvc;
+	using System.Web.Mvc;
 
-    using log4net;
+	//[Authorize]
+	public class HomeController : Controller {
+		//private static readonly ILog Log = LogManager.GetLogger(typeof(HomeController).Name);
 
-    using Microsoft.AspNet.Identity;
-    using Microsoft.AspNet.Identity.Owin;
+		//private ApplicationUserManager _userManager;
 
-    using StackifyLib;
+		public HomeController() {
 
-    //[Authorize]
-    public class HomeController : Controller {
-        //private static readonly ILog Log = LogManager.GetLogger(typeof(HomeController).Name);
+			//if (User.Identity.IsAuthenticated) {
+			//    Log.Debug("User is authenticated");
 
-        //private ApplicationUserManager _userManager;
-
-        public HomeController() {
-           
-            //if (User.Identity.IsAuthenticated) {
-            //    Log.Debug("User is authenticated");
-
-            //}
-        }
+			//}
+		}
 
 		//private ApplicationSignInManager SignInManager { get => _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>(); set => _signInManager = value; }
 		// private ApplicationUserManager UserManager { get => _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>(); set => _userManager = value; }
@@ -33,13 +23,13 @@
 		}
 
 		[HttpPost]
-        public JsonResult SubmitMessage(string name, string surname, string email, string message) {
-            return Json(new {
-                name
-              , surname
-              , email
-              , message
-            });
-        }
-    }
+		public JsonResult SubmitMessage(string name, string surname, string email, string message) {
+			return Json(new {
+				name
+			  , surname
+			  , email
+			  , message
+			});
+		}
+	}
 }

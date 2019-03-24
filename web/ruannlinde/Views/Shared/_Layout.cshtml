@@ -1,77 +1,70 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="Cache-control" content="public">
+	<meta charset="utf-8" />
+	<meta http-equiv="Cache-control" content="public">
 
-    <title>@ViewBag.Title Ruann LINDE</title>
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <meta name="description" content="Ruann Linde">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript,AngularJs,Software Development, Programming, Pretoria, Freelance, Websites, Garsfontein">
-    <meta name="author" content="Ruann Linde">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>@ViewBag.Title Ruann LINDE</title>
+	<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta name="description" content="Ruann Linde">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript,AngularJs,Software Development, Programming, Pretoria, Freelance, Websites, Garsfontein">
+	<meta name="author" content="Ruann Linde">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    @Scripts.Render("~/bundles/modernizr")
-    @RenderSection("Scripts", required: false)
-    @Styles.Render("~/content/bootstrap")
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="~/Content/animate.min.css" />
-    @Styles.Render("~/content/main")
-    @Styles.Render("~/content/cv")
-    <base href="/">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38341478-2"></script>
-    <script async>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+	@Scripts.Render("~/bundles/modernizr")
+	@RenderSection("Scripts", required: false)
+	@Styles.Render("~/content/bootstrap")
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="~/Content/animate.min.css" />
+	@Styles.Render("~/content/main")
+	@Styles.Render("~/content/cv")
+	<base href="/">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38341478-2"></script>
+	<script async>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-        gtag('config', 'UA-38341478-2');
-    </script>
+		gtag('config', 'UA-38341478-2');
+	</script>
 </head>
 <body ng-app="rlApp">
-    <div class="web-content" ng-controller="BaseController">
-        <main class="body-content {{layout}}" role="main" ng-class="">
-            @RenderBody()
-            <div ng-include src="template"></div>
+	<div class="web-content" ng-controller="BaseController">
+		<main class="body-content {{layout}}" role="main" ng-class="">
+			@RenderBody()
+			<div ng-include src="template"></div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<span class="text-muted">
+					&copy; @DateTime.Now.Year
+					<a href="" ng-click="redirectToTemplate('home.htm')" class="nav-link">Home</a>
+					<a href="" ng-click="redirectToTemplate('timesheet.htm')" class="footer-link">Timesheet</a>
+					<a href="" ng-click="redirectToTemplate('cv.htm')" class="nav-link">Curriculum Vitae</a>
+				</span>
+			</div>
+		</footer>
 
-            @RenderSection("SPAViews", required: false)
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <span class="text-muted">
-                    &copy; @DateTime.Now.Year
-                    <a href="" ng-click="redirectToTemplate('home.htm')" class="nav-link">Home</a>
-                    <a href="" ng-click="redirectToTemplate('timesheet.htm')" class="footer-link">Timesheet</a>
-                    <a href="" ng-click="redirectToTemplate('cv.htm')" class="nav-link">Curriculum Vitae</a>
-                   
-                    @Html.ActionLink("Calendar", "UpcomingEvents", "Calendar", new { }, new { @class = "nav-link" })
-                    @Html.ActionLink("Accounting", "Index", "Home", new { area = "Accounting" }, new { @class = "nav-link" })
-                    @Html.ActionLink("Quick Books", "Index", "Home", new { area = "Intuit" }, new { @class = "nav-link" })
-                   
-                </span>
-            </div>
-        </footer>
+	</div>
 
-    </div>
+	<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+	<script src="~/Scripts/jquery.validate.min.js"></script>
 
-    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
-    <script src="~/Scripts/jquery.validate.min.js"></script>
+	<script src="~/Scripts/umd/popper.min.js"></script>
+	<script src="~/Scripts/bootstrap.min.js"></script>
+	<script src="~/Scripts/respond.min.js"></script>
 
-    <script src="~/Scripts/umd/popper.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/respond.min.js"></script>
+	<script src="~/Scripts/angular.min.js"></script>
+	<script src="~/Scripts/angular-route.min.js"></script>
+	<script src="~/Scripts/angular-animate.min.js"></script>
+	<script src="~/Scripts/ngStorage.js"></script>
+	<script src="~/Scripts/ng-infinate-scroll.js"></script>
 
-    <script src="~/Scripts/angular.min.js"></script>
-    <script src="~/Scripts/angular-route.min.js"></script>
-    <script src="~/Scripts/angular-animate.min.js"></script>
-    <script src="~/Scripts/ngStorage.js"></script>
-    <script src="~/Scripts/ng-infinate-scroll.js"></script>
+	<script src="~/Scripts/FileAPI.min.js"></script>
+	<script src="~/Scripts/ng-file-upload.min.js"></script>
+	<script src="~/Scripts/ng-file-upload-shim.min.js"></script>
 
-    <script src="~/Scripts/FileAPI.min.js"></script>
-    <script src="~/Scripts/ng-file-upload.min.js"></script>
-    <script src="~/Scripts/ng-file-upload-shim.min.js"></script>
-
-    <script src="~/Scripts/rlApp.js"></script>
+	<script src="~/Scripts/rlApp.js"></script>
 </body>
 </html>
