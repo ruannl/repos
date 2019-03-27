@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Web.Mvc;
 using log4net;
-using RL.Database.Models;
-using RL.Database.Providers.CurriculumVitae;
+using Ruann.Linde.Database.Models;
+using Ruann.Linde.Database.Providers.CurriculumVitae;
 
-namespace RL.Areas.CV.Controllers {
+namespace Ruann.Linde.Areas.CV.Controllers {
 	public class HomeController : Controller {
 
 		internal CurriculumVitaeManager CurriculumVitaeManager;

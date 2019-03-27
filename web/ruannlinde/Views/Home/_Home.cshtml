@@ -1,8 +1,31 @@
-﻿<script type="text/ng-template" id="home.htm">
+﻿
+<script type="text/ng-template" id="home.htm">
     <div ng-controller="HomeController" class="home" ng-cloak>
+        <p class="text-center text-muted" ng-if="model.loading">
+    <span class="fa fa-spinner fa-spin fa-4x"></span>
+    <br /><br />
+    Processing, please wait...
+</p>
         <span id="top"></span>
-        @Html.Partial("_LoginPartial")
-        <h1>Home</h1>
+		        @Html.Partial("_LoginPartial")
+        <div class="{{layout}}">
+			<div class="row">
+				<div class="col-12">
+                    <h3>LOG</h3><br />
+				</div>
+			</div>
+            <div class="row">
+				<div class="col-12">
+                  	<button class="btn btn-info" ng-click="LoadLog()">Load Log</button>
+                    <button class="btn btn-info" ng-click="ClearLog()">Clear Log</button>
+				</div>
+			</div><br>
+            <div class="row">
+				<div class="col-12">
+                  	<code ng-bind-html=model.log></code>
+				</div>
+			</div>
+		</div>
     </div>
 </script>
 

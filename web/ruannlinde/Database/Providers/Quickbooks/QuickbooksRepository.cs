@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using log4net;
-using RL.Database.Models;
+using Ruann.Linde.Database.Models;
 
-namespace RL.Database.Providers.Quickbooks {
+namespace Ruann.Linde.Database.Providers.Quickbooks {
 	public interface IQuickbooksRepository {
 		IList<Transaction> GetTransactions(int statementId);
 		IList<Statement> GetStatements();

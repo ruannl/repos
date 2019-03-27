@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
-using RL.Database.Models;
+using Ruann.Linde.Database.Models;
 
-namespace RL.Database {
+namespace Ruann.Linde.Database {
 	public class ApplicationDatabaseContext : DbContext {
 		public ApplicationDatabaseContext() {
 			System.Data.Entity.Database.SetInitializer(new ApplicationDatabaseInitializer());

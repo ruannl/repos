@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using log4net;
-using RL.Database.Models;
+using Ruann.Linde.Database.Models;
 
-namespace RL.Database.Providers.CurriculumVitae {
+namespace Ruann.Linde.Database.Providers.CurriculumVitae {
 	public interface ICurriculumVitaeManager {
 		ContactMessage AddContactMessage(ContactMessage message);
 		IList<ContactMessage> GetContactMessages();

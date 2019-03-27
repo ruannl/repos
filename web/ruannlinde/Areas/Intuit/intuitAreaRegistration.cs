@@ -1,6 +1,6 @@
-﻿namespace RL.Areas.intuit {
-	using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
+namespace Ruann.Linde.Areas.Intuit {
 	public class IntuitAreaRegistration : AreaRegistration {
 		public override string AreaName => "Intuit";
 
@@ -9,7 +9,7 @@
 				"intuit_default"
 				, "Intuit/{controller}/{action}/{id}"
 				, new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-				, new[] { "RL.Areas.Intuit.Controllers" });
+				, new[] { "Ruann.Linde.Areas.Intuit.Controllers" });
 		}
 	}
 }

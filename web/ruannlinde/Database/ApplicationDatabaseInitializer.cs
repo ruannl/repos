@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using log4net;
-using RL.Database.Models;
+using Ruann.Linde.Database.Models;
 
-namespace RL.Database {
+namespace Ruann.Linde.Database {
 	public class ApplicationDatabaseInitializer : DropCreateDatabaseIfModelChanges<ApplicationDatabaseContext> {
 		private static readonly ILog Log = LogManager.GetLogger(typeof(ApplicationDatabaseInitializer).Name);
 

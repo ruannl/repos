@@ -1,7 +1,7 @@
-﻿namespace RL {
-    using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
-    public static class BundleConfig {
+namespace Ruann.Linde {
+	public static class BundleConfig {
         public static void RegisterBundles(BundleCollection bundles) {
             // script bundles
             //bundles.Add(new ScriptBundle("~/bundles/jquery").Include("~/Scripts/jquery-{version}.js"));
@@ -11,8 +11,8 @@
             //bundles.Add(new ScriptBundle("~/bundles/chart").Include("~/Scripts/Chart.js", "~/Scripts/angular-chart.js"));
             //bundles.Add(new ScriptBundle("~/bundles/file-upload").Include("~/Scripts/FileAPI.min.js", "~/Scripts/ng-file-upload.min.js", "~/Scripts/ng-file-upload-shim.min.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/rlApp.js"));
-            bundles.Add(new ScriptBundle("~/bundles/intuit").Include("~/Scripts/rlIntuit.js"));
+            bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/rl-app.js"));
+            bundles.Add(new ScriptBundle("~/bundles/intuit").Include("~/Scripts/rl-intuit.js"));
 
             // style bundles
             //bundles.Add(new StyleBundle("~/content/bootstrap").Include("~/Content/bootstrap.css", "~/Content/bootstrap-theme.css"));

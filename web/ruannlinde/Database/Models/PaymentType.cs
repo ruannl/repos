@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace RL.Database.Models {
+namespace Ruann.Linde.Database.Models {
 	public class PaymentType {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]

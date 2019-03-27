@@ -2,21 +2,16 @@
 using System.Reflection;
 using System.Web;
 using System.Web.Http;
-
 using log4net;
 using log4net.Config;
-
 using Microsoft.Owin.Security.OAuth;
-
 using Newtonsoft.Json.Serialization;
-
 using Ninject;
 using Ninject.Extensions.Logging;
 using Ninject.Extensions.Logging.Log4net.Infrastructure;
-
 using Owin;
 
-namespace RL {
+namespace Ruann.Linde {
 	public partial class Startup {
 
 		public void ConfigureNinject(IAppBuilder app) {

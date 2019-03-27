@@ -1,9 +1,8 @@
-﻿namespace RL.Providers {
-	using System;
-	using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
+using Microsoft.Owin.Security.OAuth;
 
-	using Microsoft.Owin.Security.OAuth;
-
+namespace Ruann.Linde.Providers {
 	public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider {
 		private readonly string _publicClientId;
 

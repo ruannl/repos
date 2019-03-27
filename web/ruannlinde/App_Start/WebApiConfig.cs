@@ -1,12 +1,8 @@
-﻿namespace RL
+﻿using System.Web.Http;
+
+namespace Ruann.Linde
 {
-    using System.Web.Http;
-
-    using Microsoft.Owin.Security.OAuth;
-
-    using Newtonsoft.Json.Serialization;
-
-    public static class WebApiConfig
+	public static class WebApiConfig
     {
         public static void Register(HttpConfiguration config)
         {

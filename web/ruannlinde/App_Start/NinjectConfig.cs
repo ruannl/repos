@@ -1,20 +1,23 @@
-﻿using RL;
-using RL.Database;
-using RL.Database.Providers.CurriculumVitae;
-using RL.Database.Providers.Lookup;
+﻿using Ruann.Linde;
+using Ruann.Linde.Database;
+using Ruann.Linde.Database.Providers;
+using Ruann.Linde.Database.Providers.CurriculumVitae;
+using Ruann.Linde.Database.Providers.Lookup;
 using WebActivatorEx;
 
 [assembly: PreApplicationStartMethod(typeof(NinjectConfig), "Start")]
 [assembly: ApplicationShutdownMethod(typeof(NinjectConfig), "Stop")]
 
-namespace RL {
+namespace Ruann.Linde {
 	using System;
 	using System.Diagnostics.CodeAnalysis;
 	using System.Reflection;
 	using System.Web;
 
 	using log4net;
+
 	using Microsoft.Web.Infrastructure.DynamicModuleHelper;
+
 	using Ninject;
 	using Ninject.Extensions.Logging;
 	using Ninject.Extensions.Logging.Log4net.Infrastructure;
@@ -69,6 +72,7 @@ namespace RL {
 			kernel.Bind<ApplicationDatabaseContext>().To<ApplicationDatabaseContext>().InSingletonScope();
 			kernel.Bind<ICurriculumVitaeManager>().To<CurriculumVitaeManager>().InSingletonScope();
 			kernel.Bind<LookupManager>().ToSelf().InSingletonScope();
+			kernel.Bind<ILogProvider>().To<LogProvider>().InSingletonScope();
 		}
 	}
 }

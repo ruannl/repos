@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using log4net;
-using RL.Database.Models;
-using RL.Database.Providers.Quickbooks;
+using Ruann.Linde.Database.Models;
+using Ruann.Linde.Database.Providers.Quickbooks;
 
-namespace RL.Database.Providers.Lookup {
+namespace Ruann.Linde.Database.Providers.Lookup {
 
 	public class LookupManager {
 

@@ -2,11 +2,10 @@
 using Google.Apis.Calendar.v3;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
-
 using Owin;
-using RL.Providers;
+using Ruann.Linde.Providers;
 
-namespace RL {
+namespace Ruann.Linde {
 	public static class MyRequestedScopes {
 		public static string[] Scopes => new[] {
 			"openid", "email", CalendarService.Scope.CalendarReadonly,

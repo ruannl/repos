@@ -11,13 +11,16 @@
 	<meta name="author" content="Ruann Linde">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-	@Scripts.Render("~/bundles/modernizr")
-	@RenderSection("Scripts", required: false)
-	@Styles.Render("~/content/bootstrap")
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" href="~/Content/animate.min.css" />
-	@Styles.Render("~/content/main")
-	@Styles.Render("~/content/cv")
+	<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+	<link href="~/Content/font-awesome.css" rel="stylesheet" />
+
+	<link href="~/Content/animate.min.css" rel="stylesheet" />
+
+	<script src="~/Scripts/modernizr-2.8.3.js"></script>
+
+	<link href="~/Content/Main.min.css" rel="stylesheet" />
+	<link href="~/Content/CV.min.css" rel="stylesheet" />
 	<base href="/">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38341478-2"></script>
@@ -33,19 +36,16 @@
 	<div class="web-content" ng-controller="BaseController">
 		<main class="body-content {{layout}}" role="main" ng-class="">
 			@RenderBody()
-			<div ng-include src="template"></div>
+			<div ng-include src="mainTemplate"></div>
+			@RenderSection("SPAViews", required: false)
 		</main>
 		<footer class="footer">
 			<div class="container">
 				<span class="text-muted">
 					&copy; @DateTime.Now.Year
-					<a href="" ng-click="redirectToTemplate('home.htm')" class="nav-link">Home</a>
-					<a href="" ng-click="redirectToTemplate('timesheet.htm')" class="footer-link">Timesheet</a>
-					<a href="" ng-click="redirectToTemplate('cv.htm')" class="nav-link">Curriculum Vitae</a>
 				</span>
 			</div>
 		</footer>
-
 	</div>
 
 	<script src="~/Scripts/jquery-3.3.1.min.js"></script>
@@ -58,13 +58,13 @@
 	<script src="~/Scripts/angular.min.js"></script>
 	<script src="~/Scripts/angular-route.min.js"></script>
 	<script src="~/Scripts/angular-animate.min.js"></script>
-	<script src="~/Scripts/ngStorage.js"></script>
 	<script src="~/Scripts/ng-infinate-scroll.js"></script>
+	<script src="~/Scripts/ngStorage.js"></script>
 
 	<script src="~/Scripts/FileAPI.min.js"></script>
 	<script src="~/Scripts/ng-file-upload.min.js"></script>
 	<script src="~/Scripts/ng-file-upload-shim.min.js"></script>
 
-	<script src="~/Scripts/rlApp.js"></script>
+	@Scripts.Render("~/bundles/app")
 </body>
 </html>

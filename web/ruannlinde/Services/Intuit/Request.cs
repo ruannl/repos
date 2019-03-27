@@ -1,4 +1,4 @@
-﻿namespace RL.Services.Intuit
+﻿namespace Ruann.Linde.Services.Intuit
 {
     public class Request
     {

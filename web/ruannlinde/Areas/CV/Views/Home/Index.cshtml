@@ -1,30 +1,26 @@
 ﻿<window-size></window-size>
 <script type="text/ng-template" id="cv.htm">
-	<ul id="context1" class="context-menu" role='menu'>
-		<li class="context-menu-item">
-			<div class="context-menu-item-text">Download CV</div>
-			<div class="context-menu-item-image">
-				<span class="icon"><i class="fa fa-file-download"></i></span>
-			</div>
-		</li>
-	</ul>
-	@*context="context1" rl-right-click="ShowContextMenu()"*@
 	<div class="container clearfix">
-		<span id="top"></span>
 		<div ng-controller="CvController" ng-cloak>
+			<span id="top"></span>
 			<header role="banner">
 				<div class="">
 					<div class="row">
 						<div class="col-sm-12">
+							<div style="float: right;">
+								<figure class="avatar"></figure>
+							</div>
 							<div style="float: left;">
 								<hgroup class="">
 									<h1>Ruann LINDE</h1>
 									<h2>Software Development</h2>
 								</hgroup>
 							</div>
-							<div style="float: right;">
-								<figure class="avatar"></figure>
-							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-12 col-lg-12">
+						<h3>FREElance and Contract </h3>
 						</div>
 					</div>
 					<div class="row">
@@ -255,9 +251,7 @@
 				@*education*@
 				<article>
 					<header>
-						<div class="row">
-							<icon-title icon="fa-graduation-cap" title="Education"></icon-title>
-						</div>
+						<icon-title icon="fa-graduation-cap" title="Education"></icon-title>
 					</header>
 					<section>
 						<div class="row">
@@ -393,11 +387,7 @@
 				@*professional skills*@
 				<article>
 					<header>
-						<div class="row">
-							<div class="col-12">
-								<icon-title icon="fa-project-diagram" title="Professional Skills"></icon-title>
-							</div>
-						</div>
+						<icon-title icon="fa-address-card" title="Professional Skills"></icon-title>
 					</header>
 
 					<section>
@@ -414,11 +404,7 @@
 				@*Hobbies and Interests*@
 				<article>
 					<header>
-						<div class="row">
-							<div class="col-12">
-								<icon-title icon="fa-golf-ball" title="Hobbies and Interests"></icon-title>
-							</div>
-						</div>
+						<icon-title icon="fa-futbol-o" title="Hobbies and Interests"></icon-title>
 					</header>
 
 					<section>
@@ -434,11 +420,7 @@
 				<br />
 				<article>
 					<header>
-						<div class="row">
-							<div class="col-12">
-								<icon-title icon="fa-address-card" title="Contact Us"></icon-title>
-							</div>
-						</div>
+						<icon-title icon="fa-address-card" title="Contact Us"></icon-title>
 					</header>
 
 					<section>
@@ -453,10 +435,19 @@
 			</main>
 		</div>
 	</div>
+	<ul id="context1" class="context-menu" role='menu'>
+		<li class="context-menu-item">
+			<div class="context-menu-item-text">Download CV</div>
+			<div class="context-menu-item-image">
+				<span class="icon"><i class="fa fa-file-download"></i></span>
+			</div>
+		</li>
+	</ul>
+	@*context="context1" rl-right-click="ShowContextMenu()"*@
 </script>
 <script type="text/ng-template" id="icon-title.htm">
 	<div ng-transclude>
-		<span class="icon"><i class="fa {{icon}}"></i></span>
+		<span class="icon"><i class="fa fas {{icon}}"></i></span>
 		<div class="content">
 			<h3>{{title}}</h3>
 		</div>
@@ -842,10 +833,10 @@
 <script type="text/ng-template" id="contact.htm">
 	<div>
 		<div ng-show="model.showThankYou()" class="animated fadeInOut thank-you">
-			<h3>Thank You</h3>
-			<p>ksdjvbskdljvksdjvbksdjvbkj</p>
+			<h3>Thank You, {{model.contactMessage.FirstName}}</h3>
+			<p>We will keep your email safe and will not ditribute...</p>
 		</div>
-		<form id="contactForm" name="contactForm" ng-submit="submitContactForm(contactForm.$valid)" novalidate ng-show="!model.showThankYou()" class="animated">
+		<form id="contactForm" name="contactForm" ng-submit="submitContactForm(contactForm.$valid)" novalidate ng-show="!model.showThankYou()">
 			<div class="form-group">
 				<input type="text" class="form-control" placeholder="Name" id="name" name="name" ng-model="model.contact.name" required="" ng-class="{'is-invalid':contactForm.name.$invalid && !contactForm.name.$pristine }" />
 			</div>

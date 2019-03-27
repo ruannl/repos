@@ -8,7 +8,7 @@ using System.Xml;
 using log4net;
 using log4net.Config;
 
-namespace RL.Services {
+namespace Ruann.Linde.Services {
     [WebService(Namespace = "http://developer.intuit.com/", Name = "QBCommunicationService")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [ToolboxItem(false)]

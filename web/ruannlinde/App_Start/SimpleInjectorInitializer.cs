@@ -1,6 +1,6 @@
-[assembly: WebActivator.PostApplicationStartMethod(typeof(RL.App_Start.SimpleInjectorInitializer), "Initialize")]
+[assembly: WebActivator.PostApplicationStartMethod(typeof(Ruann.Linde.App_Start.SimpleInjectorInitializer), "Initialize")]
 
-namespace RL.App_Start
+namespace Ruann.Linde.App_Start
 {
     using System.Reflection;
     using System.Web.Mvc;

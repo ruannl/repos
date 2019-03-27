@@ -1,10 +1,10 @@
-﻿namespace RL.Services.ServicesExtensions {
-    using System;
-    using System.IO;
-    using System.Xml;
-    using System.Xml.Serialization;
+﻿using System;
+using System.IO;
+using System.Xml;
+using System.Xml.Serialization;
 
-    public static class ServiceHelper {
+namespace Ruann.Linde.Services.ServicesExtensions {
+	public static class ServiceHelper {
         public static string Serialize<T>(this T value) {
 
             if(value == null)

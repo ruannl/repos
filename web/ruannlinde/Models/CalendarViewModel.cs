@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Google.Apis.Calendar.v3;
 using Google.Apis.Calendar.v3.Data;
 
-namespace RL.Models {
+namespace Ruann.Linde.Models {
 
     public class CalendarEventGroup {
         /// <summary>

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace RL.Areas.CV {
+namespace Ruann.Linde.Areas.CV {
 	public class CVAreaRegistration : AreaRegistration {
 		public override string AreaName => "CV";
 
@@ -9,7 +9,7 @@ namespace RL.Areas.CV {
 				"CV_default",
 				"CV/{controller}/{action}/{id}",
 				new { controller="Home", action = "Index", id = UrlParameter.Optional },
-				new[] { "RL.Areas.CV.Controllers"}
+				new[] { "Ruann.Linde.Areas.CV.Controllers" }
 			);
 		}
 	}

@@ -1,63 +1,71 @@
 ﻿using System;
+using System.IO.Compression;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-
 using log4net;
 
-namespace RL {
-    public class MvcApplication : HttpApplication {
-        //private const string RootDocument = "/Home/Index";
-        public static readonly ILog Log = LogManager.GetLogger(typeof(MvcApplication));
+namespace Ruann.Linde {
+	public class MvcApplication : HttpApplication {
+		//private const string RootDocument = "/Home/Index";
+		public static readonly ILog Log = LogManager.GetLogger(typeof(MvcApplication));
 
-        protected void Application_Start() {
-            AreaRegistration.RegisterAllAreas();
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+		protected void Application_Start() {
 
-            log4net.Config.XmlConfigurator.Configure();
-            Log.Debug("Application_Start");
-            //var container = new Container();
-            //container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
+			AreaRegistration.RegisterAllAreas();
+			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+			RouteConfig.RegisterRoutes(RouteTable.Routes);
+			BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            //container.Register<AccountingContext, AccountingContext>(Lifestyle.Scoped);
-            //container.Register<ILogger, Log4NetLogger>(Lifestyle.Singleton);
+			log4net.Config.XmlConfigurator.Configure();
+			Log.Debug("Application_Start");
+			//var container = new Container();
+			//container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
 
-            //container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
+			//container.Register<AccountingContext, AccountingContext>(Lifestyle.Scoped);
+			//container.Register<ILogger, Log4NetLogger>(Lifestyle.Singleton);
 
-            //container.Verify();
+			//container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
 
-            //DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
-        }
+			//container.Verify();
 
-        protected void Application_BeginRequest(object sender, EventArgs e) {
-            LogicalThreadContext.Properties["Request"] = new {
-                HostAddress = Request.UserHostAddress
-              , Request.RawUrl
-              , Request.QueryString
-            };
+			//DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
+		}
 
-            LogicalThreadContext.Properties["RequestInfo"] = new WebRequestInfo();
-            //    string url = Request.Url.LocalPath;
-            //    if (!System.IO.File.Exists(Context.Server.MapPath(url)))
-            //        Context.RewritePath(RootDocument);
-        }
+		protected void Application_BeginRequest(object sender, EventArgs e) {
+			LogicalThreadContext.Properties["Request"] = new { HostAddress = Request.UserHostAddress, Request.RawUrl, Request.QueryString };
+			LogicalThreadContext.Properties["RequestInfo"] = new WebRequestInfo();
 
-        protected void MvcApplication_AuthenticateRequest(object sender, EventArgs e) {
-            try {
-                LogicalThreadContext.Properties["User"] = User;
-            }
-            catch (Exception ex) {
-                Log.Error(ex);
-            }
-        }
+			//var app = (HttpApplication)sender;
+			//var encodings = app.Request.Headers.Get("Accept-Encoding");
+			//if (encodings != null) {
+			//	// Check the browser accepts deflate or gzip (deflate takes preference)
+			//	encodings = encodings.ToLower();
+			//	if (encodings.Contains("deflate")) {
+			//		app.Response.Filter = new DeflateStream(app.Response.Filter, CompressionMode.Compress);
+			//		app.Response.AppendHeader("Content-Encoding", "deflate");
+			//	}
+			//	else if (encodings.Contains("gzip")) {
+			//		app.Response.Filter = new GZipStream(app.Response.Filter, CompressionMode.Compress);
+			//		app.Response.AppendHeader("Content-Encoding", "gzip");
+			//	}
+			//}
+		}
 
-        public class WebRequestInfo {
-            public override string ToString() {
-                return HttpContext.Current?.Request?.RawUrl + ", " + HttpContext.Current?.Request?.UserAgent;
-            }
-        }
-    }
+		protected void MvcApplication_AuthenticateRequest(object sender, EventArgs e) {
+			try {
+				LogicalThreadContext.Properties["User"] = User;
+			}
+			catch (Exception ex) {
+				Log.Error(ex);
+			}
+		}
+
+		public class WebRequestInfo {
+			public override string ToString() {
+				return HttpContext.Current?.Request?.RawUrl + ", " + HttpContext.Current?.Request?.UserAgent;
+			}
+		}
+	}
 }

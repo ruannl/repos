@@ -1,9 +1,9 @@
-﻿namespace RL.Models
-{
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
-    // Models returned by AccountController actions.
+namespace Ruann.Linde.Models
+{
+	// Models returned by AccountController actions.
     public class ExternalLoginConfirmationViewModel
     {
         [Required]
