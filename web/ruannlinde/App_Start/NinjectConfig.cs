@@ -71,7 +71,7 @@ namespace Ruann.Linde {
 
 			kernel.Bind<ApplicationDatabaseContext>().To<ApplicationDatabaseContext>().InSingletonScope();
 			kernel.Bind<ICurriculumVitaeManager>().To<CurriculumVitaeManager>().InSingletonScope();
-			kernel.Bind<LookupManager>().ToSelf().InSingletonScope();
+			kernel.Bind<LookupProvider>().ToSelf().InSingletonScope();
 			kernel.Bind<ILogProvider>().To<LogProvider>().InSingletonScope();
 		}
 	}

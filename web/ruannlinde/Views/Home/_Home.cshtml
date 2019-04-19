@@ -1,51 +1,61 @@
 ﻿
 <script type="text/ng-template" id="home.htm">
-    <div ng-controller="HomeController" class="home" ng-cloak>
-        <p class="text-center text-muted" ng-if="model.loading">
-    <span class="fa fa-spinner fa-spin fa-4x"></span>
-    <br /><br />
-    Processing, please wait...
-</p>
-        <span id="top"></span>
-		        @Html.Partial("_LoginPartial")
-        <div class="{{layout}}">
+	<div ng-controller="HomeController" class="home" ng-cloak>
+		<p class="text-center text-muted" ng-if="model.loading">
+			<span class="fa fa-spinner fa-spin fa-4x"></span>
+			<br /><br />
+			Processing, please wait...
+		</p>
+		<span id="top"></span>
+		@Html.Partial("_LoginPartial")
+		<div class="{{layout}}">
 			<div class="row">
 				<div class="col-12">
-                    <h3>LOG</h3><br />
+					<h3>LOG</h3><br />
 				</div>
 			</div>
-            <div class="row">
+			<div class="row">
 				<div class="col-12">
-                  	<button class="btn btn-info" ng-click="LoadLog()">Load Log</button>
-                    <button class="btn btn-info" ng-click="ClearLog()">Clear Log</button>
+					<button class="btn btn-info" ng-click="LoadLog()">Load Log</button>
+					<button class="btn btn-info" ng-click="ClearLog()">Clear Log</button>
+					<button class="btn btn-info" ng-click="ThrowDomainException()">Throw</button><br /><br />
+					<h3>Last Load Date: {{model.lastLoadDate | date : 'EEEE, MMMM d, y HH:mm:ss' }}</h3>
 				</div>
 			</div><br>
-            <div class="row">
+			<div class="row">
 				<div class="col-12">
-                  	<code ng-bind-html=model.log></code>
+					@*<p ng-bind-html=model.log></p>*@
+					<p>
+						<div ng-repeat="item in model.log.content">
+							Logger: {{item.Logger}}<br />
+							Level: {{item.Level}}<br />
+							Message: {{item.Message}}<br />
+							Exception: {{item.Exception}}<br /><br />
+						</div>
+					</p>
 				</div>
 			</div>
 		</div>
-    </div>
+	</div>
 </script>
 
 @*<div class="row">
-        <div class="col-xs-12">
-            <div id="avatar-carousel" class="carousel" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="~/Content/Images/avatar1.png">
-                    </div>
-                    <div class="item">
-                        <img src="~/Content/Images/avatar2.png">
-                    </div>
-                    <div class="item">
-                        <img src="~/Content/Images/avatar3.png">
-                    </div>
-                    <div class="item">
-                        <img src="~/Content/Images/avatar4.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>*@
+		<div class="col-xs-12">
+			<div id="avatar-carousel" class="carousel" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="~/Content/Images/avatar1.png">
+					</div>
+					<div class="item">
+						<img src="~/Content/Images/avatar2.png">
+					</div>
+					<div class="item">
+						<img src="~/Content/Images/avatar3.png">
+					</div>
+					<div class="item">
+						<img src="~/Content/Images/avatar4.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>*@

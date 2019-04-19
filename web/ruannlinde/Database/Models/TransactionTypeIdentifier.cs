@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ruann.Linde.Database.Models {
+	[Table("TransactionTypeIdentifiers")]
 	public class TransactionTypeIdentifier {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]

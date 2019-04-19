@@ -1,54 +1,62 @@
 <?xml version="1.0" encoding="utf-16"?>
-<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT2H44M4.3052378S" SolutionTotalViewTime="PT8H17M44.898572S" SolutionTotalDebugTime="PT2M51.417182S">
+<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT6H30M32.8769101S" SolutionTotalViewTime="P1DT8H4M25.3582874S" SolutionTotalDebugTime="PT9M45.0049899S">
   <FileVersion>
     <Major>1</Major>
     <Minor>0</Minor>
   </FileVersion>
   <SolutionFolder>C:\source\github\repos\web</SolutionFolder>
+  <SolutionCreattionDate>2019-03-01T21:37:57.3460502+02:00</SolutionCreattionDate>
+  <ProjectsCreatedDateList>
+    <ProjectCreated>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2018-12-24T11:50:35.1175793+02:00</CreatedDate>
+    </ProjectCreated>
+  </ProjectsCreatedDateList>
   <SessionTimeList />
   <LastSessionTimeList>
-    <DevTrackerDataItem ViewActiveTime="PT10.420549S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
+    <DevTrackerDataItem ViewActiveTime="PT13M34.6603109S" EditActiveTime="PT4M47.7266266S">
+      <ModifiedDate>2019-04-04T22:29:51.8252933+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
-      <Item>Debug Mode</Item>
-      <ItemType>DebugModeItem</ItemType>
-      <ProjectName />
-      <CreatedDate>2019-03-27T17:17:37.1326375+02:00</CreatedDate>
-      <ViewedBy>RuannL</ViewedBy>
-    </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT8M55.225448S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
-      <Item>C:\source\github\repos\web\ruannlinde\Global.asax.cs</Item>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseContext.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
-      <CreatedDate>2019-03-27T16:56:11.9702802+02:00</CreatedDate>
+      <CreatedDate>2019-04-04T21:56:01.6707492+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M40.3841185S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT46.979507S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
       <ViewedCount>1</ViewedCount>
-      <Item>C:\source\github\repos\web\ruannlinde\Services\QBCommunicationService.asmx.cs</Item>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseInitializer.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
-      <CreatedDate>2019-03-27T17:29:45.4447366+02:00</CreatedDate>
+      <CreatedDate>2019-04-04T21:56:16.0329312+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT4M34.3676464S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT32M56.7449059S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
       <ViewedCount>1</ViewedCount>
-      <Item>C:\source\github\repos\web\ruannlinde\App_Start\Startup.Ninject.cs</Item>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\app\rl-app.js</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
-      <CreatedDate>2019-03-27T17:31:25.8298563+02:00</CreatedDate>
+      <CreatedDate>2019-04-03T10:36:26.9064031+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
   </LastSessionTimeList>
   <TotalTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT7M12.2814367S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>0b10f5a1-a946-433d-97cf-622d14a4844fMSSQL__/L02RUANNL/SENSElmah/True/SqlProcedure/Create dbo.ELMAH_LogError.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-30T19:16:19.6697021+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT26.6355482S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
@@ -57,6 +65,36 @@
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-21T13:42:47.010008+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3M0.1953649S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>3e990f9e-1058-452c-b46c-473082e4b11eMSSQL__/L02RUANNL/SENSElmah/True/SqlTable/Create dbo.ELMAH_Error.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-29T16:45:13.0143256+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT34.4565203S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>72e1cf37-6aba-443b-abd5-314d913cdcdaMSSQL__/L02RUANNL/SENSElmah/True/SqlProcedure/Create dbo.ELMAH_GetErrorsXml.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-30T19:16:47.6968877+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT19.2074336S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>7849d940-eb10-4646-8db5-fed184470d77MSSQL__/L02RUANNL/SENSElmah/True/SqlProcedure/Create dbo.ELMAH_GetErrorXml.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-30T19:16:39.9353741+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT20M38.2536467S" EditActiveTime="PT6.121346S">
@@ -81,22 +119,22 @@
       <CreatedDate>2019-03-27T15:42:38.1128682+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT6M53.0491036S" EditActiveTime="PT1M29.6742312S">
-      <ModifiedDate>2019-03-26T14:04:55.7089531+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT15M56.3192074S" EditActiveTime="PT5M53.069193S">
+      <ModifiedDate>2019-03-31T09:48:25.8997091+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>4</ViewedCount>
+      <EditedCount>4</EditedCount>
+      <ViewedCount>8</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Views\Home\_Home.cshtml</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-09T20:47:27.551519+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT17M37.8149532S" EditActiveTime="PT1M43.9366132S">
-      <ModifiedDate>2019-03-27T11:27:40.005471+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT31M45.2245642S" EditActiveTime="PT1M51.6271836S">
+      <ModifiedDate>2019-03-29T21:30:24.4670569+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>3</EditedCount>
-      <ViewedCount>5</ViewedCount>
+      <EditedCount>6</EditedCount>
+      <ViewedCount>10</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Views\Shared\_Layout.cshtml</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -114,21 +152,21 @@
       <CreatedDate>2019-03-22T14:52:17.4041905+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT35.4542672S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT5M15.5718722S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Views\_ViewStart.cshtml</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-02T14:05:42.2336803+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M42.2162855S" EditActiveTime="PT6.51702S">
-      <ModifiedDate>2019-03-21T13:56:03.5672061+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT2M4.8575783S" EditActiveTime="PT21.5515625S">
+      <ModifiedDate>2019-03-28T22:39:46.7995244+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>4</ViewedCount>
+      <EditedCount>2</EditedCount>
+      <ViewedCount>6</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Account.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -197,11 +235,11 @@
       <CreatedDate>2019-03-22T14:04:50.8071176+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT46.5927847S" EditActiveTime="PT13.6835024S">
-      <ModifiedDate>2019-03-24T15:38:43.6511813+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT56.6501091S" EditActiveTime="PT27.8002836S">
+      <ModifiedDate>2019-03-28T22:40:11.0750982+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>3</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\AccountType.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -218,22 +256,32 @@
       <CreatedDate>2019-03-22T15:13:02.9760892+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT25M52.7778651S" EditActiveTime="PT30M10.3270973S">
-      <ModifiedDate>2019-03-24T15:33:30.8693146+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT24.1793844S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Services\ApiController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T14:19:34.2002958+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1H34M23.2810384S" EditActiveTime="PT45M41.2246797S">
+      <ModifiedDate>2019-04-04T22:29:51.8252933+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>3</EditedCount>
-      <ViewedCount>4</ViewedCount>
+      <EditedCount>8</EditedCount>
+      <ViewedCount>11</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseContext.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-21T12:59:27.8516785+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT27M32.4762414S" EditActiveTime="PT13M51.0585589S">
-      <ModifiedDate>2019-03-24T15:31:26.4525645+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT1H50M56.5059262S" EditActiveTime="PT35M35.1139111S">
+      <ModifiedDate>2019-04-01T19:29:00.6788387+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>3</EditedCount>
-      <ViewedCount>4</ViewedCount>
+      <EditedCount>6</EditedCount>
+      <ViewedCount>10</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseInitializer.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -270,11 +318,11 @@
       <CreatedDate>2019-03-21T14:15:20.0950825+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT49.0902092S" EditActiveTime="PT19.4844625S">
-      <ModifiedDate>2019-03-24T15:39:42.8164218+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT57.5510747S" EditActiveTime="PT30.1957465S">
+      <ModifiedDate>2019-03-28T22:40:37.4215189+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Bank.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -291,11 +339,11 @@
       <CreatedDate>2019-03-21T14:16:46.797192+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT56.7605699S" EditActiveTime="PT28.422921S">
-      <ModifiedDate>2019-03-24T15:40:19.8430758+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT1M4.994415S" EditActiveTime="PT43.3051129S">
+      <ModifiedDate>2019-03-28T22:41:20.6650798+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>3</EditedCount>
-      <ViewedCount>3</ViewedCount>
+      <EditedCount>4</EditedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\BankAccount.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -312,10 +360,11 @@
       <CreatedDate>2019-03-21T14:18:20.5429136+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT14.5153061S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>2</ViewedCount>
+    <DevTrackerDataItem ViewActiveTime="PT58.2326097S" EditActiveTime="PT9.8456721S">
+      <ModifiedDate>2019-03-28T22:41:43.190732+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\BankCard.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -343,11 +392,11 @@
       <CreatedDate>2019-03-21T14:19:26.5872404+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT22.8307307S" EditActiveTime="PT5.0011268S">
-      <ModifiedDate>2019-03-21T14:20:29.479159+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT32.8502587S" EditActiveTime="PT15.1417052S">
+      <ModifiedDate>2019-03-28T22:42:34.4663066+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>3</ViewedCount>
+      <EditedCount>2</EditedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\BudgetItem.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -364,22 +413,22 @@
       <CreatedDate>2019-03-21T14:20:35.8555219+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT31.4172275S" EditActiveTime="PT23.6225469S">
-      <ModifiedDate>2019-03-24T15:41:23.9794497+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT45.7342727S" EditActiveTime="PT39.1907677S">
+      <ModifiedDate>2019-03-28T22:44:06.0476022+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>3</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\BudgetItemCategory.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-21T14:21:34.7666387+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT6M33.6472331S" EditActiveTime="PT7.0730879S">
-      <ModifiedDate>2019-03-27T14:30:01.4969825+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT9M9.9060994S" EditActiveTime="PT1M48.2188306S">
+      <ModifiedDate>2019-04-02T14:13:22.8947266+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>1</ViewedCount>
+      <EditedCount>2</EditedCount>
+      <ViewedCount>2</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\App_Start\BundleConfig.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
@@ -426,37 +475,47 @@
       <CreatedDate>2019-03-21T12:51:57.0782902+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT32.7251402S" EditActiveTime="PT8.487904S">
+    <DevTrackerDataItem ViewActiveTime="PT3M0.5918139S" EditActiveTime="PT8.487904S">
       <ModifiedDate>2019-03-21T14:12:42.9277791+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
       <EditedCount>1</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\CleanupExpression.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-21T13:59:16.8117078+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT26.2558135S" EditActiveTime="PT1M16.032294S">
-      <ModifiedDate>2019-03-24T15:41:57.6746347+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT48.5274936S" EditActiveTime="PT1M28.6856603S">
+      <ModifiedDate>2019-03-28T22:39:17.4356306+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Company.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-21T14:00:53.8892608+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M56.4411195S" EditActiveTime="PT5.9899822S">
-      <ModifiedDate>2019-03-21T14:03:51.8014779+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT2M15.0385973S" EditActiveTime="PT18.1755533S">
+      <ModifiedDate>2019-03-28T22:43:14.9639394+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>2</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\CompanyIdentifier.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-21T14:03:40.2441674+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8.7862291S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\compilerconfig.json</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:41:25.0085338+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT8.7683912S" EditActiveTime="PT1M58.3638515S">
@@ -470,6 +529,27 @@
       <CreatedDate>2019-03-21T13:40:39.868759+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M3.3497479S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ruannl\AppData\Local\Symbols\src\Source\03062.00\Source\ndp\fx\src\Configuration\System\Configuration\ConfigurationManager.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-29T18:13:56.7948048+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M29.0734818S" EditActiveTime="PT7M10.6482902S">
+      <ModifiedDate>2019-03-29T18:51:17.9009078+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Extensions\ConfigurationManagerExtension.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T18:18:49.9035216+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT38.3265484S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
@@ -480,31 +560,43 @@
       <CreatedDate>2019-03-22T15:29:12.9891308+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT7.5898462S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
+    <DevTrackerDataItem ViewActiveTime="PT5M31.8036327S" EditActiveTime="PT1M38.3246041S">
+      <ModifiedDate>2019-03-29T18:12:14.1259393+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\connectionStrings.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:06:02.0783741+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT13.5075998S" EditActiveTime="PT13.5436462S">
+      <ModifiedDate>2019-03-28T22:43:41.1453673+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\ContactMessage.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-24T15:42:19.5466575+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT15.8552529S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT33.5742068S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
+      <ViewedCount>2</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\CurriculumVitae\CurriculumVitaeManager .cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
       <CreatedDate>2019-03-27T16:10:12.5938376+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT58.4271069S" EditActiveTime="PT6.1958573S">
-      <ModifiedDate>2019-03-21T14:05:30.7146911+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT1M6.9023612S" EditActiveTime="PT14.0642763S">
+      <ModifiedDate>2019-03-28T22:44:23.8134364+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>2</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Customer.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -563,6 +655,16 @@
       <CreatedDate>2019-03-22T14:35:10.4486097+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M6.7214179S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ruannl\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\B7B192E5-A05F-4F14-A14A-A0D5B14AEEEB\c5\7c873d3b\Database.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-04-02T11:12:19.1438811+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT3.8366142S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
@@ -573,14 +675,142 @@
       <CreatedDate>2019-03-24T15:38:11.9966794+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT2M51.417182S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT32.1946902S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
-      <ViewedCount>3</ViewedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ruannl\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\B7B192E5-A05F-4F14-A14A-A0D5B14AEEEB\57\de5f9f5a\DbCompiledModel.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-04-02T11:02:58.9633844+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT7M26.5381247S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ruannl\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\B7B192E5-A05F-4F14-A14A-A0D5B14AEEEB\0d\257cc11b\DbContext.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-04-02T11:00:46.6019045+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT9M45.0049899S" EditActiveTime="PT3M30.7513244S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>8</ViewedCount>
       <Item>Debug Mode</Item>
       <ItemType>DebugModeItem</ItemType>
       <ProjectName />
       <CreatedDate>2019-03-10T18:14:12.1599872+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5M44.4023263S" EditActiveTime="PT2M38.5990967S">
+      <ModifiedDate>2019-03-28T14:38:34.0311113+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Extensions\DomainException.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T13:11:33.9042389+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6M19.6595235S" EditActiveTime="PT9M52.7079538S">
+      <ModifiedDate>2019-03-28T14:52:27.7647354+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Extensions\ActionFilter\DomainExceptionFilter.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T13:35:09.0635521+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M25.0815851S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\Users\ruannl\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\B7B192E5-A05F-4F14-A14A-A0D5B14AEEEB\80\6d0912e0\DropCreateDatabaseIfModelChanges`1.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-28T22:49:37.4216117+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5M59.0996247S" EditActiveTime="PT1M18.8564775S">
+      <ModifiedDate>2019-03-29T18:04:18.9643116+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\elmah.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:01:30.0490803+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT16M16.3433818S" EditActiveTime="PT5M16.2858494S">
+      <ModifiedDate>2019-03-31T18:50:32.7453004+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>3</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\ELMAH_Error.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:46:09.5944277+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5M10.6861262S" EditActiveTime="PT4M29.3837721S">
+      <ModifiedDate>2019-03-31T08:49:42.9911223+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>2</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Procedures\ELMAH_GetErrorsXml.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-30T19:24:30.5740957+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8M8.0384751S" EditActiveTime="PT1M29.6047612S">
+      <ModifiedDate>2019-03-31T08:44:40.3677453+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>2</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Procedures\ELMAH_GetErrorXml.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-30T19:24:08.4655045+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT17M20.1934396S" EditActiveTime="PT2M51.1510201S">
+      <ModifiedDate>2019-03-31T08:53:20.6758064+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>2</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Procedures\ELMAH_LogError.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-30T19:23:56.436179+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M8.3802541S" EditActiveTime="PT21.5010111S">
+      <ModifiedDate>2019-03-29T16:14:08.6639459+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\entityframework.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:03:32.5764663+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4.6103963S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Shared\Error.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:41:10.2293998+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT12.7357275S" EditActiveTime="PT0.7265124S">
@@ -626,53 +856,74 @@
       <CreatedDate>2019-03-27T16:16:23.0521222+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT17M52.9045973S" EditActiveTime="PT1M54.8657779S">
-      <ModifiedDate>2019-03-27T16:33:44.72571+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT9.774239S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Global.asax</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T13:21:06.8901366+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT33M16.848179S" EditActiveTime="PT2M8.6651345S">
+      <ModifiedDate>2019-03-29T13:21:51.5708031+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>4</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>8</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Global.asax.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-22T14:45:59.0331943+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT6M46.7669641S" EditActiveTime="PT22.8987904S">
+    <DevTrackerDataItem ViewActiveTime="PT22.1266844S" EditActiveTime="PT30.3531154S">
+      <ModifiedDate>2019-03-27T18:43:30.5164284+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\google_client_secret.json</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:42:41.770912+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT7M27.981288S" EditActiveTime="PT22.8987904S">
       <ModifiedDate>2019-03-24T15:52:55.1804895+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
       <EditedCount>1</EditedCount>
-      <ViewedCount>3</ViewedCount>
+      <ViewedCount>5</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Areas\CV\Controllers\HomeController.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-22T14:50:19.7731973+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M7.2561762S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT1M47.9747896S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
+      <ViewedCount>2</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Areas\Accounting\Controllers\HomeController.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-22T15:09:07.0771315+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT6M44.8387277S" EditActiveTime="PT20M19.3886062S">
-      <ModifiedDate>2019-03-27T16:09:08.4228345+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT4H36M11.7112782S" EditActiveTime="PT1H10M15.1671325S">
+      <ModifiedDate>2019-04-02T13:47:21.3845884+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>4</EditedCount>
-      <ViewedCount>4</ViewedCount>
+      <EditedCount>11</EditedCount>
+      <ViewedCount>13</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Controllers\HomeController.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-22T15:17:11.3727215+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M1.412667S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT1M22.7741947S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
+      <ViewedCount>2</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\App_Start\IdentityConfig.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -690,11 +941,11 @@
       <CreatedDate>2019-03-22T15:10:14.3473257+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M41.9299279S" EditActiveTime="PT5.40184S">
+    <DevTrackerDataItem ViewActiveTime="PT2M9.4154295S" EditActiveTime="PT5.40184S">
       <ModifiedDate>2019-03-25T23:05:07.4386156+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
       <EditedCount>1</EditedCount>
-      <ViewedCount>3</ViewedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Views\Home\Index.cshtml</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -723,6 +974,17 @@
       <CreatedDate>2019-03-22T14:51:14.1282987+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT7M0.1905714S" EditActiveTime="PT14M23.8182466S">
+      <ModifiedDate>2019-04-02T14:02:43.6173778+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Services\IntegrationService.svc.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T13:21:30.9378595+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT1M18.8118766S" EditActiveTime="PT2.8101124S">
       <ModifiedDate>2019-03-27T15:40:54.3671139+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
@@ -734,25 +996,66 @@
       <CreatedDate>2019-03-27T15:40:49.6839663+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT16.99711S" EditActiveTime="PT8.9934473S">
-      <ModifiedDate>2019-03-24T15:42:32.3823612+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT13.3071829S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\libman.json</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:42:39.8660242+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4.4372046S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Shared\Lockout.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:41:14.8477991+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M21.67491S" EditActiveTime="PT1M5.0444568S">
+      <ModifiedDate>2019-03-31T08:19:59.9923052+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>4</EditedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Log.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-21T14:07:03.1928438+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT7.0138443S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT33.3742505S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
       <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\log4net - Copy.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T15:55:27.6699644+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M44.7119028S" EditActiveTime="PT21.3315311S">
+      <ModifiedDate>2019-03-29T16:00:52.889415+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>5</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\log4net.config</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
       <CreatedDate>2019-03-27T14:49:44.1380018+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT9.4117728S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\log4net.txt</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T15:56:01.049218+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT7.3772612S" EditActiveTime="PT1.2889129S">
@@ -766,33 +1069,33 @@
       <CreatedDate>2019-03-27T15:43:23.3349039+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT5M47.6062598S" EditActiveTime="PT5M46.9579187S">
-      <ModifiedDate>2019-03-26T13:51:45.0167913+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT9H24M41.3055693S" EditActiveTime="PT36M22.8396344S">
+      <ModifiedDate>2019-04-02T13:44:39.4683851+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>7</EditedCount>
+      <ViewedCount>10</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\LogProvider.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-26T13:33:41.5890327+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT3M48.2733314S" EditActiveTime="PT2M43.5178289S">
-      <ModifiedDate>2019-03-22T14:28:27.0091857+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT6M55.3103093S" EditActiveTime="PT2M49.3902319S">
+      <ModifiedDate>2019-03-28T19:47:15.6012657+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>2</ViewedCount>
-      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\Lookup\LookupManager.cs</Item>
+      <EditedCount>2</EditedCount>
+      <ViewedCount>5</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\Lookup\LookupProvider.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-22T14:23:30.2685463+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT47.838855S" EditActiveTime="PT12.4381881S">
-      <ModifiedDate>2019-03-24T15:43:21.1551155+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT1M1.2752138S" EditActiveTime="PT22.4493464S">
+      <ModifiedDate>2019-03-28T22:44:59.6874529+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\LookupType.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -840,48 +1143,80 @@
       <CreatedDate>2019-03-22T15:12:04.4795648+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT22M11.7843473S" EditActiveTime="PT5M33.7198139S">
+    <DevTrackerDataItem ViewActiveTime="PT31.1067171S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\App_Start\Ninject.Web.Common.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:46:06.2457936+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT22M36.0887129S" EditActiveTime="PT5M33.7198139S">
       <ModifiedDate>2019-03-27T15:59:50.9994122+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
       <EditedCount>3</EditedCount>
-      <ViewedCount>3</ViewedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\App_Start\NinjectConfig.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-22T14:30:03.5324156+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT2M22.2173557S" EditActiveTime="PT1.0422973S">
+    <DevTrackerDataItem ViewActiveTime="PT2M47.6472147S" EditActiveTime="PT1.0422973S">
       <ModifiedDate>2019-03-27T16:17:57.2880797+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
       <EditedCount>1</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\packages.config</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-10T18:18:45.9390257+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT46.723735S" EditActiveTime="PT7.4361665S">
-      <ModifiedDate>2019-03-24T15:43:41.341288+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT52.5660243S" EditActiveTime="PT44.4555945S">
+      <ModifiedDate>2019-03-28T22:45:47.8724039+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\PaymentType.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-21T14:09:10.5717208+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT23.4436667S" EditActiveTime="PT6.874499S">
-      <ModifiedDate>2019-03-21T14:10:12.0864413+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT33.1652542S" EditActiveTime="PT13.4359228S">
+      <ModifiedDate>2019-03-28T22:46:08.0475457+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>2</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\PaymentTypeIdentifier.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-21T14:10:00.5336117+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT29.3617265S" EditActiveTime="PT9.2432744S">
+      <ModifiedDate>2019-03-31T07:53:30.7288381+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Procedures\Procedures.tt</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T07:53:08.3528702+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT29M17.1763236S" EditActiveTime="PT44.2871429S">
+      <ModifiedDate>2019-03-29T18:55:20.8946054+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Email\Provider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T18:07:25.7054265+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT15.1705577S" EditActiveTime="PT0S">
@@ -947,6 +1282,27 @@
       <CreatedDate>2019-03-22T14:17:21.7959072+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8.0723677S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\packages\elmah.1.2.2\readme.txt</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-27T18:34:35.948076+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8M46.1642673S" EditActiveTime="PT2.3290516S">
+      <ModifiedDate>2019-03-29T16:26:50.919597+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\readme.txt</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:26:45.9375723+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT6.3195359S" EditActiveTime="PT3.3683872S">
       <ModifiedDate>2019-03-27T15:43:38.3295312+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
@@ -979,11 +1335,11 @@
       <CreatedDate>2019-03-21T14:21:50.5870056+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT26.2541967S" EditActiveTime="PT8.1200795S">
-      <ModifiedDate>2019-03-24T15:44:08.0335257+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT36.7612528S" EditActiveTime="PT17.3157992S">
+      <ModifiedDate>2019-03-28T22:46:32.6405333+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>3</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Retailer.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -1000,26 +1356,37 @@
       <CreatedDate>2019-03-21T14:22:39.4956433+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT21.7431699S" EditActiveTime="PT6.1278883S">
-      <ModifiedDate>2019-03-21T14:23:26.3639122+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT29.2710993S" EditActiveTime="PT13.3177432S">
+      <ModifiedDate>2019-03-28T22:46:52.8247346+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>2</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\RetailerIdentifier.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-21T14:23:15.321536+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT59M11.0346142S" EditActiveTime="PT20M47.3796983S">
-      <ModifiedDate>2019-03-27T11:50:53.8495403+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT1H16M55.515041S" EditActiveTime="PT32M51.2336238S">
+      <ModifiedDate>2019-03-31T06:34:34.0366157+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>5</EditedCount>
-      <ViewedCount>9</ViewedCount>
+      <EditedCount>8</EditedCount>
+      <ViewedCount>14</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Scripts\rl-app.js</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-01T21:37:57.4621319+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT34M27.9025626S" EditActiveTime="PT2M14.0556226S">
+      <ModifiedDate>2019-04-02T14:13:22.9537623+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\app\rl-app.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T14:00:04.8141687+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT39.1842279S" EditActiveTime="PT0S">
@@ -1032,6 +1399,16 @@
       <CreatedDate>2019-03-27T14:30:25.1802093+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT9.3783311S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\app\rl-geolocator.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:47:41.0655567+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT15.8050044S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
@@ -1042,14 +1419,34 @@
       <CreatedDate>2019-03-27T14:31:05.567273+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT14.9650893S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT3.9965215S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
       <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\app\rl-google-api.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:48:07.2451876+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT22.1291343S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>2</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Scripts\rl-intuit.js</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
       <CreatedDate>2019-03-27T14:30:11.3449091+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3.445307S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\app\rl-intuit.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:48:54.59265+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT35.075137S" EditActiveTime="PT0S">
@@ -1062,6 +1459,16 @@
       <CreatedDate>2019-03-27T14:31:21.3762857+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT55.4242362S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\app\rl-open-weather-map.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:47:04.7020458+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT7M26.299014S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
@@ -1070,6 +1477,16 @@
       <ItemType>ProjectItem</ItemType>
       <ProjectName />
       <CreatedDate>2019-03-27T12:39:32.0191272+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT27.4441028S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\rl.log</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T21:29:28.0733756+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT1M18.5483308S" EditActiveTime="PT0S">
@@ -1082,15 +1499,25 @@
       <CreatedDate>2019-03-22T15:05:21.9191183+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT6M5.4040983S" EditActiveTime="PT1M28.6477502S">
-      <ModifiedDate>2019-03-27T15:41:26.6311866+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT7M17.859696S" EditActiveTime="PT1M35.0783298S">
+      <ModifiedDate>2019-03-29T15:53:18.9467819+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\App_Start\RouteConfig.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-22T15:02:01.5055741+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M20.4293422S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ruannl\AppData\Local\Temp\ruannlinde.co.za - Copy.csproj</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-27T19:41:30.8316164+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT7.008438S" EditActiveTime="PT0.8656142S">
@@ -1104,21 +1531,31 @@
       <CreatedDate>2019-03-27T15:43:47.9391044+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT5.9589481S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT31.788345S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
       <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Services\ServicesExtensions\ServiceHelper.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T14:10:09.5760259+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M36.1590569S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\settings.config</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-22T15:29:47.8704362+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT52.8907167S" EditActiveTime="PT7.9212258S">
+    <DevTrackerDataItem ViewActiveTime="PT1M19.4289371S" EditActiveTime="PT7.9212258S">
       <ModifiedDate>2019-03-27T16:03:02.9495503+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
       <EditedCount>1</EditedCount>
-      <ViewedCount>1</ViewedCount>
+      <ViewedCount>2</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\App_Start\SimpleInjectorInitializer.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
@@ -1146,22 +1583,22 @@
       <CreatedDate>2019-03-21T13:38:30.8506971+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT11M27.3516998S" EditActiveTime="PT1M33.6106189S">
+    <DevTrackerDataItem ViewActiveTime="PT11M57.4368733S" EditActiveTime="PT1M33.6106189S">
       <ModifiedDate>2019-03-27T16:22:48.3487198+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
       <EditedCount>2</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <ViewedCount>5</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Startup.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-22T14:41:35.3167012+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT12M48.3615673S" EditActiveTime="PT30.6682879S">
+    <DevTrackerDataItem ViewActiveTime="PT19M32.8532975S" EditActiveTime="PT30.6682879S">
       <ModifiedDate>2019-03-22T15:15:36.1905826+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
       <EditedCount>1</EditedCount>
-      <ViewedCount>3</ViewedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\App_Start\Startup.Ninject.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -1178,11 +1615,11 @@
       <CreatedDate>2019-03-21T13:49:08.5381175+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT5M33.8014765S" EditActiveTime="PT1M58.3448735S">
-      <ModifiedDate>2019-03-24T15:44:48.1417586+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT5M49.4097442S" EditActiveTime="PT2M16.666598S">
+      <ModifiedDate>2019-03-28T22:37:56.0067458+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>3</EditedCount>
-      <ViewedCount>3</ViewedCount>
+      <EditedCount>4</EditedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Statement.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -1199,11 +1636,54 @@
       <CreatedDate>2019-03-21T14:23:34.1300381+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT4M12.0413753S" EditActiveTime="PT4M37.0288762S">
-      <ModifiedDate>2019-03-22T12:55:01.9313357+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT1M2.1000271S" EditActiveTime="PT0.7238795S">
+      <ModifiedDate>2019-03-29T16:09:43.0941754+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\system.diagnostics.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:08:47.5110433+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M18.353673S" EditActiveTime="PT1.8341023S">
+      <ModifiedDate>2019-03-29T16:19:56.7501613+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\system.net.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:19:27.279733+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT51.9816946S" EditActiveTime="PT5.0499049S">
+      <ModifiedDate>2019-03-29T16:12:08.7255692+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
       <EditedCount>2</EditedCount>
-      <ViewedCount>3</ViewedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\system.webServer.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:11:11.0736789+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M59.8616977S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T19:43:08.2194937+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M27.1857029S" EditActiveTime="PT4M54.5421371S">
+      <ModifiedDate>2019-03-28T22:38:33.5930423+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>4</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Transaction.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -1241,11 +1721,11 @@
       <CreatedDate>2019-03-22T12:35:06.8763371+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M13.0892801S" EditActiveTime="PT9.6655542S">
-      <ModifiedDate>2019-03-24T15:02:51.5184827+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT1M18.6067832S" EditActiveTime="PT25.0323988S">
+      <ModifiedDate>2019-03-28T22:47:32.3108335+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>2</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>3</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\TransactionType.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -1263,11 +1743,11 @@
       <CreatedDate>2019-03-21T14:16:23.6843358+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M56.794223S" EditActiveTime="PT22.3125828S">
-      <ModifiedDate>2019-03-22T12:36:55.3955397+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT2M26.9501264S" EditActiveTime="PT29.2970923S">
+      <ModifiedDate>2019-03-28T22:47:59.0891398+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>1</EditedCount>
-      <ViewedCount>2</ViewedCount>
+      <EditedCount>2</EditedCount>
+      <ViewedCount>3</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Database\Models\TransactionTypeIdentifier.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
@@ -1296,6 +1776,16 @@
       <CreatedDate>2019-03-27T15:43:56.889175+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT11.3194626S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>ViewDataWindow_MSSQL__/L02RUANNL/ruanndld_db/True/SqlTable/dbo.ContactMessage.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-28T23:00:33.1182374+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT21.12276S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
@@ -1306,59 +1796,2122 @@
       <CreatedDate>2019-03-24T15:49:15.4647882+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT30M39.8699419S" EditActiveTime="PT18M22.1203803S">
-      <ModifiedDate>2019-03-27T15:47:43.6601195+02:00</ModifiedDate>
+    <DevTrackerDataItem ViewActiveTime="PT1M29.0322715S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>ViewDataWindow_MSSQL__/L02RUANNL/ruanndld_db/True/SqlTable/dbo.Log.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-28T22:57:00.3817573+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT55.1988125S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>ViewDataWindow_MSSQL__/L02RUANNL/ruanndld_db/True/SqlTable/dbo.Logs.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-28T20:41:45.4225405+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2H49M21.8254861S" EditActiveTime="PT45M43.8506175S">
+      <ModifiedDate>2019-04-02T15:28:01.9327298+02:00</ModifiedDate>
       <ModifiedBy>RuannL</ModifiedBy>
-      <EditedCount>5</EditedCount>
-      <ViewedCount>6</ViewedCount>
+      <EditedCount>13</EditedCount>
+      <ViewedCount>14</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Web.config</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-21T12:26:00.1063131+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M26.9849514S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
+    <DevTrackerDataItem ViewActiveTime="PT1M37.841047S" EditActiveTime="PT10.7774664S">
+      <ModifiedDate>2019-03-27T18:30:56.0458694+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Areas\CV\Views\web.config</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-22T14:53:56.0714433+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT31.5634329S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
+    <DevTrackerDataItem ViewActiveTime="PT1M42.4581287S" EditActiveTime="PT5.7354958S">
+      <ModifiedDate>2019-03-27T18:30:00.794042+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Views\Web.config</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-25T22:32:28.8975413+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT38.4879074S" EditActiveTime="PT0S">
+    <DevTrackerDataItem ViewActiveTime="PT10.7724047S" EditActiveTime="PT0.4924985S">
+      <ModifiedDate>2019-03-27T18:31:11.2165822+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Areas\Accounting\Views\web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:31:07.6315786+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT10.8883751S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
       <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Areas\HelpPage\Views\Web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:31:15.110302+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8.0280013S" EditActiveTime="PT0.5108055S">
+      <ModifiedDate>2019-03-27T18:31:36.8772961+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Areas\Intuit\Views\web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:31:33.2476383+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8M39.5056002S" EditActiveTime="PT1.284095S">
+      <ModifiedDate>2019-03-27T18:33:11.2659059+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Web.Debug.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:32:17.9315421+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M15.4720501S" EditActiveTime="PT1.1183575S">
+      <ModifiedDate>2019-03-27T18:32:51.763136+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\Web.Release.config</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
       <CreatedDate>2019-03-27T11:19:55.3258378+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
-    <DevTrackerDataItem ViewActiveTime="PT1M17.3524123S" EditActiveTime="PT0S">
-      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
-      <EditedCount>0</EditedCount>
-      <ViewedCount>1</ViewedCount>
+    <DevTrackerDataItem ViewActiveTime="PT3M23.7106304S" EditActiveTime="PT1M17.2680855S">
+      <ModifiedDate>2019-04-02T15:04:57.6877522+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>2</ViewedCount>
       <Item>C:\source\github\repos\web\ruannlinde\App_Start\WebApiConfig.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
       <CreatedDate>2019-03-27T16:04:28.357369+02:00</CreatedDate>
       <ViewedBy>RuannL</ViewedBy>
     </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5M3.5823166S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\webconnector.log</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:43:50.1267006+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
   </TotalTimeList>
   <HistoryTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT46.9449821S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseInitializer.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-04T21:56:16.0329312+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT13M34.6603109S" EditActiveTime="PT4M47.7266266S">
+      <ModifiedDate>2019-04-04T22:29:51.8252933+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseContext.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-04T21:56:01.6707492+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT32M56.7449059S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\app\rl-app.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-03T10:36:26.9064031+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT24.1793844S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Services\ApiController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T14:19:34.2002958+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT9.5298688S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Startup.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T14:16:34.2913249+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M6.3582181S" EditActiveTime="PT1M17.2680855S">
+      <ModifiedDate>2019-04-02T15:04:57.6877522+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\App_Start\WebApiConfig.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T14:12:07.3812151+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT26.5382204S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\App_Start\SimpleInjectorInitializer.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T14:11:43.6469519+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT21.3615277S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\App_Start\IdentityConfig.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T14:11:22.2844265+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT31.788345S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Services\ServicesExtensions\ServiceHelper.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T14:10:09.5760259+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT54.7014453S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\App_Start\RouteConfig.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T14:09:48.9335345+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M20.7597254S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Global.asax.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T14:09:33.5367763+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M31.1576567S" EditActiveTime="PT2M14.0556226S">
+      <ModifiedDate>2019-04-02T14:13:22.9537623+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\app\rl-app.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T14:00:04.8141687+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT7M0.1905714S" EditActiveTime="PT14M23.8182466S">
+      <ModifiedDate>2019-04-02T14:02:43.6173778+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Services\IntegrationService.svc.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T13:21:30.9378595+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3.445307S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\app\rl-intuit.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:48:54.59265+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3.9965215S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\app\rl-google-api.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:48:07.2451876+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT9.3783311S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\app\rl-geolocator.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:47:41.0655567+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT55.4242362S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\app\rl-open-weather-map.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:47:04.7020458+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M36.2588663S" EditActiveTime="PT1M41.1457427S">
+      <ModifiedDate>2019-04-02T14:13:22.8947266+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\App_Start\BundleConfig.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:46:19.9596415+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT31.1067171S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\App_Start\Ninject.Web.Common.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:46:06.2457936+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M3.5166946S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Shared\_Layout.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:45:39.9892876+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT55.5368672S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\rl-app.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:44:44.4514197+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3M59.2574194S" EditActiveTime="PT1M9.5813355S">
+      <ModifiedDate>2019-04-02T15:28:01.9327298+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T12:28:58.1561332+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M6.7214179S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ruannl\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\B7B192E5-A05F-4F14-A14A-A0D5B14AEEEB\c5\7c873d3b\Database.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-04-02T11:12:19.1438811+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT32.1946902S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ruannl\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\B7B192E5-A05F-4F14-A14A-A0D5B14AEEEB\57\de5f9f5a\DbCompiledModel.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-04-02T11:02:58.9633844+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT7M26.5381247S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ruannl\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\B7B192E5-A05F-4F14-A14A-A0D5B14AEEEB\0d\257cc11b\DbContext.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-04-02T11:00:46.6019045+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8M9.010542S" EditActiveTime="PT1M24.1705116S">
+      <ModifiedDate>2019-04-02T13:47:21.3845884+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T10:58:46.9029639+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5.9479405S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\Lookup\LookupProvider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T10:58:31.2172992+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M50.2567894S" EditActiveTime="PT10.0794869S">
+      <ModifiedDate>2019-04-02T13:44:39.4683851+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\LogProvider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T10:58:19.6469689+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M49.0398138S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseInitializer.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T10:58:04.7588906+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M47.7375267S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>Debug Mode</Item>
+      <ItemType>DebugModeItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-04-02T10:58:03.4749932+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT20M16.0937224S" EditActiveTime="PT6M23.5572498S">
+      <ModifiedDate>2019-04-02T15:18:05.131518+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseContext.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-02T10:46:15.1614695+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT10M12.6839061S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseContext.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-01T20:55:38.4700629+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT9.5141778S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>Debug Mode</Item>
+      <ItemType>DebugModeItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-04-01T20:55:21.0002375+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M27.8666737S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\CleanupExpression.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-01T20:52:53.1335638+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3.7352523S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-01T20:52:49.3963105+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5M49.7023846S" EditActiveTime="PT15.7481785S">
+      <ModifiedDate>2019-04-01T19:41:49.7053592+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-01T19:41:27.6166801+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M3.5791308S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-01T19:34:14.4025293+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4.1559484S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\Lookup\LookupProvider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-01T19:34:05.513222+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5.5289246S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\LogProvider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-01T19:33:55.0898206+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT59.649339S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseContext.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-01T19:31:44.503126+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M1.9465518S" EditActiveTime="PT3M30.7513244S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>Debug Mode</Item>
+      <ItemType>DebugModeItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-04-01T19:22:32.54433+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT29M28.5924778S" EditActiveTime="PT2M34.585055S">
+      <ModifiedDate>2019-04-01T19:29:00.6788387+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseInitializer.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-04-01T18:22:21.191666+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M3.2061456S" EditActiveTime="PT1M23.0414007S">
+      <ModifiedDate>2019-03-31T10:04:37.8242371+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseContext.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T09:58:41.7664229+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4.7753828S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\elmah.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T09:45:42.0902375+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3M38.0961724S" EditActiveTime="PT45.8789907S">
+      <ModifiedDate>2019-03-31T09:48:25.8997091+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Home\_Home.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T09:23:40.2970314+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M15.2009534S" EditActiveTime="PT1M21.706261S">
+      <ModifiedDate>2019-03-31T08:44:40.3677453+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Procedures\ELMAH_GetErrorXml.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T08:31:37.7810017+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M17.2180687S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ruannl\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\B7B192E5-A05F-4F14-A14A-A0D5B14AEEEB\80\6d0912e0\DropCreateDatabaseIfModelChanges`1.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-31T08:23:51.5055047+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT0.9443498S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\rl-app.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T08:13:34.0933372+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M3.1764145S" EditActiveTime="PT22.7319882S">
+      <ModifiedDate>2019-03-31T08:19:59.9923052+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Log.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T08:01:26.3026038+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6M21.0128196S" EditActiveTime="PT2M32.4501518S">
+      <ModifiedDate>2019-03-31T09:50:10.4908353+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T08:00:26.89141+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M5.5475554S" EditActiveTime="PT1M43.9552215S">
+      <ModifiedDate>2019-03-31T09:45:22.3232338+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T08:00:17.8830117+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT48M3.730547S" EditActiveTime="PT17M57.4403279S">
+      <ModifiedDate>2019-03-31T19:42:52.2159426+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseInitializer.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T08:00:13.1996862+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT10M37.4355885S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\LogProvider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T08:00:10.5978378+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M3.0094576S" EditActiveTime="PT4M25.7569709S">
+      <ModifiedDate>2019-03-31T08:49:42.9911223+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Procedures\ELMAH_GetErrorsXml.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T08:00:08.8726129+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT29.3617265S" EditActiveTime="PT9.2432744S">
+      <ModifiedDate>2019-03-31T07:53:30.7288381+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Procedures\Procedures.tt</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T07:53:08.3528702+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M13.6798271S" EditActiveTime="PT33.1513024S">
+      <ModifiedDate>2019-03-31T18:50:32.7453004+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\ELMAH_Error.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T07:49:47.3377723+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT14M59.2944853S" EditActiveTime="PT2M40.2888458S">
+      <ModifiedDate>2019-03-31T08:53:20.6758064+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Procedures\ELMAH_LogError.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T07:37:41.5804379+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT11M51.9355707S" EditActiveTime="PT45.0269825S">
+      <ModifiedDate>2019-03-31T07:09:59.5676719+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\ELMAH_Error.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-31T07:07:29.8015718+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M3.7177687S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>ViewDataWindow_MSSQL__/L02RUANNL/ruanndld_db/True/SqlTable/dbo.Log.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-30T19:54:38.9088142+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT56.665876S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseInitializer.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-30T19:47:40.3064163+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M7.6766686S" EditActiveTime="PT3.6268012S">
+      <ModifiedDate>2019-03-30T19:30:09.5836872+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Procedures\ELMAH_GetErrorsXml.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-30T19:24:30.5740957+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6M52.8375217S" EditActiveTime="PT7.8985002S">
+      <ModifiedDate>2019-03-30T19:29:32.9175046+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Procedures\ELMAH_GetErrorXml.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-30T19:24:08.4655045+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M20.8989543S" EditActiveTime="PT10.8621743S">
+      <ModifiedDate>2019-03-31T07:25:17.5249856+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Procedures\ELMAH_LogError.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-30T19:23:56.436179+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT34.4565203S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>72e1cf37-6aba-443b-abd5-314d913cdcdaMSSQL__/L02RUANNL/SENSElmah/True/SqlProcedure/Create dbo.ELMAH_GetErrorsXml.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-30T19:16:47.6968877+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT19.2074336S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>7849d940-eb10-4646-8db5-fed184470d77MSSQL__/L02RUANNL/SENSElmah/True/SqlProcedure/Create dbo.ELMAH_GetErrorXml.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-30T19:16:39.9353741+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT7M12.2814367S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>0b10f5a1-a946-433d-97cf-622d14a4844fMSSQL__/L02RUANNL/SENSElmah/True/SqlProcedure/Create dbo.ELMAH_LogError.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-30T19:16:19.6697021+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8M34.6750341S" EditActiveTime="PT7M0.489034S">
+      <ModifiedDate>2019-03-31T06:34:34.0366157+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\rl-app.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-30T14:59:16.4511486+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT7M15.6589924S" EditActiveTime="PT11M36.2737868S">
+      <ModifiedDate>2019-03-31T06:12:48.5723304+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\LogProvider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-30T14:47:20.3316364+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M15.3527503S" EditActiveTime="PT3M31.8103178S">
+      <ModifiedDate>2019-03-31T07:01:36.6932051+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Home\_Home.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-30T14:45:06.1600854+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3M45.8402211S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\readme.txt</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-30T11:19:45.0378563+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT11M17.1204047S" EditActiveTime="PT2M4.0645583S">
+      <ModifiedDate>2019-03-31T06:54:24.8781343+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T21:40:34.8900633+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT27.4441028S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\rl.log</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T21:29:28.0733756+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6.8025956S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\settings.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T21:13:55.8288126+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT19.7158694S" EditActiveTime="PT2.319648S">
+      <ModifiedDate>2019-03-29T21:30:24.4670569+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Shared\_Layout.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T21:11:33.694382+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M36.5856175S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\connectionStrings.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T21:11:16.9448009+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT20.8761501S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\log4net.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T21:11:14.2079532+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT16.1506334S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\system.diagnostics.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T21:11:09.1191153+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT27.1217462S" EditActiveTime="PT3.4231758S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\system.webServer.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T21:11:08.1742352+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1H8M33.1964219S" EditActiveTime="PT7M29.0861953S">
+      <ModifiedDate>2019-03-31T06:59:15.8069509+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T21:00:53.1029727+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT11M9.3501127S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Email\Provider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T20:49:29.634915+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT20.6480142S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Extensions\ActionFilter\DomainExceptionFilter.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T18:21:04.5786355+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT33.8734596S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Extensions\DomainException.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T18:19:00.4401332+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M29.0734818S" EditActiveTime="PT7M10.6482902S">
+      <ModifiedDate>2019-03-29T18:51:17.9009078+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Extensions\ConfigurationManagerExtension.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T18:18:49.9035216+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M3.3497479S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ruannl\AppData\Local\Symbols\src\Source\03062.00\Source\ndp\fx\src\Configuration\System\Configuration\ConfigurationManager.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-29T18:13:56.7948048+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT18M7.8312144S" EditActiveTime="PT44.2871429S">
+      <ModifiedDate>2019-03-29T18:55:20.8946054+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Email\Provider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T18:07:25.7054265+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M29.0632482S" EditActiveTime="PT1.1418921S">
+      <ModifiedDate>2019-03-29T17:45:49.6080081+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Shared\_Layout.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T17:16:27.7815388+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT11M21.37123S" EditActiveTime="PT53.8793063S">
+      <ModifiedDate>2019-03-29T16:58:31.4731349+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseContext.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:53:59.4007904+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M10.727984S" EditActiveTime="PT3M58.1075645S">
+      <ModifiedDate>2019-03-29T16:56:46.1744929+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\ELMAH_Error.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:46:09.5944277+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT16.8150721S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Account.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:45:58.7836697+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3M0.1953649S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>3e990f9e-1058-452c-b46c-473082e4b11eMSSQL__/L02RUANNL/SENSElmah/True/SqlTable/Create dbo.ELMAH_Error.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-29T16:45:13.0143256+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5M0.3240462S" EditActiveTime="PT2.3290516S">
+      <ModifiedDate>2019-03-29T16:26:50.919597+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\readme.txt</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:26:45.9375723+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M18.353673S" EditActiveTime="PT1.8341023S">
+      <ModifiedDate>2019-03-29T16:19:56.7501613+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\system.net.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:19:27.279733+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT24.8599484S" EditActiveTime="PT1.6267291S">
+      <ModifiedDate>2019-03-29T16:12:08.7255692+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\system.webServer.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:11:11.0736789+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT45.9493937S" EditActiveTime="PT0.7238795S">
+      <ModifiedDate>2019-03-29T16:09:43.0941754+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\system.diagnostics.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:08:47.5110433+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M55.2180152S" EditActiveTime="PT1M38.3246041S">
+      <ModifiedDate>2019-03-29T18:12:14.1259393+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\connectionStrings.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:06:02.0783741+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M8.3802541S" EditActiveTime="PT21.5010111S">
+      <ModifiedDate>2019-03-29T16:14:08.6639459+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\entityframework.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:03:32.5764663+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5M54.3242419S" EditActiveTime="PT1M18.8564775S">
+      <ModifiedDate>2019-03-29T18:04:18.9643116+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\elmah.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T16:01:30.0490803+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT19.2052658S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\packages.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T15:56:10.4659951+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT9.4117728S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\log4net.txt</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T15:56:01.049218+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT33.3742505S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\log4net - Copy.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T15:55:27.6699644+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M16.683929S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\settings.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T15:54:21.9864883+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT55.7080917S" EditActiveTime="PT21.3315311S">
+      <ModifiedDate>2019-03-29T16:00:52.889415+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\log4net.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T15:54:10.2012638+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT17.7541524S" EditActiveTime="PT6.4305796S">
+      <ModifiedDate>2019-03-29T15:53:18.9467819+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\App_Start\RouteConfig.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T15:53:05.0583252+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT54.5873042S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Global.asax.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T15:52:45.7196303+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2.6048588S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Global.asax</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T15:52:42.2065932+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT18M36.3789637S" EditActiveTime="PT11M53.8082078S">
+      <ModifiedDate>2019-03-29T18:54:29.8400191+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T15:46:39.5222737+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M18.797765S" EditActiveTime="PT0.4783397S">
+      <ModifiedDate>2019-03-29T14:33:59.4159732+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\LogProvider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T14:33:07.2183379+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT20.1598798S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>Debug Mode</Item>
+      <ItemType>DebugModeItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-29T14:32:41.1738213+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M15.7976145S" EditActiveTime="PT3.0651817S">
+      <ModifiedDate>2019-03-29T14:36:59.9822245+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\rl-app.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T14:31:28.4392187+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT18M9.9098549S" EditActiveTime="PT9M11.1557181S">
+      <ModifiedDate>2019-03-29T18:51:31.1267146+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T14:17:14.196986+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT7.1693802S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Global.asax</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T13:21:06.8901366+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT21.2692283S" EditActiveTime="PT4.2290303S">
+      <ModifiedDate>2019-03-29T13:10:39.5106571+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Shared\_Layout.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T13:10:18.8778804+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6M57.5265612S" EditActiveTime="PT5M0.2997098S">
+      <ModifiedDate>2019-03-29T13:24:08.9021948+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\rl-app.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T13:00:18.9394039+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT7.164045S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Scripts\rl-intuit.js</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T13:00:11.7713574+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT30.5277541S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Home\_Home.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T12:59:24.0247511+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT12M25.9689421S" EditActiveTime="PT13.7993566S">
+      <ModifiedDate>2019-03-29T13:21:51.5708031+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Global.asax.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T10:15:28.4532348+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8.9550027S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Startup.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-29T10:15:21.8999205+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT11.3194626S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>ViewDataWindow_MSSQL__/L02RUANNL/ruanndld_db/True/SqlTable/dbo.ContactMessage.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-28T23:00:33.1182374+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT25.3145028S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>ViewDataWindow_MSSQL__/L02RUANNL/ruanndld_db/True/SqlTable/dbo.Log.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-28T22:57:00.3817573+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT7.8635164S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ruannl\AppData\Local\JetBrains\Shared\vAny\DecompilerCache\decompiler\B7B192E5-A05F-4F14-A14A-A0D5B14AEEEB\80\6d0912e0\DropCreateDatabaseIfModelChanges`1.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-28T22:49:37.4216117+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT30.1559034S" EditActiveTime="PT6.9845095S">
+      <ModifiedDate>2019-03-28T22:47:59.0891398+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\TransactionTypeIdentifier.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:47:45.9071016+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5.5175031S" EditActiveTime="PT15.3668446S">
+      <ModifiedDate>2019-03-28T22:47:32.3108335+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\TransactionType.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:47:14.5088244+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT7.5279294S" EditActiveTime="PT7.1898549S">
+      <ModifiedDate>2019-03-28T22:46:52.8247346+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\RetailerIdentifier.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:46:40.6454039+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT10.5070561S" EditActiveTime="PT9.1957197S">
+      <ModifiedDate>2019-03-28T22:46:32.6405333+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Retailer.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:46:16.1060069+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT9.7215875S" EditActiveTime="PT6.5614238S">
+      <ModifiedDate>2019-03-28T22:46:08.0475457+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\PaymentTypeIdentifier.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:45:55.6080945+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5.8422893S" EditActiveTime="PT37.019428S">
+      <ModifiedDate>2019-03-28T22:45:47.8724039+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\PaymentType.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:45:08.6156537+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT13.4363588S" EditActiveTime="PT10.0111583S">
+      <ModifiedDate>2019-03-28T22:44:59.6874529+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\LookupType.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:44:38.0944055+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8.4752543S" EditActiveTime="PT7.868419S">
+      <ModifiedDate>2019-03-28T22:44:23.8134364+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Customer.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:44:13.0187005+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5.9177536S" EditActiveTime="PT13.5436462S">
+      <ModifiedDate>2019-03-28T22:43:41.1453673+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\ContactMessage.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:43:24.8462114+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT18.5974778S" EditActiveTime="PT12.1855711S">
+      <ModifiedDate>2019-03-28T22:43:14.9639394+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\CompanyIdentifier.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:42:55.8338244+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT14.3170452S" EditActiveTime="PT15.5682208S">
+      <ModifiedDate>2019-03-28T22:44:06.0476022+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\BudgetItemCategory.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:42:48.2440985+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT10.019528S" EditActiveTime="PT10.1405784S">
+      <ModifiedDate>2019-03-28T22:42:34.4663066+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\BudgetItem.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:42:16.8538377+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT43.7173036S" EditActiveTime="PT9.8456721S">
+      <ModifiedDate>2019-03-28T22:41:43.190732+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\BankCard.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:41:28.9600717+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8.2338451S" EditActiveTime="PT14.8821919S">
+      <ModifiedDate>2019-03-28T22:41:20.6650798+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\BankAccount.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:41:01.0962303+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8.4608655S" EditActiveTime="PT10.711284S">
+      <ModifiedDate>2019-03-28T22:40:37.4215189+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Bank.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:40:23.5681533+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT10.0573244S" EditActiveTime="PT14.1167812S">
+      <ModifiedDate>2019-03-28T22:40:11.0750982+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\AccountType.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:39:54.0401015+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5.8262207S" EditActiveTime="PT15.0345425S">
+      <ModifiedDate>2019-03-28T22:39:46.7995244+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Account.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:39:29.1558063+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT22.2716801S" EditActiveTime="PT12.6533663S">
+      <ModifiedDate>2019-03-28T22:39:17.4356306+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Company.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:38:47.4479085+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT15.1443276S" EditActiveTime="PT17.5132609S">
+      <ModifiedDate>2019-03-28T22:38:33.5930423+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Transaction.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:38:11.9442566+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT15.6082677S" EditActiveTime="PT18.3217245S">
+      <ModifiedDate>2019-03-28T22:37:56.0067458+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Statement.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:37:34.5523793+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M19.1542125S" EditActiveTime="PT1M12.0299693S">
+      <ModifiedDate>2019-03-28T22:48:57.666669+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseInitializer.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T22:21:35.251251+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT10.3539324S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\log4net.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T21:04:06.922087+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT55.1988125S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>ViewDataWindow_MSSQL__/L02RUANNL/ruanndld_db/True/SqlTable/dbo.Logs.sql</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-28T20:41:45.4225405+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M34.2326734S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>Debug Mode</Item>
+      <ItemType>DebugModeItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-28T20:33:31.2482348+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3M1.5013855S" EditActiveTime="PT33.3190213S">
+      <ModifiedDate>2019-03-28T22:19:59.1951484+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Models\Log.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T20:13:30.8935698+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8H37M13.2427499S" EditActiveTime="PT13M52.6659933S">
+      <ModifiedDate>2019-03-28T23:21:37.4124158+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\LogProvider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T20:12:36.4846752+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT24.3043656S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\App_Start\NinjectConfig.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T19:46:25.5069864+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M56.933089S" EditActiveTime="PT5.872403S">
+      <ModifiedDate>2019-03-28T19:47:15.6012657+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\Lookup\LookupProvider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T19:46:08.2255062+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT17.7189539S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\CurriculumVitae\CurriculumVitaeManager .cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T19:45:50.5065523+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT23.4310786S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Areas\CV\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T19:44:58.2001036+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8M2.8435241S" EditActiveTime="PT2M2.692999S">
+      <ModifiedDate>2019-03-28T22:37:05.0890615+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\ApplicationDatabaseContext.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T19:44:48.1531053+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT31M10.2973582S" EditActiveTime="PT19M2.8090356S">
+      <ModifiedDate>2019-03-29T13:27:37.4572676+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T19:44:20.6645551+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT28M24.4049241S" EditActiveTime="PT3M41.2546098S">
+      <ModifiedDate>2019-03-28T23:16:41.0935968+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T16:23:57.661666+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M46.6278417S" EditActiveTime="PT9.0619711S">
+      <ModifiedDate>2019-03-28T16:03:11.2008026+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T15:55:21.2629191+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT11M3.4588914S" EditActiveTime="PT28.6250558S">
+      <ModifiedDate>2019-03-28T15:51:47.8256861+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\LogProvider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T15:27:27.4866631+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5M59.0115093S" EditActiveTime="PT9M52.7079538S">
+      <ModifiedDate>2019-03-28T14:52:27.7647354+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Extensions\ActionFilter\DomainExceptionFilter.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T13:35:09.0635521+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5M10.5288667S" EditActiveTime="PT2M38.5990967S">
+      <ModifiedDate>2019-03-28T14:38:34.0311113+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Extensions\DomainException.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T13:11:33.9042389+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT40.7186134S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Areas\Accounting\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T12:53:24.7949048+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT17.7832453S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Areas\CV\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T12:53:07.0006479+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6M58.3290803S" EditActiveTime="PT6M50.4915505S">
+      <ModifiedDate>2019-03-28T15:27:16.8531539+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-28T12:51:44.9167682+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M59.8616977S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T19:43:08.2194937+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M20.4293422S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\ruannl\AppData\Local\Temp\ruannlinde.co.za - Copy.csproj</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-27T19:41:30.8316164+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8M29.3196083S" EditActiveTime="PT4M27.7590532S">
+      <ModifiedDate>2019-03-27T19:34:09.4256277+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\LogProvider.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T19:05:46.3251348+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3H10M29.3433719S" EditActiveTime="PT9M39.1319307S">
+      <ModifiedDate>2019-03-27T20:22:46.2849369+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Controllers\HomeController.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T19:04:03.1679961+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5M3.5823166S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\webconnector.log</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:43:50.1267006+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT22.1266844S" EditActiveTime="PT30.3531154S">
+      <ModifiedDate>2019-03-27T18:43:30.5164284+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\google_client_secret.json</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:42:41.770912+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT13.3071829S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\libman.json</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:42:39.8660242+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT42.62761S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Global.asax.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:41:33.8017857+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8.7862291S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\compilerconfig.json</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:41:25.0085338+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4.4372046S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Shared\Lockout.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:41:14.8477991+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4.6103963S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Shared\Error.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:41:10.2293998+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT39.293427S" EditActiveTime="PT5.7056533S">
+      <ModifiedDate>2019-03-27T19:23:29.6899646+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Home\_Home.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:41:02.1047186+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT27.4855016S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Home\Index.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:40:58.0508078+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT11.600302S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Startup.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:36:38.4574163+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8.0723677S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\packages\elmah.1.2.2\readme.txt</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2019-03-27T18:34:35.948076+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT36.9841427S" EditActiveTime="PT1.1183575S">
+      <ModifiedDate>2019-03-27T18:32:51.763136+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Web.Release.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:32:19.1083699+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8M39.5056002S" EditActiveTime="PT1.284095S">
+      <ModifiedDate>2019-03-27T18:33:11.2659059+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Web.Debug.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:32:17.9315421+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5M11.3827732S" EditActiveTime="PT10.7395874S">
+      <ModifiedDate>2019-03-27T18:50:09.5797507+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:32:11.8085493+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6.7135842S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\settings.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:32:07.6216656+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6.2245932S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\packages.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:32:04.0688351+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT10.7598843S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\log4net.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:31:54.7300297+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8.0280013S" EditActiveTime="PT0.5108055S">
+      <ModifiedDate>2019-03-27T18:31:36.8772961+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Areas\Intuit\Views\web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:31:33.2476383+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT10.8883751S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Areas\HelpPage\Views\Web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:31:15.110302+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT10.7724047S" EditActiveTime="PT0.4924985S">
+      <ModifiedDate>2019-03-27T18:31:11.2165822+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Areas\Accounting\Views\web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:31:07.6315786+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT10.8560956S" EditActiveTime="PT10.7774664S">
+      <ModifiedDate>2019-03-27T18:30:56.0458694+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Areas\CV\Views\web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:30:39.5383179+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M10.8946958S" EditActiveTime="PT5.7354958S">
+      <ModifiedDate>2019-03-27T18:30:00.794042+02:00</ModifiedDate>
+      <ModifiedBy>RuannL</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Web.config</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:29:45.5477331+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6M53.8445705S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\Shared\_Layout.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:14:30.1046031+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M40.117605S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\Views\_ViewStart.cshtml</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:14:23.3876701+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6M44.4917302S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\source\github\repos\web\ruannlinde\App_Start\Startup.Ninject.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
+      <CreatedDate>2019-03-27T18:07:04.9273116+02:00</CreatedDate>
+      <ViewedBy>RuannL</ViewedBy>
+    </DevTrackerDataItem>
     <DevTrackerDataItem ViewActiveTime="PT4M34.3626232S" EditActiveTime="PT0S">
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
@@ -1535,7 +4088,7 @@
       <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
       <EditedCount>0</EditedCount>
       <ViewedCount>1</ViewedCount>
-      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\Lookup\LookupManager.cs</Item>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\Lookup\LookupProvider.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\ruannlinde.co.za.csproj</ProjectName>
       <CreatedDate>2019-03-27T16:10:28.4701051+02:00</CreatedDate>
@@ -2863,7 +5416,7 @@
       <ModifiedBy>RuannL</ModifiedBy>
       <EditedCount>1</EditedCount>
       <ViewedCount>1</ViewedCount>
-      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\Lookup\LookupManager.cs</Item>
+      <Item>C:\source\github\repos\web\ruannlinde\Database\Providers\Lookup\LookupProvider.cs</Item>
       <ItemType>ProjectItem</ItemType>
       <ProjectName>C:\source\github\repos\web\ruannlinde\RL.csproj</ProjectName>
       <CreatedDate>2019-03-22T14:23:30.2685463+02:00</CreatedDate>

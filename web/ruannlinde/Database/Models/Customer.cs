@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ruann.Linde.Database.Models {
+	[Table("Customers")]
 	public class Customer {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]

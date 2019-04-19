@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Ruann.Linde.Database.Models {
+namespace Ruann.Linde.Database.Models  {
+
+	[Table("Accounts")]
 	public class Account {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]

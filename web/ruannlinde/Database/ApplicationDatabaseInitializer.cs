@@ -1,45 +1,194 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using log4net;
 using Ruann.Linde.Database.Models;
 
 namespace Ruann.Linde.Database {
 	public class ApplicationDatabaseInitializer : DropCreateDatabaseIfModelChanges<ApplicationDatabaseContext> {
-		private static readonly ILog Log = LogManager.GetLogger(typeof(ApplicationDatabaseInitializer).Name);
+
+		#region  ELMAH stored procedures
+
+		private readonly string ELMAH_LogError = @"CREATE PROCEDURE [dbo].[ELMAH_LogError]
+(
+    @ErrorId UNIQUEIDENTIFIER,
+    @Application NVARCHAR(60),
+    @Host NVARCHAR(30),
+    @Type NVARCHAR(100),
+    @Source NVARCHAR(60),
+    @Message NVARCHAR(500),
+    @User NVARCHAR(50),
+    @AllXml NTEXT,
+    @StatusCode INT,
+    @TimeUtc DATETIME
+)
+AS
+
+    SET NOCOUNT ON
+
+    INSERT
+    INTO
+        [ELMAH_Error]
+        (
+            [ErrorId],
+            [Application],
+            [Host],
+            [Type],
+            [Source],
+            [Message],
+            [User],
+            [AllXml],
+            [StatusCode],
+            [TimeUtc]
+        )
+    VALUES
+        (
+            @ErrorId,
+            @Application,
+            @Host,
+            @Type,
+            @Source,
+            @Message,
+            @User,
+            @AllXml,
+            @StatusCode,
+            @TimeUtc
+        )";
+
+		private readonly string ELMAH_GetErrorXml = @"CREATE PROCEDURE [dbo].[ELMAH_GetErrorXml]
+(
+    @Application NVARCHAR(60),
+    @ErrorId UNIQUEIDENTIFIER
+)
+AS
+
+    SET NOCOUNT ON
+
+    SELECT 
+        [AllXml]
+    FROM 
+        [ELMAH_Error]
+    WHERE
+        [ErrorId] = @ErrorId
+    AND
+        [Application] = @Application";
+
+		private readonly string ELMAH_GetErrorsXml = @" CREATE PROCEDURE [dbo].[ELMAH_GetErrorsXml]
+(
+    @Application NVARCHAR(60),
+    @PageIndex INT = 0,
+    @PageSize INT = 15,
+    @TotalCount INT OUTPUT
+)
+AS
+
+	DECLARE @FirstTimeUTC DATETIME
+    DECLARE @FirstSequence INT
+    DECLARE @StartRow INT
+    DECLARE @StartRowIndex INT
+
+    SELECT 
+        @TotalCount = COUNT(1) 
+    FROM 
+        [ELMAH_Error]
+    WHERE 
+        [Application] = @Application
+
+    -- Get the ID of the first error for the requested page
+
+    SET @StartRowIndex = @PageIndex * @PageSize + 1
+
+    IF @StartRowIndex <= @TotalCount
+    BEGIN
+
+        SET ROWCOUNT @StartRowIndex
+
+        SELECT  
+            @FirstTimeUTC = [TimeUtc],
+            @FirstSequence = [Sequence]
+        FROM 
+            [ELMAH_Error]
+        WHERE   
+            [Application] = @Application
+        ORDER BY 
+            [TimeUtc] DESC, 
+            [Sequence] DESC
+
+    END
+    ELSE
+    BEGIN
+
+        SET @PageSize = 0
+
+    END
+
+    -- Now set the row count to the requested page size and get
+    -- all records below it for the pertaining application.
+
+    SET ROWCOUNT @PageSize
+
+    SELECT 
+        errorId     = [ErrorId], 
+        application = [Application],
+        host        = [Host], 
+        type        = [Type],
+        source      = [Source],
+        message     = [Message],
+        [user]      = [User],
+        statusCode  = [StatusCode], 
+        time        = CONVERT(VARCHAR(50), [TimeUtc], 126) + 'Z'
+    FROM 
+        [ELMAH_Error] error
+    WHERE
+        [Application] = @Application
+    AND
+        [TimeUtc] <= @FirstTimeUTC
+    AND 
+        [Sequence] <= @FirstSequence
+    ORDER BY
+        [TimeUtc] DESC, 
+        [Sequence] DESC
+    FOR
+        XML AUTO";
+
+		#endregion
 
 		public override void InitializeDatabase(ApplicationDatabaseContext context) {
-			//context.Database.ExecuteSqlCommand(TransactionalBehavior.DoNotEnsureTransaction, $"ALTER DATABASE {context.Database.Connection.Database} SET SINGLE_USER WITH ROLLBACK IMMEDIATE");
+			if (context.Database.Exists()) {
+				context.Database.ExecuteSqlCommand(TransactionalBehavior.DoNotEnsureTransaction, $"ALTER DATABASE {context.Database.Connection.Database} SET SINGLE_USER WITH ROLLBACK IMMEDIATE");
+			}
 			base.InitializeDatabase(context);
 		}
 
 		protected override void Seed(ApplicationDatabaseContext context) {
-			try {
-				var lookupTypes = new List<LookupType> {new LookupType {Name = "Contains"}, new LookupType {Name = "Starts With"}, new LookupType {Name = "Ends With"}};
-				context.LookupTypes.AddRange(lookupTypes);
 
-				var accountTypes = new List<AccountType> {
+			context.Database.ExecuteSqlCommand(ELMAH_LogError);
+			context.Database.ExecuteSqlCommand(ELMAH_GetErrorXml);
+			context.Database.ExecuteSqlCommand(ELMAH_GetErrorsXml);
+
+			var lookupTypes = new List<LookupType> { new LookupType { Name = "Contains" }, new LookupType { Name = "Starts With" }, new LookupType { Name = "Ends With" } };
+			context.LookupTypes.AddRange(lookupTypes);
+
+			var accountTypes = new List<AccountType> {
 														 new AccountType {AccountTypeName = "Transaction", AccountTypeCode = "TRNS"},
 														 new AccountType {AccountTypeName = "Split", AccountTypeCode = "SPL"}
 													 };
-				context.AccountTypes.AddRange(accountTypes);
+			context.AccountTypes.AddRange(accountTypes);
 
-				var accounts = new List<Account> {
+			var accounts = new List<Account> {
 												 new Account { AccountName = "ABSA", AccountType = accountTypes.FirstOrDefault(x => x.AccountTypeCode == "TRNS")},
 												 new Account { AccountName = "Accounts Receivable", AccountType = accountTypes.FirstOrDefault(x => x.AccountTypeCode == "SPL")}
 											 };
-				context.Accounts.AddRange(accounts);
+			context.Accounts.AddRange(accounts);
 
-				var expressions = new List<CleanupExpression> {
+			var expressions = new List<CleanupExpression> {
 															  new CleanupExpression {Expression = "ACB CREDIT"},
 															  new CleanupExpression {Expression = "CASH DEP BRANCH"},
 															  new CleanupExpression {Expression = "IBANK"},
 															  new CleanupExpression {Expression = "ABSA BANK"}
 														  };
-				context.CleanupExpressions.AddRange(expressions);
+			context.CleanupExpressions.AddRange(expressions);
 
-				var paymentTypes = new List<PaymentType> {
+			var paymentTypes = new List<PaymentType> {
 														 new PaymentType {PaymentTypeName = "Cash", PaymentTypeCode = "Cash"}
 													   , new PaymentType {PaymentTypeName = "Credit Card", PaymentTypeCode = "CC"}
 													   , new PaymentType {PaymentTypeName = "Direct Debit", PaymentTypeCode = "DD"}
@@ -47,15 +196,15 @@ namespace Ruann.Linde.Database {
 													   , new PaymentType {PaymentTypeName = "Medical Aid", PaymentTypeCode = "MA"}
 													   , new PaymentType {PaymentTypeName = "Less Payment", PaymentTypeCode = "LP"}
 													 };
-				context.PaymentTypes.AddRange(paymentTypes);
+			context.PaymentTypes.AddRange(paymentTypes);
 
-				context.SaveChanges();
+			context.SaveChanges();
 
-				var contains = lookupTypes.FirstOrDefault(t => t.Name == "Contains");
-				var startsWith = lookupTypes.FirstOrDefault(t => t.Name == "Starts With");
-				var endsWith = lookupTypes.FirstOrDefault(t => t.Name == "Ends With");
+			var contains = lookupTypes.FirstOrDefault(t => t.Name == "Contains");
+			var startsWith = lookupTypes.FirstOrDefault(t => t.Name == "Starts With");
+			var endsWith = lookupTypes.FirstOrDefault(t => t.Name == "Ends With");
 
-				var paymentTypeIdentifiers = new List<PaymentTypeIdentifier> {
+			var paymentTypeIdentifiers = new List<PaymentTypeIdentifier> {
 																			 new PaymentTypeIdentifier {Expression = "Cash", PaymentType = paymentTypes.FirstOrDefault(x => x.PaymentTypeCode == "Cash"), LookupType = contains}
 																		   , new PaymentTypeIdentifier {Expression = " CC", PaymentType = paymentTypes.FirstOrDefault(x => x.PaymentTypeCode == "CC"), LookupType = endsWith}
 																		   , new PaymentTypeIdentifier {Expression = " DD", PaymentType = paymentTypes.FirstOrDefault(x => x.PaymentTypeCode == "DD"), LookupType = endsWith}
@@ -63,9 +212,9 @@ namespace Ruann.Linde.Database {
 																		   , new PaymentTypeIdentifier {Expression = "PAYMENT FROM", PaymentType = paymentTypes.FirstOrDefault(x => x.PaymentTypeCode == "EFT"), LookupType = contains}
 																		   , new PaymentTypeIdentifier {Expression = "ACB CREDIT", PaymentType = paymentTypes.FirstOrDefault(x => x.PaymentTypeCode == "EFT"), LookupType = contains}
 																		 };
-				context.PaymentTypeIdentifierIdentifiers.AddRange(paymentTypeIdentifiers);
+			context.PaymentTypeIdentifierIdentifiers.AddRange(paymentTypeIdentifiers);
 
-				var companies = new List<Company> {
+			var companies = new List<Company> {
 												  new Company {Name = "AECI", Code = "AECI"}
 												, new Company {Name = "Affinity", Code = "Affinity"}
 												, new Company {Name = "AMS", Code = "AMS "}
@@ -112,9 +261,9 @@ namespace Ruann.Linde.Database {
 												, new Company {Name = "Tiger Brands", Code = "TB"}
 												, new Company {Name = "TopMed", Code = "TOPM"}
 											  };
-				context.Companies.AddRange(companies);
+			context.Companies.AddRange(companies);
 
-				var companyIdentifiers = new List<CompanyIdentifier> {
+			var companyIdentifiers = new List<CompanyIdentifier> {
 																	 new CompanyIdentifier {Expression = "AECI", Company = companies.FirstOrDefault(c => c.Name == "AECI"), LookupType = contains}
 																   , new CompanyIdentifier {Expression = "AFFINITY", Company = companies.FirstOrDefault(c => c.Name == "Affinity"), LookupType = contains}
 																   , new CompanyIdentifier {Expression = "8MN33", Company = companies.FirstOrDefault(c => c.Name == "Affinity"), LookupType = contains}
@@ -208,18 +357,18 @@ namespace Ruann.Linde.Database {
 				                                                     //new CompanyIdentifier { Expression = "BESTMED", Company = companies.FirstOrDefault(medicalCompany => medicalCompany.Name == "BESTMED"), LookupType = contains },
 				                                                     //new CompanyIdentifier { Expression = "MEDIHELP", Company = companies.FirstOrDefault(medicalCompany => medicalCompany.Name == "MEDIHELP"), LookupType = contains }
 			                                                     };
-				context.CompanyIdentifiers.AddRange(companyIdentifiers);
+			context.CompanyIdentifiers.AddRange(companyIdentifiers);
 
-				var banks = new List<Bank> {
+			var banks = new List<Bank> {
 										   new Bank {Name = "ABSA", ImageSource = "Content//images//standardbank.png"}
 										 , new Bank {Name = "Capitec", ImageSource = "Content//images//capitec.png"}
 										 , new Bank {Name = "FNB", ImageSource = "Content//images//fnb.png"}
 										 , new Bank {Name = "Nedbank", ImageSource = "Content//images//nedbank.png"}
 										 , new Bank {Name = "Standard Bank", ImageSource = "Content//images//standardbank.png"}
 									   };
-				context.Banks.AddRange(banks);
+			context.Banks.AddRange(banks);
 
-				var retailers = new List<Retailer> {
+			var retailers = new List<Retailer> {
 												   new Retailer {RetailerName = "Caltex"}
 												 , new Retailer {RetailerName = "Checkers"}
 												 , new Retailer {RetailerName = "Builders Warehouse"}
@@ -240,9 +389,9 @@ namespace Ruann.Linde.Database {
 												 , new Retailer {RetailerName = "Barcelos"}
 												 , new Retailer {RetailerName = "Gautrain"}
 											   };
-				context.Retailers.AddRange(retailers);
+			context.Retailers.AddRange(retailers);
 
-				var transactionTypes = new List<TransactionType> {
+			var transactionTypes = new List<TransactionType> {
 																 new TransactionType {TransactionTypeName = "Bank Card Purchase"}
 															   , new TransactionType {TransactionTypeName = "Bank Charges"}
 															   , new TransactionType {TransactionTypeName = "Bank Transfer"}
@@ -256,9 +405,9 @@ namespace Ruann.Linde.Database {
 															   , new TransactionType {TransactionTypeName = "Failed TransactionEntry Reversal"}
 															   , new TransactionType {TransactionTypeName = "Medical Payments"}
 															 };
-				context.TransactionTypes.AddRange(transactionTypes);
+			context.TransactionTypes.AddRange(transactionTypes);
 
-				var budgetItemCategories = new List<BudgetItemCategory> {
+			var budgetItemCategories = new List<BudgetItemCategory> {
 																		new BudgetItemCategory {BudgetItemCategoryName = "Banking"}
 																	  , new BudgetItemCategory {BudgetItemCategoryName = "Charities"}
 																	  , new BudgetItemCategory {BudgetItemCategoryName = "Education"}
@@ -294,17 +443,12 @@ namespace Ruann.Linde.Database {
 																	  , new BudgetItemCategory {BudgetItemCategoryName = "Unemployment Insurance"}
 																	  , new BudgetItemCategory {BudgetItemCategoryName = "Utilities"}
 																	};
-				context.BudgetItemCategories.AddRange(budgetItemCategories);
+			context.BudgetItemCategories.AddRange(budgetItemCategories);
 
-				context.Customers.Add(new Customer { CustomerName = "1.Solumed" });
+			context.Customers.Add(new Customer { CustomerName = "1.Solumed" });
 
-				context.SaveChanges();
+			context.SaveChanges();
 
-				Log.Info("Seed Completed");
-			}
-			catch (Exception e) {
-				Log.Error(e);
-			}
 		}
 	}
 }

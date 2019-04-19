@@ -719,6 +719,20 @@
 			}
 		};
 	};
+	//var lookupService = function($http) {
+	//	'use strict';
+	//	return {
+	//		PaymentTypes:function() {
+	//			return $http({
+	//				url: $location.$$absUrl + 'api/PaymentTypes',
+	//				method: 'GET'
+	//			}).then(function (response) {
+	//				return response.data;
+	//			}); 
+	//		};
+	//	};
+	//};
+
 	var calendarService = function ($http, $location) {
 		'use strict';
 		return {
@@ -934,6 +948,12 @@
 					url: $location.$$absUrl + 'Home/ClearLogContent',
 					method: 'GET'
 				});
+			},
+			ThrowDomainException: function () {
+				return $http({
+					url: $location.$$absUrl + 'Home/ThrowDomainException',
+					method: 'GET'
+				});
 			}
 		};
 	};
@@ -988,7 +1008,7 @@
 	};
 
 	//controllers
-	var baseController = function ($scope, $route, $window, $location, $anchorScroll) {
+	var baseController = function ($scope, $route, $window, $location, $http, $anchorScroll) {
 
 		$scope.template = 'cv.htm';
 		$scope.mainTemplate = 'home.htm';
@@ -1014,6 +1034,16 @@
 		$scope.redirectToView = function () { };
 		$scope.ShowContextMenu = function () { };
 
+		var settings = {
+			Get: function () {
+				return $http({
+					url: $location.$$absUrl + 'Home/GetSettings',
+					method: 'GET'
+				}).then(function (response) {
+					return response.data;
+				});
+			}
+		};
 		//var body = $document[0].body;
 		//var bodyElement = angular.element(body);
 		//bodyElement.removeClass('weather-body');
@@ -1157,6 +1187,67 @@
 			} else {
 				$scope.layout = 'container';
 			}
+		});
+
+		setTimeout(function () {
+			$scope.settings = settings.Get();
+			console.info('settings', $scope.settings);
+		});
+
+	};
+	var homeController = function ($scope, $sce, logService) {
+		$scope.model = {
+			log: undefined,
+			loading: false,
+			show: false
+		};
+
+		$scope.ThrowDomainException = function() {
+			logService.ThrowDomainException().then(function(response) {
+					console.info(response.data);
+				},
+				function(reject) {
+					console.error(reject);
+				});
+		};
+
+		$scope.ClearLog = function () {
+			$scope.model.log = null;
+			logService.ClearLog().then(function (response) {
+				console.log(response);
+				$scope.model.loading = false;
+				$scope.LoadLog();
+			}, function (reject) {
+				$scope.model.loading = false;
+				console.error(reject);
+			});
+		};
+
+		$scope.LoadLog = function () {
+			$scope.model.lastLoadDate = new Date();
+			$scope.model.log = null;
+			$scope.model.loading = true;
+			logService.GetLog().then(function (response) {
+
+				$scope.model.loading = false;
+				$scope.model.show = true;
+
+				//$scope.model.log = $sce.trustAsHtml(response.data);	
+				$scope.model.log = response.data;
+
+			}, function (reject) {
+				$scope.model.loading = false;
+				$scope.model.show = true;
+				console.error(reject);
+			});
+		};
+
+		setTimeout(function () {
+			//$scope.LoadLog();
+
+			//setInterval(function () {
+			//	$scope.LoadLog();
+			//}, 60000); //60 seconds
 		});
 	};
 	var cvController = function ($scope, $anchorScroll, dataService) {
@@ -1434,42 +1525,7 @@
 
 		console.log('CvController.model', $scope.model);
 	};
-	var homeController = function ($scope, $sce, logService) {
-		$scope.model = {
-			log: undefined,
-			loading: true,
-			show: false
-		};
-
-		$scope.ClearLog = function () {
-			$scope.model.log = null;
-			logService.ClearLog().then(function (response) {
-				$scope.model.loading = false;
-				$scope.LoadLog();
-			}, function (reject) {
-				$scope.model.loading = false;
-				console.error(reject);
-			});
-		};
-
-		$scope.LoadLog = function () {
-			$scope.model.log = null;
-			logService.GetLog().then(function (response) {
-				console.log('getlog response data', response.data);
-				$scope.model.loading = false;
-				$scope.model.show = true;
-				$scope.model.log = $sce.trustAsHtml(response.data);
-			}, function (reject) {
-				$scope.model.loading = false;
-				$scope.model.show = true;
-				console.error(reject);
-			});
-		};
-
-		setTimeout(function () {
-			$scope.LoadLog();
-		});
-	};
+	
 	var timesheetController = function ($scope, $storageService, $interval, $filter, $q) {
 		var handleAddWeekResponse = function (response) {
 			$scope.model.timesheetWeek = response;
@@ -1842,12 +1898,12 @@
 		.directive('cellHighlight', cellHighlight)
 		.directive('rlRightClick', ['$parse', rlRightClick])
 		.provider('openWeatherMap', [openWeatherMapProvider])
-		.controller('BaseController', ['$scope', '$route', '$window', '$location', '$anchorScroll', baseController])
+		.controller('BaseController', ['$scope', '$route', '$window', '$location', '$http', '$anchorScroll', baseController])
 		.controller('CvController', ['$scope', '$anchorScroll', 'dataService', cvController])
 		.controller('HomeController', ['$scope', '$sce', 'logService', homeController])
 		.controller('TimesheetController', ['$scope', '$storageService', '$interval', '$filter', '$q', timesheetController])
 		.controller('AccountingController', ['$scope', '$sce', 'accountingService', accountingController])
-		.controller('WeatherController', ['$scope', '$document', '$filter', 'calendarService', 'geolocatorService', 'openWeatherMapService', weatherController ]);
+		.controller('WeatherController', ['$scope', '$document', '$filter', 'calendarService', 'geolocatorService', 'openWeatherMapService', weatherController]);
 
 	angular.module('infinite-scroll').value('THROTTLE_MILLISECONDS', 250);
 

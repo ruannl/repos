@@ -29,6 +29,7 @@
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
     <TargetFrameworkProfile />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -244,6 +245,12 @@
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
+    <Reference Include="Pop3, Version=2.2.2.0, Culture=neutral, PublicKeyToken=e33d940baacd0f37, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pop3.2.2.2\lib\net40\Pop3.dll</HintPath>
+    </Reference>
+    <Reference Include="ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jacobslusser.ScintillaNET.3.6.3\lib\net40\ScintillaNET.dll</HintPath>
+    </Reference>
     <Reference Include="SimpleInjector, Version=4.4.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleInjector.4.4.3\lib\net45\SimpleInjector.dll</HintPath>
     </Reference>
@@ -285,6 +292,8 @@
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -350,6 +359,8 @@
     <Compile Include="Areas\CV\CVAreaRegistration.cs" />
     <Compile Include="Areas\Intuit\Controllers\HomeController.cs" />
     <Compile Include="Areas\Intuit\IntuitAreaRegistration.cs" />
+    <Compile Include="Controllers\PaymentTypesController.cs" />
+    <Compile Include="Controllers\TransactionController.cs" />
     <Compile Include="Database\ApplicationDatabaseInitializer.cs" />
     <Compile Include="Database\ApplicationDatabaseContext.cs" />
     <Compile Include="Database\Models\Account.cs" />
@@ -364,6 +375,7 @@
     <Compile Include="Database\Models\CompanyIdentifier.cs" />
     <Compile Include="Database\Models\ContactMessage.cs" />
     <Compile Include="Database\Models\Customer.cs" />
+    <Compile Include="Database\Models\ELMAH_Error.cs" />
     <Compile Include="Database\Models\Log.cs" />
     <Compile Include="Database\Models\LookupType.cs" />
     <Compile Include="Database\Models\PaymentType.cs" />
@@ -374,10 +386,15 @@
     <Compile Include="Database\Models\Transaction.cs" />
     <Compile Include="Database\Models\TransactionType.cs" />
     <Compile Include="Database\Models\TransactionTypeIdentifier.cs" />
+    <Compile Include="Database\Models\Version.cs" />
     <Compile Include="Database\Providers\CurriculumVitae\CurriculumVitaeManager .cs" />
     <Compile Include="Database\Providers\LogProvider.cs" />
-    <Compile Include="Database\Providers\Lookup\LookupManager.cs" />
+    <Compile Include="Database\Providers\Lookup\LookupProvider.cs" />
     <Compile Include="Database\Providers\Quickbooks\QuickbooksRepository.cs" />
+    <Compile Include="Email\Provider.cs" />
+    <Compile Include="Extensions\ActionFilter\DomainExceptionFilter.cs" />
+    <Compile Include="Extensions\ConfigurationManagerExtension.cs" />
+    <Compile Include="Extensions\DomainException.cs" />
     <Compile Include="Helpers\MyGoogleClaimTypes.cs" />
     <Compile Include="Helpers\MyGoogleClientSecrets.cs" />
     <Compile Include="Models\CalendarViewModel.cs" />
@@ -402,7 +419,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Readme\Elmah.txt" />
     <Content Include="Content\Accounting.css">
       <DependentUpon>Accounting.scss</DependentUpon>
     </Content>
@@ -522,7 +538,20 @@
       <DependentUpon>Main.css</DependentUpon>
     </Content>
     <Content Include="Content\Site.css" />
+    <Content Include="Database\Procedures\ELMAH_GetErrorXml.sql" />
+    <Content Include="Database\Procedures\ELMAH_LogError.sql" />
+    <Content Include="Database\Procedures\ELMAH_GetErrorsXml.sql" />
+    <Content Include="Database\Procedures\Procedures.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Procedures.txt</LastGenOutput>
+    </Content>
+    <Content Include="Database\Procedures\Procedures.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Procedures.tt</DependentUpon>
+    </Content>
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="readme.txt" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-chart.js" />
@@ -594,10 +623,10 @@
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
-    <Content Include="Scripts\rl-app.js" />
-    <Content Include="Scripts\rl-geolocator.js" />
-    <Content Include="Scripts\rl-google-api.js" />
-    <Content Include="Scripts\rl-intuit.js" />
+    <Content Include="Scripts\app\rl-app.js" />
+    <Content Include="Scripts\app\rl-geolocator.js" />
+    <Content Include="Scripts\app\rl-google-api.js" />
+    <Content Include="Scripts\app\rl-intuit.js" />
     <Content Include="Content\Images\banner.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -624,7 +653,7 @@
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\rl-open-weather-map.js" />
+    <Content Include="Scripts\app\rl-open-weather-map.js" />
     <Content Include="Scripts\sammy-0.7.5.js" />
     <Content Include="Scripts\sammy-0.7.5.min.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
@@ -681,8 +710,6 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\_Timesheet.cshtml" />
     <Content Include="Views\Calendar\Index.cshtml" />
-    <Content Include="settings.config" />
-    <Content Include="log4net.config" />
     <Content Include="Views\Calendar\UpcomingEvents.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -696,6 +723,7 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />

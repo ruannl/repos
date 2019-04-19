@@ -2,6 +2,8 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ruann.Linde.Database.Models {
+
+	[Table("CompanyIdentifiers")]
 	public class CompanyIdentifier {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]

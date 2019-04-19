@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ruann.Linde.Database.Models {
+	[Table("PaymentTypes")]
 	public class PaymentType {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]

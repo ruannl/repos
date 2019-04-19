@@ -33,20 +33,21 @@
 	</script>
 </head>
 <body ng-app="rlApp">
-	<div class="web-content" ng-controller="BaseController">
-		<main class="body-content {{layout}}" role="main" ng-class="">
-			@RenderBody()
-			<div ng-include src="mainTemplate"></div>
-			@RenderSection("SPAViews", required: false)
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<span class="text-muted">
-					&copy; @DateTime.Now.Year
-				</span>
-			</div>
-		</footer>
-	</div>
+<div class="web-content" ng-controller="BaseController">
+
+	<main class="body-content {{layout}}" role="main" ng-class="">
+		@RenderBody()
+		<div ng-include src="mainTemplate"></div>
+		@RenderSection("SPAViews", required: false)
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<span class="text-muted">
+				&copy; @DateTime.Now.Year
+			</span>
+		</div>
+	</footer>
+</div>
 
 	<script src="~/Scripts/jquery-3.3.1.min.js"></script>
 	<script src="~/Scripts/jquery.validate.min.js"></script>

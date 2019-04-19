@@ -7,9 +7,9 @@ using System.Web.Routing;
 using log4net;
 
 namespace Ruann.Linde {
-	public class MvcApplication : HttpApplication {
+	public class WebApplication : HttpApplication {
 		//private const string RootDocument = "/Home/Index";
-		public static readonly ILog Log = LogManager.GetLogger(typeof(MvcApplication));
+		public static readonly ILog Log = LogManager.GetLogger(typeof(WebApplication));
 
 		protected void Application_Start() {
 
@@ -19,7 +19,7 @@ namespace Ruann.Linde {
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
 
 			log4net.Config.XmlConfigurator.Configure();
-			Log.Debug("Application_Start");
+	
 			//var container = new Container();
 			//container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
 

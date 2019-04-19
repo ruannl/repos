@@ -3,6 +3,8 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ruann.Linde.Database.Models {
+
+	[Table("LookupTypes")]
 	public class LookupType {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]

@@ -11,8 +11,11 @@ namespace Ruann.Linde {
             //bundles.Add(new ScriptBundle("~/bundles/chart").Include("~/Scripts/Chart.js", "~/Scripts/angular-chart.js"));
             //bundles.Add(new ScriptBundle("~/bundles/file-upload").Include("~/Scripts/FileAPI.min.js", "~/Scripts/ng-file-upload.min.js", "~/Scripts/ng-file-upload-shim.min.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/rl-app.js"));
-            bundles.Add(new ScriptBundle("~/bundles/intuit").Include("~/Scripts/rl-intuit.js"));
+            bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/app/rl-open-weather-map.js"));
+            bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/app/rl-geolocator.js"));
+            bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/app/rl-google-api.js"));
+            bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/app/rl-app.js"));
+			bundles.Add(new ScriptBundle("~/bundles/intuit").Include("~/Scripts/app/rl-intuit.js"));
 
             // style bundles
             //bundles.Add(new StyleBundle("~/content/bootstrap").Include("~/Content/bootstrap.css", "~/Content/bootstrap-theme.css"));

@@ -6,12 +6,12 @@ using Ruann.Linde.Database.Providers.Quickbooks;
 
 namespace Ruann.Linde.Database.Providers.Lookup {
 
-	public class LookupManager {
+	public class LookupProvider {
 
 		internal ILog Log = LogManager.GetLogger(typeof(QuickbooksRepository).Name);
 		internal ApplicationDatabaseContext ApplicationDatabaseContext;
 
-		public LookupManager(ApplicationDatabaseContext context) {
+		public LookupProvider(ApplicationDatabaseContext context) {
 			ApplicationDatabaseContext = context;
 		}
 

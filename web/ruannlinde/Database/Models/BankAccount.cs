@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ruann.Linde.Database.Models {
+	[Table("BanksAccounts")]
 	public class BankAccount {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]

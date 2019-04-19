@@ -2,6 +2,8 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ruann.Linde.Database.Models {
+
+	[Table("BudgetItems")]
 	public class BudgetItem {
 
 		[Key]

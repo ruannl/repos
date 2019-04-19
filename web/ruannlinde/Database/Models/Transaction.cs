@@ -3,6 +3,8 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ruann.Linde.Database.Models {
+
+	[Table("Transactions")]
 	public class Transaction {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]

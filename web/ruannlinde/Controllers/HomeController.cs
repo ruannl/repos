@@ -1,57 +1,113 @@
-﻿using System;
-using System.Web.Mvc;
-using log4net;
-using Ruann.Linde.Database.Providers;
+﻿namespace Ruann.Linde.Controllers {
+	using System;
+	using System.Data;
+	using System.Diagnostics;
+	using System.Web.Mvc;
+	using log4net;
+	using Ruann.Linde.Database;
+	using Ruann.Linde.Database.Providers;
+	using Ruann.Linde.Database.Providers.Lookup;
+	using Ruann.Linde.Extensions;
 
-namespace Ruann.Linde.Controllers
-{
 	//[Authorize]
-    public class HomeController : Controller
-    {
-        private static readonly ILog Log = LogManager.GetLogger(typeof(HomeController).Name);
+	public class HomeController : Controller {
+		private static ApplicationDatabaseContext _applicationDatabaseContext;
 
-        private static ILogProvider _logProvider;
-        public HomeController(ILogProvider logProvider)
-        {
-            _logProvider = logProvider;
-            Log.Info(_logProvider.LogFileDirectory);
-            //if (User.Identity.IsAuthenticated) {
-            //    Log.Debug("User is authenticated");
-            //}
-        }
+		private static ILogProvider _logProvider;
+		private static LookupProvider _lookupProvider;
+		private static readonly ILog Log = LogManager.GetLogger(typeof(HomeController).Name);
 
-        //private ApplicationSignInManager SignInManager { get => _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>(); set => _signInManager = value; }
-        // private ApplicationUserManager UserManager { get => _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>(); set => _userManager = value; }
+		/// <summary>
+		///     Home Controller
+		/// </summary>
+		/// <param name = "applicationDatabaseContext" ></param>
+		/// <param name = "logProvider" ></param>
+		/// <param name = "lookupProvider" ></param>
+		public HomeController(ApplicationDatabaseContext applicationDatabaseContext, ILogProvider logProvider, LookupProvider lookupProvider) {
+			_logProvider = logProvider;
+			_lookupProvider = lookupProvider;
+			_applicationDatabaseContext = applicationDatabaseContext;
+			//if (User.Identity.IsAuthenticated) {
+			//    Log.Debug("User is authenticated");
+			//}
+		}
 
-        public ActionResult Index()
-        {
-            return View();
-        }
+		public bool ClearLogContent() {
+			try {
+				return _logProvider.ClearLog();
+			} catch (Exception e) {
+				Console.WriteLine(e);
+				throw;
+			}
+		}
 
-        public bool ClearLogContent()
-        {
-            try
-            {
-                return _logProvider.ClearLog();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
-        }
+		public JsonResult GetLogContent() {
+			try {
+				//var content = _logProvider.GetLog(null,null);
+				var content = new string('*', 1);
+				return Json(new {
+								content
+							}
+						  , "json"
+						  , JsonRequestBehavior.AllowGet
+				);
+			} catch (Exception e) {
+				throw new DomainException(e.Message);
+			}
+		}
 
-        public string GetLogContent()
-        {
-            try
-            {
-                return _logProvider.GetLog();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
-        }
-    }
+		public JsonResult GetSettings() {
+			var connection = _applicationDatabaseContext.Database.Connection;
+
+			try {
+				if (_applicationDatabaseContext.Database.Exists()) {
+					if (connection.State != ConnectionState.Open) connection.Open();
+
+					var connectionObject = new {
+						connection.ConnectionString
+					  , connection.ConnectionTimeout
+					  , connection.DataSource
+					  , connection.ServerVersion
+					  , connection.State
+					};
+					Debug.WriteLine($"connection established to {_applicationDatabaseContext.Database.Connection}");
+					connection.Close();
+					return Json(new {
+									connectionObject
+								}
+							  , "json"
+							  , JsonRequestBehavior.AllowGet
+					);
+				} else {
+					_applicationDatabaseContext.Database.Initialize(true);
+
+					throw new Exception($"{_applicationDatabaseContext.Database.Connection.Database} does not exist");
+				}
+			} catch (Exception e) {
+				throw new DomainException(e.Message, e);
+			} finally {
+				if (connection.State != ConnectionState.Closed) {
+					connection.Close();
+					connection.Dispose();
+				}
+			}
+		}
+
+		//private ApplicationSignInManager SignInManager { get => _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>(); set => _signInManager = value; }
+		// private ApplicationUserManager UserManager { get => _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>(); set => _userManager = value; }
+
+		public ActionResult Index() {
+			return View();
+		}
+
+		public JsonResult ThrowDomainException() {
+			Log.Info("logging info from home controller");
+			Log.Error("logging error from home controller");
+			Log.Fatal("logging fatal error from home controller");
+			return Json(new { }
+					  , "json"
+					  , JsonRequestBehavior.AllowGet
+			);
+		}
+	}
 }

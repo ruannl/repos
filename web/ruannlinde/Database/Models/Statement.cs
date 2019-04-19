@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ruann.Linde.Database.Models {
 
+	[Table("Statements")]
 	public class Statement {
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -31,11 +32,11 @@ namespace Ruann.Linde.Database.Models {
 
 		[Column(Order = 6)]
 		public virtual bool Processed { get; set; }
-
-		[Column(Order = 7)]
-		public virtual ICollection<Transaction> Transactions { get; set; }
 		
-		[Column(Order = 8)]
+		[Column(Order = 7)]
 		public virtual BankAccount  BankAccount { get; set; }
+
+		[Column(Order = 8)]
+		public virtual ICollection<Transaction> Transactions { get; set; }
 	}
 }
