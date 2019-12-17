@@ -184,12 +184,14 @@ p {
   padding-left: 15px;
   padding-top: 15px;
   background-color: #fff;
-  border: 1px dashed #ccc;
-  color: #ddd; }
+  opacity: 0.9;
+  border: 1px dashed #33a4c9;
+  color: #33a4c9; }
   .context-menu-item:hover {
     background-color: #ccc;
     color: #fff;
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: 0.9; }
 
 .context-menu-item-text {
   float: left;
@@ -279,6 +281,27 @@ p {
 .high-school {
   background-image: url(Images/brandwag-logo.jpg) !important; }
 
+.ninjitsu {
+  background-image: url(Images/bujinkan-logo.jpg) !important; }
+
+.rasberry-pi {
+  background-image: url(Images/rasberrypi.jpg) !important; }
+
+.iot {
+  background-image: url(Images/iot.jpg) !important; }
+
+.health {
+  background-image: url(Images/meditation.jpg) !important; }
+
+.kick-boxing {
+  background-image: url(Images/kickboxing.png) !important; }
+
+.cdc {
+  background-image: url(Images/cdc.jpg) !important; }
+
+.bl {
+  background-image: url(Images/bl-logo.png) !important; }
+
 .g-connect {
   background-repeat: no-repeat;
   background-position: top right;
@@ -293,7 +316,14 @@ p {
 .crux-it,
 .microsoft,
 .ultracomp,
-.high-school {
+.high-school,
+.ninjitsu,
+.rasberry-pi,
+.iot,
+.health,
+.kick-boxing,
+.cdc,
+.bl {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 100px !important;
@@ -307,7 +337,14 @@ p {
 .pluralsight h2,
 .microsoft h2,
 .ultracomp h2,
-.high-school h2 {
+.high-school h2,
+.ninjitsu h2,
+.rasberry-pi h2,
+.iot h2,
+.health h2,
+.kick-boxing h2,
+.cdc h2,
+.bl h2 {
   color: #33a4c9 !important; }
 
 .technology li {
@@ -382,12 +419,6 @@ p {
   box-shadow: 3px 3px 9px #808080;
   padding-top: 20px; }
 
-@keyframes marquee {
-  0% {
-    transform: translateY(200%); }
-  100% {
-    transform: translateY(-200%); } }
-
 .marquee {
   position: relative;
   overflow: hidden;
@@ -425,6 +456,15 @@ article {
   height: 0;
   box-shadow: 3px 3px 9px #808080;
   border-radius: 3px; }
+
+.cv-address {
+  display: none; }
+
+@keyframes marquee {
+  0% {
+    transform: translateY(200%); }
+  100% {
+    transform: translateY(-200%); } }
 
 @media (min-width: 768px) {
   header figure {
@@ -475,8 +515,41 @@ article {
 
 @media (min-width: 992px) {
   .jse .view-more {
-    display: none !important; } }
+    /*display: none !important;*/ } }
 
 @media (min-width: 1200px) {
   .jse .view-more {
+    /*display: none !important;*/ } }
+
+@media print {
+  @page {
+    margin: 0 !important; }
+  .window-size {
+    display: none; }
+  .cv_contact {
+    display: none; }
+  .avatar {
+    display: none; }
+  .scramble-container {
+    display: none; }
+  .cv-address {
+    display: block; }
+  .email-icon {
+    color: #33a4c9;
+    font-size: 14px;
+    float: left;
+    position: relative;
+    margin-top: 0px;
+    overflow: hidden;
+    text-decoration: none; }
+  .body-content {
+    padding: 0; }
+  .context-menu {
+    display: none; }
+  .page-break-after {
+    page-break-after: always !important;
+    break-after: always !important; }
+  .avoid-page-break {
+    page-break-inside: avoid !important; }
+  footer {
     display: none !important; } }

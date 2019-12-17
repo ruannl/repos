@@ -11,6 +11,7 @@ namespace Ruann.Linde.Database.Models {
 		[Column(Order = 0)]
 		public virtual int TransactionId { get; set; }
 
+		[Index("IX_UniqueTransaction",1, IsUnique = true)]
 		[Required]
 		[Column(Order = 1)]
 		[DataType(DataType.DateTime)]
@@ -19,11 +20,14 @@ namespace Ruann.Linde.Database.Models {
 		[Required]
 		[Column(Order = 2)]
 		[DataType(DataType.Text)]
+		[MaxLength(450)]
+		[Index("IX_UniqueTransaction", 2, IsUnique = true)]
 		public virtual string Description { get; set; }
 
 		[Required]
 		[Column(Order = 3)]
 		[DataType(DataType.Currency)]
+		[Index("IX_UniqueTransaction", 3, IsUnique = true)]
 		public virtual decimal Amount { get; set; }
 
 		[Column(Order = 4)]

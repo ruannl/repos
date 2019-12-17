@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="Cache-control" content="public">
 
-	<title>@ViewBag.Title Ruann LINDE</title>
+	<title>Ruann LINDE @ViewBag.Title</title>
 	<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 	<meta name="description" content="Ruann Linde">
 	<meta name="keywords" content="HTML,CSS,XML,JavaScript,AngularJs,Software Development, Programming, Pretoria, Freelance, Websites, Garsfontein">
@@ -19,42 +19,26 @@
 
 	<script src="~/Scripts/modernizr-2.8.3.js"></script>
 
-	<link href="~/Content/Main.css" rel="stylesheet" />
-	<link href="~/Content/CV.css" rel="stylesheet" />
-	<base href="/">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38341478-2"></script>
-	<script async>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+	<link href="~/Content/Main.min.css" rel="stylesheet" />
+	<link href="~/Content/Banking.min.css" rel="stylesheet" />
 
-		gtag('config', 'UA-38341478-2');
-	</script>
+
+	<base href="/">
 </head>
 <body ng-app="rlApp">
-<div class="web-content" ng-controller="BaseController">
-
-	<main class="body-content {{layout}}" role="main" ng-class="">
-		@RenderBody()
-		<div ng-include src="mainTemplate"></div>
-		@RenderSection("SPAViews", required: false)
-	</main>
-	<footer class="footer">
-		<div class="container">
-            <div class="row">
-                <div class="col-6 pull-left">
-                    <span class="">
-                        &copy; @DateTime.Now.Year - &nbsp;Ruann Linde
-                    </span>
-                </div>
-                <div class="col-6 pull-right text-right">
-                    <window-size class="window-size"></window-size>
-                </div>
-            </div>
-		</div>
-	</footer>
-</div>
+	<div class="web-content" ng-controller="BaseController">
+		<main class="body-content container-fluid" role="main" ng-class="">
+			@RenderBody()
+			<div ng-include src="template"></div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<span class="text-muted">
+					&copy; @DateTime.Now.Year
+				</span>
+			</div>
+		</footer>
+	</div>
 
 	<script src="~/Scripts/jquery-3.3.1.min.js"></script>
 	<script src="~/Scripts/jquery.validate.min.js"></script>
@@ -74,5 +58,6 @@
 	<script src="~/Scripts/ng-file-upload-shim.min.js"></script>
 
 	@Scripts.Render("~/bundles/app")
+
 </body>
 </html>

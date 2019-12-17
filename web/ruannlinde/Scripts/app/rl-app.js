@@ -1,4 +1,4 @@
-﻿(function (angular) {
+(function (angular) {
 	'use strict';
 
 	var settings = {};
@@ -359,18 +359,8 @@
 									});
 									last = event.timeStamp;
 								});
-						//$(iElement).click(function(event) {
-						//  ul.css({
-						//    position: "fixed",
-						//    display: "block",
-						//    left: event.clientX + 'px',
-						//    top: event.clientY + 'px'
-						//  });
-						//  last = event.timeStamp;
-						//});
 
-						$(document)
-							.click(function (event) {
+						$(document).click(function (event) {
 								var target = $(event.target);
 								if (!target.is('.popover') && !target.parents().is('.popover')) {
 									if (last === event.timeStamp) {
@@ -389,15 +379,12 @@
 	var rlRightClick = function ($parse) {
 		return function (scope, element, attrs) {
 			var fn = $parse(attrs.ngRightClick);
-			element.bind('contextmenu',
-				function (event) {
-					scope.$apply(function () {
-						event.preventDefault();
-						fn(scope, {
-							$event: event
-						});
-					});
+			element.bind('contextmenu', function (event) {
+				scope.$apply(function () {
+					event.preventDefault();
+					fn(scope, { $event: event });
 				});
+			});
 		};
 	};
 	var jseMore = function () {
@@ -683,8 +670,7 @@
 							file: file,
 							bankId: bank.BankId
 						}
-					})
-						.then(handleUploadResponse, handleUploadError, handleUploadProgress);
+					}).then(handleUploadResponse, handleUploadError, handleUploadProgress);
 				});
 
 				return defer.promise;
@@ -707,7 +693,7 @@
 		return {
 			SaveMessage: function (contact) {
 				return $http({
-					url: $location.$$absUrl + 'Home/SubmitMessage',
+					url: $location.$$absUrl + '/SubmitMessage',
 					method: 'POST',
 					data: {
 						name: contact.name,
@@ -957,6 +943,7 @@
 			}
 		};
 	};
+
 	//providers
 	var openWeatherMapProvider = function () {
 		settings.apiKey = null;
@@ -987,17 +974,16 @@
 		openWeatherMapProvider.init();
 
 		//$httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
-		//$routeProvider
-		//    .when('/rl', {
-		//        templateUrl: 'rl/Home/Index',
-		//        controller: 'HomeController'
-		//    })
-		//   .when('/rl/cv', {
-		//        templateUrl: 'cv.htm'
-		//    })
-		//    .otherwise({
-		//        redirectTo: '/rl'
-		//   });
+		//$routeProvider.when('/', {
+		//	templateUrl: '/Home/Index',
+		//	controller: 'HomeController'
+		//})
+		//	.when('/Banking', {
+		//		templateUrl: 'banking.htm',
+
+		//	}).otherwise({
+		//	redirectTo: '/'
+		//});
 
 		$locationProvider.html5Mode({
 			enabled: true,
@@ -1010,29 +996,36 @@
 	//controllers
 	var baseController = function ($scope, $route, $window, $location, $http, $anchorScroll) {
 
-		$scope.template = 'cv.htm';
-		$scope.mainTemplate = 'home.htm';
+		$scope.template = '';
+		$scope.mainTemplate = 'cv.htm';
+		$scope.list = {};
+
 		$scope.model = {
 			loading: false
 		};
 
-		console.info('location', $location);
 		$scope.redirectToTemplate = function (template) {
 			$scope.template = template;
 			//$location.hash('top');
-			$anchorScroll('top');
+			//$anchorScroll('top');
 		};
 
-		$scope.$on('$stateChangeStart', function (a, b, c) {
-			console.log('a', a);
-			console.log('b', b);
-			console.log('c', c);
-		});
-
-		console.log('route.routes', $route.routes);
+		$scope.scrollToSection = function (section) {
+			$location.hash(section);
+			$anchorScroll();
+		};
 
 		$scope.redirectToView = function () { };
-		$scope.ShowContextMenu = function () { };
+
+		$scope.print = function () {
+			setTimeout(function () {
+				window.print();
+			});
+		};
+
+		$scope.ShowContextMenu = function () {
+		
+		};
 
 		var settings = {
 			Get: function () {
@@ -1189,9 +1182,59 @@
 			}
 		});
 
+		$scope.$on('$stateChangeStart', function (a, b, c) {
+			console.log('a', a);
+			console.log('b', b);
+			console.log('c', c);
+		});
+
 		setTimeout(function () {
-			$scope.settings = settings.Get();
+			//$scope.settings = settings.Get();
 			console.info('settings', $scope.settings);
+
+			console.info($scope.model.upload);
+			//$scope.capture = localStorage.getItem('capture' + version) || 'camera';
+			//$scope.pattern = localStorage.getItem('pattern' + version) || 'image/*,audio/*,video/*';
+			//$scope.acceptSelect = localStorage.getItem('acceptSelect' + version) || 'image/*,audio/*,video/*';
+			//$scope.modelOptions = localStorage.getItem('modelOptions' + version) || '{debounce:100}';
+			//$scope.dragOverClass = localStorage.getItem('dragOverClass' + version) || '{accept:\'dragover\', reject:\'dragover-err\', pattern:\'image/*,audio/*,video/*,text/*\'}';
+			//$scope.disabled = localStorage.getItem('disabled' + version) == 'true' || false;
+			//$scope.multiple = localStorage.getItem('multiple' + version) == 'true' || false;
+			//$scope.allowDir = localStorage.getItem('allowDir' + version) == 'true' || true;
+			//$scope.validate = localStorage.getItem('validate' + version) || '{size: {max: \'20MB\', min: \'10B\'}, height: {max: 12000}, width: {max: 12000}, duration: {max: \'5m\'}}';
+			//$scope.keep = localStorage.getItem('keep' + version) == 'true' || false;
+			//$scope.keepDistinct = localStorage.getItem('keepDistinct' + version) == 'true' || false;
+			//$scope.orientation = localStorage.getItem('orientation' + version) == 'true' || false;
+			//$scope.runAllValidations = localStorage.getItem('runAllValidations' + version) == 'true' || false;
+			//$scope.resize = localStorage.getItem('resize' + version) || "{width: 1000, height: 1000, centerCrop: true}";
+			//$scope.resizeIf = localStorage.getItem('resizeIf' + version) || "$width > 5000 || $height > 5000";
+			//$scope.dimensions = localStorage.getItem('dimensions' + version) || "$width < 12000 || $height < 12000";
+			//$scope.duration = localStorage.getItem('duration' + version) || "$duration < 10000";
+			//$scope.maxFiles = localStorage.getItem('maxFiles' + version) || "500";
+			//$scope.ignoreInvalid = localStorage.getItem('ignoreInvalid' + version) || "";
+			//$scope.$watch('validate+capture+pattern+acceptSelect+disabled+capture+multiple+allowDir+keep+orientation+' +
+			//	'keepDistinct+modelOptions+dragOverClass+resize+resizeIf+maxFiles+duration+dimensions+ignoreInvalid+runAllValidations', function () {
+			//		localStorage.setItem('capture' + version, $scope.capture);
+			//		localStorage.setItem('pattern' + version, $scope.pattern);
+			//		localStorage.setItem('acceptSelect' + version, $scope.acceptSelect);
+			//		localStorage.setItem('disabled' + version, $scope.disabled);
+			//		localStorage.setItem('multiple' + version, $scope.multiple);
+			//		localStorage.setItem('allowDir' + version, $scope.allowDir);
+			//		localStorage.setItem('validate' + version, $scope.validate);
+			//		localStorage.setItem('keep' + version, $scope.keep);
+			//		localStorage.setItem('orientation' + version, $scope.orientation);
+			//		localStorage.setItem('keepDistinct' + version, $scope.keepDistinct);
+			//		localStorage.setItem('dragOverClass' + version, $scope.dragOverClass);
+			//		localStorage.setItem('modelOptions' + version, $scope.modelOptions);
+			//		localStorage.setItem('resize' + version, $scope.resize);
+			//		localStorage.setItem('resizeIf' + version, $scope.resizeIf);
+			//		localStorage.setItem('dimensions' + version, $scope.dimensions);
+			//		localStorage.setItem('duration' + version, $scope.duration);
+			//		localStorage.setItem('maxFiles' + version, $scope.maxFiles);
+			//		localStorage.setItem('ignoreInvalid' + version, $scope.ignoreInvalid);
+			//		localStorage.setItem('runAllValidations' + version, $scope.runAllValidations);
+			//	});
+
 		});
 
 	};
@@ -1202,11 +1245,11 @@
 			show: false
 		};
 
-		$scope.ThrowDomainException = function() {
-			logService.ThrowDomainException().then(function(response) {
-					console.info(response.data);
-				},
-				function(reject) {
+		$scope.ThrowDomainException = function () {
+			logService.ThrowDomainException().then(function (response) {
+				console.info(response.data);
+			},
+				function (reject) {
 					console.error(reject);
 				});
 		};
@@ -1250,8 +1293,9 @@
 			//}, 60000); //60 seconds
 		});
 	};
-	var cvController = function ($scope, $anchorScroll, dataService) {
-		$scope.template = 'cv.htm';
+
+	var cvController = function ($scope, $q, dataService) {
+		//$scope.template = 'cv.htm';
 		$scope.model = {
 			submitted: false,
 			showThankYou: function () {
@@ -1485,14 +1529,17 @@
 		};
 
 		$scope.submitContactForm = function (isValid) {
+
 			var contactForm = $scope.contactForm.$$element;
+
 			if (isValid) {
 				dataService.SaveMessage($scope.model.contact).then(function (response) {
 					console.log(response);
 					$scope.model.submitted = true;
 					$scope.model.contactMessage = response.data;
 				}, function (response) {
-					console.error(response.data);
+						console.error(response.data);
+						$q.reject(response.data);
 				});
 			} else {
 				contactForm.addClass('animated');
@@ -1521,11 +1568,11 @@
 			}
 		};
 
-		$anchorScroll('top');
+		
 
 		console.log('CvController.model', $scope.model);
 	};
-	
+
 	var timesheetController = function ($scope, $storageService, $interval, $filter, $q) {
 		var handleAddWeekResponse = function (response) {
 			$scope.model.timesheetWeek = response;
@@ -1757,8 +1804,41 @@
 	};
 	var accountingController = function ($scope, $sce, accountingService) {
 		$scope.model = {
-			bank: null
+			bank: null,
+			bankId: 1,
+			errorMsg: undefined,
+			upload: {
+				files: null,
+				dropAvailable: true,
+				capture: 'camera',
+				pattern: 'image/*,audio/*,video/*',
+				acceptSelect: 'image/*,audio/*,video/*',
+				modelOptions: { debounce: 100 },
+				dragOverClass: '{accept:\'drop-box.dragover\', reject:\'drop-box.dragover-err \', pattern:\'text/*\'}',
+				disabled: false,
+				multiple: true,
+				allowDir: true,
+				validate: '{size: {max: \'20MB\'}, height: {max: 12000}, width: {max: 12000}, duration: {max: \'5m\'}}',
+				keep: true,
+				keepDistinct: true,
+				orientation: false,
+				runAllValidations: true,
+				resize: '{width: 1000, height: 1000, centerCrop: true}',
+				resizeIf: '$width > 5000 || $height > 5000',
+				dimensions: '$width< 12000 || $height < 12000',
+				duration: '$duration < 10000',
+				maxFiles: 3,
+				invalidFiles: []
+			}
 		};
+
+		angular.element(window).bind('dragover', function (e) {
+			e.preventDefault();
+		});
+
+		angular.element(window).bind('drop', function (e) {
+			e.preventDefault();
+		});
 
 		$scope.SubmitFiles = function () {
 			if (!$scope.files) {
@@ -1775,38 +1855,18 @@
 			});
 		};
 
-		$scope.uploadFiles = function (files, errFiles) {
-			$scope.files = files;
-			$scope.errFiles = errFiles;
-
-			//angular.forEach(files, function (file) {
-
-			//    file.upload = Upload.upload({
-			//        url: 'https://angular-file-upload-cors-srv.appspot.com/upload',
-			//        data: { file: file }
-			//    });
-
-			//    file.upload.then(function (response) {
-			//        setTimeout(function () {
-			//            file.result = response.data;
-			//        });
-			//    }, function (response) {
-			//        if (response.status > 0)
-			//            $scope.errorMsg = response.status + ': ' + response.data;
-			//    }, function (evt) {
-			//        file.progress = Math.min(100, parseInt(100.0 *
-			//            evt.loaded / evt.total));
-			//    });
-			//});
+		$scope.upload = function (file) {
+			$scope.model.errorMsg = null;
+			accountingService.UploadFile(file, $scope.model.bankId).then(function (result) {
+				console.info(result);
+			}, function (reason) { console.error(reason.data); });
 		};
 
-		accountingService.BankList()
-			.then(function (response) {
-				$scope.model.banks = response;
-			},
-				function (response) {
-					$scope.errorMsg = $sce.trustAsHtml(response.data);
-				});
+		accountingService.BankList().then(function (response) {
+			$scope.model.banks = response;
+		}, function (response) {
+			$scope.errorMsg = $sce.trustAsHtml(response.data);
+		});
 	};
 	var weatherController = function ($scope, $document, $filter, calendarService, geolocatorService, openWeatherMapService) {
 		var body = $document[0].body;
@@ -1883,6 +1943,7 @@
 		.factory('openWeatherMapService', ['$http', '$q', '$filter', openWeatherMapService])
 		.directive('rlScrambler', ['$q', rlScrambler])
 		.directive('rlTumbler', ['$interval', '$q', '$animate', rlTumbler])
+		.directive('rlRightClick', ['$parse', rlRightClick])
 		.directive('clock', clock)
 		.directive('windowSize', ['$window', windowSize])
 		.directive('context', context)
@@ -1896,10 +1957,9 @@
 		.directive('contactFormTemplate', contactFormTemplate)
 		.directive('timeline', timeline)
 		.directive('cellHighlight', cellHighlight)
-		.directive('rlRightClick', ['$parse', rlRightClick])
 		.provider('openWeatherMap', [openWeatherMapProvider])
 		.controller('BaseController', ['$scope', '$route', '$window', '$location', '$http', '$anchorScroll', baseController])
-		.controller('CvController', ['$scope', '$anchorScroll', 'dataService', cvController])
+		.controller('CvController', ['$scope', '$q', '$anchorScroll','$location', 'dataService', cvController])
 		.controller('HomeController', ['$scope', '$sce', 'logService', homeController])
 		.controller('TimesheetController', ['$scope', '$storageService', '$interval', '$filter', '$q', timesheetController])
 		.controller('AccountingController', ['$scope', '$sce', 'accountingService', accountingController])

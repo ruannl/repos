@@ -18,7 +18,7 @@
     <AssemblyName>Ruann.Linde</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -335,6 +335,7 @@
     </Reference>
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebActivator, Version=1.4.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\WebActivator.1.4.4\lib\net40\WebActivator.dll</HintPath>
     </Reference>
@@ -355,6 +356,8 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\Startup.Ninject.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Banking\BankingAreaRegistration.cs" />
+    <Compile Include="Areas\Banking\Controllers\HomeController.cs" />
     <Compile Include="Areas\CV\Controllers\HomeController.cs" />
     <Compile Include="Areas\CV\CVAreaRegistration.cs" />
     <Compile Include="Areas\Intuit\Controllers\HomeController.cs" />
@@ -427,6 +430,12 @@
     </Content>
     <Content Include="Content\animate.css" />
     <Content Include="Content\animate.min.css" />
+    <Content Include="Content\Banking.css">
+      <DependentUpon>Banking.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Banking.min.css">
+      <DependentUpon>Banking.css</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -488,10 +497,13 @@
     <Content Include="Content\Images\asp-net.png" />
     <Content Include="Content\Images\avatar0.jpg" />
     <Content Include="Content\Images\azure-logo.png" />
+    <Content Include="Content\Images\bl-logo.png" />
     <Content Include="Content\Images\bootstrap.png" />
     <Content Include="Content\Images\brandwag-logo.jpg" />
+    <Content Include="Content\Images\bujinkan-logo.jpg" />
     <Content Include="Content\Images\bytes-logo.png" />
     <Content Include="Content\Images\c-sharp.png" />
+    <Content Include="Content\Images\cdc.jpg" />
     <Content Include="Content\Images\css3-50.png" />
     <Content Include="Content\Images\css3.png" />
     <Content Include="Content\Images\free-radius.png" />
@@ -501,16 +513,20 @@
     <Content Include="Content\Images\html5.png" />
     <Content Include="Content\Images\image-placeholder.jpg" />
     <Content Include="Content\Images\image-placeholder1.jpg" />
+    <Content Include="Content\Images\iot.jpg" />
     <Content Include="Content\Images\itext-logo.png" />
     <Content Include="Content\Images\javascript.png" />
     <Content Include="Content\Images\jquery.png" />
     <Content Include="Content\Images\jse.png" />
     <Content Include="Content\Images\kendo-logo.png" />
+    <Content Include="Content\Images\kickboxing.png" />
+    <Content Include="Content\Images\meditation.jpg" />
     <Content Include="Content\Images\micros-fidelio-logo.png" />
     <Content Include="Content\Images\microsoft_certified_professional.png" />
     <Content Include="Content\Images\msoffice.jpg" />
     <Content Include="Content\Images\msoffice.png" />
     <Content Include="Content\Images\mysql-logo.png" />
+    <Content Include="Content\Images\mysql.jpg" />
     <Content Include="Content\Images\mysql.png" />
     <Content Include="Content\Images\net-logo.png" />
     <Content Include="Content\Images\net-mvc.jpg" />
@@ -519,6 +535,7 @@
     <Content Include="Content\Images\pluralsight1.png" />
     <Content Include="Content\Images\quick-books-logo-w.png" />
     <Content Include="Content\Images\quick-books-logo.png" />
+    <Content Include="Content\Images\rasberrypi.jpg" />
     <Content Include="Content\Images\sql-lite.png" />
     <Content Include="Content\Images\sql.png" />
     <Content Include="Content\Images\telerik-logo.png" />
@@ -537,6 +554,7 @@
     <Content Include="Content\Main.min.css">
       <DependentUpon>Main.css</DependentUpon>
     </Content>
+    <Content Include="Content\print.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Database\Procedures\ELMAH_GetErrorXml.sql" />
     <Content Include="Database\Procedures\ELMAH_LogError.sql" />
@@ -563,6 +581,7 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\animateCss\animateCss.js" />
     <Content Include="Scripts\animateCss\animateCss.min.js" />
+    <Content Include="Scripts\app\rl-banking.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -590,9 +609,6 @@
     <Content Include="Areas\CV\Views\_ViewStart.cshtml" />
     <Content Include="Areas\CV\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\CV\Views\Home\Index.cshtml" />
-    <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="Scripts\angular-animate.min.js.map" />
-    <Content Include="Scripts\angular-route.min.js.map" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
@@ -603,6 +619,16 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Areas\Banking\Views\web.config" />
+    <Content Include="Areas\Banking\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Banking\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Banking\Views\Home\Index.cshtml" />
+    <Content Include="Content\Banking.scss" />
+    <Content Include="Content\print.less" />
+    <Content Include=".eslintrc.json" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-animate.min.js.map" />
+    <Content Include="Scripts\angular-route.min.js.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -698,7 +724,6 @@
     </Content>
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-    <Content Include="webconnector.log" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
@@ -711,8 +736,10 @@
     <Content Include="Views\Home\_Timesheet.cshtml" />
     <Content Include="Views\Calendar\Index.cshtml" />
     <Content Include="Views\Calendar\UpcomingEvents.cshtml" />
+    <Content Include="Views\Home\_Cv.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Areas\Banking\Models\" />
     <Folder Include="Areas\CV\Models\" />
     <Folder Include="Database\Providers\Accounting\" />
   </ItemGroup>
@@ -727,6 +754,39 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
+    <Content Include="App_Start\IdentityConfig.cs" />
+    <Content Include="App_Start\Ninject.Web.Common.cs" />
+    <Content Include="Controllers\AccountController.cs" />
+    <Content Include="Controllers\AccountingController.cs" />
+    <Content Include="Controllers\CalendarController.cs" />
+    <Content Include="Controllers\ManageController.cs" />
+    <Content Include="Controllers\MeController.cs" />
+    <Content Include="Content\Accounting.css.map" />
+    <Content Include="Content\CV.css.map" />
+    <Content Include="Content\Intuit.css.map" />
+    <Content Include="Content\Main.css.map" />
+    <Content Include="Helpers\GoogleHelper.cs" />
+    <Content Include="Migrations\201808161506085_first.cs" />
+    <Content Include="Migrations\201808161506085_first.Designer.cs" />
+    <Content Include="Migrations\201808161506085_first.resx" />
+    <Content Include="Migrations\201901031033349_InitialCreate.cs" />
+    <Content Include="Migrations\201901031033349_InitialCreate.Designer.cs" />
+    <Content Include="Migrations\201901031033349_InitialCreate.resx" />
+    <Content Include="Migrations\AccountingContext_Configuration.cs" />
+    <Content Include="Migrations\Configuration.cs" />
+    <Content Include="Models\IdentityModels.cs" />
+    <Content Include="Models\MySqlHistoryContext.cs" />
+    <Content Include="Models\MySqlInitializer.cs" />
+    <Content Include="uploads\6236180487820180912_151502.csv" />
+    <Content Include="uploads\6236180487820180912_151649.csv" />
+    <Content Include="uploads\6236180487820180912_170800.csv" />
+    <Content Include="uploads\6236180487820180912_170923.csv" />
+    <Content Include="uploads\6236180487820180912_172145.csv" />
+    <Content Include="uploads\6236180487820180912_172233.csv" />
+    <Content Include="uploads\6236180487820180913_144450.csv" />
+    <Content Include="uploads\transaction_history_FNB_Platinum_Cheque_Account (2).zip" />
+    <Content Include="settings.config" />
+    <Content Include="connectionStrings.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

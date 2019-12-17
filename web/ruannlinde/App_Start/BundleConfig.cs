@@ -15,18 +15,19 @@ namespace Ruann.Linde {
             bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/app/rl-geolocator.js"));
             bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/app/rl-google-api.js"));
             bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/app/rl-app.js"));
-			bundles.Add(new ScriptBundle("~/bundles/intuit").Include("~/Scripts/app/rl-intuit.js"));
+			//bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/app/rl-banking.js"));
+			bundles.Add(new ScriptBundle("~/bundles/intuit").Include("~/Scripts/app/rl-intuit.js")); 
 
-            // style bundles
-            //bundles.Add(new StyleBundle("~/content/bootstrap").Include("~/Content/bootstrap.css", "~/Content/bootstrap-theme.css"));
-            //bundles.Add(new StyleBundle("~/content/font-awesome").Include("~/Content/font-awesome.css"));
-            //bundles.Add(new StyleBundle("~/content/main").Include("~/Content/Main.css"));
-            //bundles.Add(new StyleBundle("~/content/intuit").Include("~/Content/Intuit.css"));
-            //bundles.Add(new StyleBundle("~/content/cv").Include("~/Content/CV.css"));
-            //bundles.Add(new StyleBundle("~/content/accounting").Include("~/Content/Accounting.css"));
+			// style bundles
+			//bundles.Add(new StyleBundle("~/content/bootstrap").Include("~/Content/bootstrap.css", "~/Content/bootstrap-theme.css"));
+			//bundles.Add(new StyleBundle("~/content/font-awesome").Include("~/Content/font-awesome.css"));
+			//bundles.Add(new StyleBundle("~/content/main").Include("~/Content/Main.css"));
+			//bundles.Add(new StyleBundle("~/content/intuit").Include("~/Content/Intuit.css"));
+			//bundles.Add(new StyleBundle("~/content/cv").Include("~/Content/CV.css"));
+			//bundles.Add(new StyleBundle("~/content/accounting").Include("~/Content/Accounting.css"));
 
-            //BundleTable.EnableOptimizations = true;
+			//BundleTable.EnableOptimizations = true;
 
-        }
+		}
     }
 }

@@ -1,4 +1,4 @@
-﻿$color-primary: #808080;
+$color-primary: #808080;
 $acent-color: #33a4c9;
 
 $color-light: #ccc;
@@ -148,10 +148,10 @@ p {
 }
 
 .media {
-	.icon {
-		font-size: 60px !important;
-		color: $color-primary !important;
-	}
+    .icon {
+        font-size: 60px !important;
+        color: $color-primary !important;
+    }
 }
 
 .timeline {
@@ -232,19 +232,21 @@ p {
 }
 
 .context-menu-item {
-	min-width: 250px;
-	min-height: 60px;
-	padding-left: 15px;
-	padding-top: 15px;
-	background-color: #fff;
-	border: 1px dashed #ccc;
-	color: #ddd;
+    min-width: 250px;
+    min-height: 60px;
+    padding-left: 15px;
+    padding-top: 15px;
+    background-color: #fff;
+    opacity: 0.9;
+    border: 1px dashed $acent-color;
+    color: $acent-color;
 
-	&:hover {
-		background-color: #ccc;
-		color: #fff;
-		cursor: pointer;
-	}
+    &:hover {
+        background-color: #ccc;
+        color: #fff;
+        cursor: pointer;
+        opacity:0.9;
+    }
 }
 
 .context-menu-item-text {
@@ -382,6 +384,33 @@ p {
 	background-image: url(Images/brandwag-logo.jpg) !important;
 }
 
+.ninjitsu {
+	background-image: url(Images/bujinkan-logo.jpg) !important;
+}
+
+.rasberry-pi {
+	background-image: url(Images/rasberrypi.jpg) !important;
+}
+
+.iot {
+	background-image: url(Images/iot.jpg) !important;
+}
+
+.health {
+	background-image: url(Images/meditation.jpg) !important;
+}
+
+.kick-boxing {
+	background-image: url(Images/kickboxing.png) !important;
+}
+
+.cdc {
+	background-image: url(Images/cdc.jpg) !important;
+}
+
+.bl {
+	background-image: url(Images/bl-logo.png) !important;
+}
 //100
 .g-connect {
 	background-repeat: no-repeat;
@@ -400,12 +429,21 @@ p {
 .crux-it,
 .microsoft,
 .ultracomp,
-.high-school {
+.high-school,
+.ninjitsu,
+.rasberry-pi,
+.iot,
+.health,
+.kick-boxing,
+.cdc,
+.bl 
+{
 	background-repeat: no-repeat;
 	background-position: top right;
 	background-size: 100px !important;
 	min-height: 100px !important;
 }
+
 
 .jse,
 .g-connect,
@@ -415,7 +453,15 @@ p {
 .pluralsight,
 .microsoft,
 .ultracomp,
-.high-school {
+.high-school,
+.ninjitsu,
+.rasberry-pi,
+.iot,
+.health,
+.kick-boxing,
+.cdc ,
+.bl
+{
 	h2 {
 		color: $acent-color !important;
 	}
@@ -508,16 +554,6 @@ p {
 	padding-top: 20px;
 }
 
-@keyframes marquee {
-	0% {
-		transform: translateY(200%);
-	}
-
-	100% {
-		transform: translateY(-200%);
-	}
-}
-
 .marquee {
 	position: relative;
 	overflow: hidden;
@@ -568,6 +604,20 @@ article {
 	border-radius: 3px;
 }
 
+.cv-address {
+    display: none;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateY(200%);
+    }
+
+    100% {
+        transform: translateY(-200%);
+    }
+}
+
 @media (min-width: 576px) {
 }
 
@@ -580,7 +630,7 @@ article {
 		border-radius: 95px;
 	}
 
-		header figure img {
+	header figure img {
 			position: relative;
 			height: 200px;
 			width: 200px;
@@ -672,11 +722,9 @@ article {
 }
 
 @media (min-width: 992px) {
-
-
 	.jse {
 		.view-more {
-			display: none !important;
+			/*display: none !important;*/
 		}
 	}
 }
@@ -684,7 +732,65 @@ article {
 @media (min-width: 1200px) {
 	.jse {
 		.view-more {
-			display: none !important;
+			/*display: none !important;*/
 		}
 	}
+}
+
+@media print {
+
+    @page {
+        margin:0 !important;
+    }
+
+    .window-size {
+        display:none;
+    }
+
+    .cv_contact {
+        display: none;
+    }
+
+    .avatar {
+        display:none;
+    }
+
+    .scramble-container {
+        display: none;
+    }
+
+    .cv-address {
+        display:block;
+    }
+
+    .email-icon {
+        color: $acent-color;
+        font-size: 14px;
+        float: left;
+        position: relative;
+        margin-top: 0px;
+        overflow: hidden;
+        text-decoration: none;
+    }
+
+    .body-content {
+        padding:0;
+    }
+
+    .context-menu {
+        display:none;
+    }
+
+    .page-break-after {
+        page-break-after: always !important;
+        break-after: always !important;
+    }
+
+    .avoid-page-break {
+        page-break-inside: avoid !important;
+    }
+
+    footer {
+        display:none !important;
+    }
 }

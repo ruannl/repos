@@ -1,0 +1,58 @@
+﻿
+@{
+	ViewBag.Title = "Banking";
+}
+	<div ng-controller="AccountingController">
+		<form name="accountingUploadForm">
+			<fieldset>
+				<input type="file" ngf-select="" ng-model="model.upload.files" name="file" accept="model.upload.acceptSelect" ng-disabled="model.upload.disabled" />
+				<i ng-show="myForm.file.$error.required">*required</i>
+				<br />
+				<button ng-disabled="!accountingUploadForm.$valid" ng-click="uploadFiles(files,theErrorFile)">Submit</button>
+			</fieldset>
+		</form>
+		<div class="row">
+			<div class="col">
+				<h2 class="">Banking Index</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="up-buttons">
+					<div ngf-select=""
+						 ngf-drop="model.upload.dropAvailable"
+						 ng-model="model.upload.files"
+						 ngf-model-invalid="model.upload.invalidFiles"
+						 ngf-model-options="model.upload.modelOptions"
+						 ngf-multiple="model.upload.multiple"
+						 ngf-pattern="model.upload.pattern"
+						 ngf-accept="model.upload.acceptSelect"
+						 ng-disabled="model.upload.disabled"
+						 ngf-capture="model.upload.capture"
+						 ngf-drag-over-class="model.upload."
+						 ngf-validate="model.upload.validate"
+						 ngf-resize="model.upload.resize"
+						 ngf-resize-if="model.upload.resizeIf"
+						 ngf-dimensions="model.upload.dimentions"
+						 ngf-duration="model.upload.duration"
+						 ngf-keep="model.upload.keep"
+						 ngf-fix-orientation="model.upload.orientation"
+						 ngf-max-files="model.upload.maxFiles"
+						 ngf-ignore-invalid="model.upload."
+						 ngf-run-all-validations="model.upload."
+						 ngf-allow-dir="model.upload.allowDir"
+						 ngf-drop-available="model.upload.dropAvailable"
+						 class="drop-box">
+
+						Select File
+						<span ng-show="model.upload.dropAvailable"> or Drop File</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/ng-template" id="banking.htm">
+			<h2>Banking Index</h2>
+		</script>
+
+	</div>

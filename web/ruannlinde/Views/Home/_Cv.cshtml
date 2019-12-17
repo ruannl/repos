@@ -1,6 +1,536 @@
-﻿<script type="text/ng-template" id="icon-title.htm">
+<script type="text/ng-template" id="cv.htm">
+    <div class="container clearfix" context="context1">
+        <div ng-controller="CvController" ng-cloak>
+            <span id="cv_top"></span>
+            <header role="banner">
+                <div class="">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div style="float: right;">
+                                <figure class="avatar"></figure>
+                                <address class="cv-address">
+                                    <span>
+                                        <i></i>
+                                    </span>
+                                    <span class="email-icon"><i class="fa fa-envelope-open-o"></i></span>&nbsp;ruann.linde@gmail.com
+                                </address>
+                            </div>
+                            <div style="float: left;" rl-right-click="ShowContextMenu()" context="context1">
+                                <hgroup class="">
+                                    <h1>Ruann LINDE</h1>
+                                    <h2>Software Development</h2>
+
+                                </hgroup>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <h3>FREElance and Contract </h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <rl-scrambler scramble-items="model.titles"></rl-scrambler>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <br />
+            <main>
+
+                @*about*@
+                <article id="about">
+                    <header>
+                        <icon-title icon="fa-user" title="About Me"></icon-title>
+                    </header>
+                    <section>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <about-me></about-me>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+               <br /><br />
+                @*experience*@
+                <article id="experience">
+                    <header>
+                        <icon-title icon="fa-briefcase" title="Experience"></icon-title>
+                    </header>
+                    <section>
+                        @*JSE*@
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="jse">
+                                    <h2>Johannesburg Stock Exchange</h2>
+                                    <h3>Senior Developer</h3>
+                                    <h4>March 2013 - Present</h4>
+                                    <p>
+                                        Contracted to the JSE as senior C# programmer, I've worked on two major projects. With these projects, I've gained a great
+                                        deal of experience in agile methodologies and working with complex code.
+                                    </p>
+
+                                    <div class="jse-view-more">
+                                        <div class="list-group filter-wrap">
+                                            <article class="list-group-item">
+                                                <header class="filter-header">
+                                                    <a href="#" data-toggle="collapse" data-target="#collapse-jse" aria-expanded="true" class="view-more">
+                                                        <i class="icon-action fa fa-chevron-down"></i>
+                                                        <span>&nbsp;View more...</span>
+                                                    </a>
+                                                    <div class="filter-content collapse" id="collapse-jse">
+                                                        <jse-more></jse-more>
+                                                    </div>
+                                                </header>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                    <div class="jse-more">
+                                        <jse-more></jse-more>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row page-break-after">
+                            <div class="col-12">
+                                <hr class="devider" />
+                            </div>
+                        </div>
+                        <br />
+                        @*G-Connect*@
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="g-connect">
+                                    <h2>G-Connect</h2>
+                                    <h3>Software Development Manager</h3>
+                                    <h4>2012 – Feb 2013</h4>
+                                    <h3>Technical Lead</h3>
+                                    <h4>2009 – 2011</h4>
+                                    <h3>Senior Developer</h3>
+                                    <h4>March 2006 – 2009</h4>
+                                    <p>
+                                        Founded in 2002, WirelessG is a South African Wi-Fi Hotspot Service Provider, enabling internet access on a large number of Wi-Fi hotspot locations locally as well as internationally, and also provides Wi-Fi products, on a commercial basis, to the Vodacom subscriber base.
+                                    </p>
+
+                                    <div class="g-connect-view-more">
+                                        <div class="list-group filter-wrap">
+                                            <article class="list-group-item">
+                                                <header class="filter-header">
+                                                    <a href="#" data-toggle="collapse" data-target="#collapse-g-connect" aria-expanded="true" class="view-more">
+                                                        <i class="icon-action fa fa-chevron-down"></i>
+                                                        <span>&nbsp;View more...</span>
+                                                    </a>
+                                                    <div class="filter-content collapse" id="collapse-g-connect">
+                                                        <gconnect-more></gconnect-more>
+                                                    </div>
+                                                </header>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="g-connect-more">
+                                        <gconnect-more></gconnect-more>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <hr class="devider" />
+                            </div>
+                        </div>
+                        @*bytes*@
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="bytes">
+                                    <h2>Bytes Technology Group</h2>
+                                    <h3>Senior Programmer</h3>
+                                    <h4>2004 – Feb 2006</h4>
+                                    <h3>Programmer</h3>
+                                    <h4>July 2000 - 2004</h4>
+                                    <p>
+                                        Working in the Microsoft department of Bytes Technologies I was contracted out to various companies like Investec, Rand Merchant Bank and E&Y to assist on development projects
+                                    </p>
+                                    <div class="bytes-view-more">
+                                        <div class="list-group filter-wrap">
+                                            <article class="list-group-item">
+                                                <header class="filter-header">
+                                                    <a href="#" data-toggle="collapse" data-target="#collapse-bytes" aria-expanded="true" class="view-more">
+                                                        <i class="icon-action fa fa-chevron-down"></i>
+                                                        <span>&nbsp;View more...</span>
+                                                    </a>
+                                                    <div class="filter-content collapse" id="collapse-bytes">
+                                                        <bytes-more></bytes-more>
+                                                    </div>
+                                                </header>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12"><br /></div>
+                                    </div>
+                                    <div id="bytes-more" class="bytes-more">
+                                        <div class="list-group filter-wrap">
+                                            <bytes-more></bytes-more>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <hr class="devider" />
+                            </div>
+                        </div>
+                        @*ITI*@
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="iti">
+                                    <h2>ITI-Holdings</h2>
+                                    <h3>Programmer</h3>
+                                    <h4>March 2000 – June 2000</h4>
+                                    <p>
+                                        Was part of a small team creating a CRM interface.
+                                        ITI Holdings merged with Idion Solutions and then later was acquired by CS Holdings and then Bytes Technology group
+                                    </p>
+                                    <div class="iti-view-more">
+                                        <div class="list-group filter-wrap">
+                                            <article class="list-group-item">
+                                                <header class="filter-header">
+                                                    <a href="#" data-toggle="collapse" data-target="#collapse-iti" aria-expanded="true" class="view-more">
+                                                        <i class="icon-action fa fa-chevron-down"></i>
+                                                        <span>&nbsp;View more...</span>
+                                                    </a>
+                                                    <div class="filter-content collapse" id="collapse-iti">
+                                                        <iti-more></iti-more>
+                                                    </div>
+                                                </header>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="iti-more">
+                                        <iti-more></iti-more>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <hr class="devider" />
+                            </div>
+                        </div>
+                        @*CRUX-IT*@
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="crux-it">
+                                    <h3>Graduate Programmer</h3>
+                                    <h2>Crux-IT</h2>
+                                    <h4>Sept 1999 – Feb 2000</h4>
+                                    <p>
+                                        Was contracted to the South African Post Office developing a point of sale system
+                                    </p>
+                                    <div class="crux-view-more">
+                                        <div class="list-group filter-wrap">
+                                            <article class="list-group-item">
+                                                <header class="filter-header">
+                                                    <a href="#" data-toggle="collapse" data-target="#collapse-crux" aria-expanded="true" class="view-more">
+                                                        <i class="icon-action fa fa-chevron-down"></i>
+                                                        <span>&nbsp;View more...</span>
+                                                    </a>
+                                                    <div class="filter-content collapse" id="collapse-crux">
+                                                        <crux-more></crux-more>
+                                                    </div>
+                                                </header>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="crux-more">
+                                        <crux-more></crux-more>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </article>
+                <br />
+                @*education*@
+                <article id="education">
+                    <header>
+                        <icon-title icon="fa-graduation-cap" title="Education"></icon-title>
+                    </header>
+                    <section>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="pluralsight">
+                                    <h2>Pluralsight</h2>
+                                    <h4>2018 - Present</h4>
+                                    <ul>
+                                        <li>
+                                            <h3>AngularJS Displaying Data: Data Binding, Directives, and Pipes</h3>
+                                            <p>
+                                                By John Pappa
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3>Security Constructs Within AngularJS</h3>
+                                            <p>
+                                                By John Pappa
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <h4>2017</h4>
+                                    <ul>
+                                        <li>
+                                            <h3>Angular Best Practices</h3>
+                                            <p>
+                                                By Jim Cooper
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3>Play by Play: Angular 2 Quick Start</h3>
+                                            <p>
+                                                with John Papa and Ward Bell
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3>C# Best Practices: Collections and Generics</h3>
+                                            <p>
+                                                by Deborah Kurata
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3>Become a Full-stack .NET Developer</h3>
+                                            <p>
+                                                by Mosh Hamedani
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <h4>2016</h4>
+                                    <ul>
+                                        <li>
+                                            <h3>SOLID Principles of Object Oriented Design</h3>
+                                            <p>
+                                                by Steve Smith
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3>C# Generics</h3>
+                                            <p>
+                                                by Scott Allen
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3>C# Best Practices: Improving on the Basics</h3>
+                                            <p>
+                                                by Deborah Kurata
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <h4>2014</h4>
+                                    <ul>
+                                        <li>
+                                            <h3>AngularJS for .NET Developers</h3>
+                                            <p>
+                                                by Joe Eames and Jim Cooper
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="microsoft">
+                                    <h2>Microsoft</h2>
+                                    <h4>2002</h4>
+                                    <ul>
+                                        <li>
+                                            <h3>Building XML based web applications</h3>
+                                        </li>
+                                        <li>
+                                            <h3>Designing distributed applications</h3>
+                                        </li>
+                                    </ul>
+                                    <h4>2000</h4>
+                                    <ul>
+                                        <li>
+                                            <h3>Microsoft SQL Server 7 (MCP ID # 2204784)</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="ultracomp">
+                                    <h2>Ultracomp</h2>
+                                    <h4>1999</h4>
+                                    <ul>
+                                        <li>
+                                            <h3>Certificate in Programming</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="high-school">
+                                    <h2>Matriculated</h2>
+                                    <h4>1997</h4>
+                                    <ul>
+                                        <li>
+                                            <h3>Brandwag</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                <br />
+                @*professional skills*@
+                <article id="skills">
+                    <header>
+                        <icon-title icon="fa-address-card" title="Professional Skills"></icon-title>
+                    </header>
+
+                    <section>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                <br />
+                @*Hobbies and Interests*@
+                <article id="hobbies">
+                    <header>
+                        <icon-title icon="fa-futbol-o" title="Hobbies and Interests"></icon-title>
+                    </header>
+
+                    <section>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="rasberry-pi">
+                                    <h2>Rasberry Pi</h2>
+                                    <ul>
+                                        <li>
+                                            <h3>Pi</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="iot">
+                                    <h2>IoT</h2>
+                                    <ul>
+                                        <li>
+                                            <h3>Internet of Things</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="ninjitsu">
+                                    <h2>Bujinkan Ninjitsu</h2>
+                                    <ul>
+                                        <li>
+                                            <h3>Ninjitsu</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="kick-boxing">
+                                    <h2>Kick Boxing</h2>
+                                    <ul>
+                                        <li>
+                                            <h3>MMA</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="cdc">
+                                    <h2>Casa da Capoeira</h2>
+                                    <ul>
+                                        <li>
+                                            <h3>Capoeira</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="health">
+                                    <h2>Health and Wellness</h2>
+                                    <ul>
+                                        <li>
+                                            <h3>Meditation - Yoga</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <div class="bl">
+                                    <h2>Health and Wellness</h2>
+                                    <ul>
+                                        <li>
+                                            <h3>Be Limitless</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                <br />
+                <article class="cv_contact" id="contact">
+                    <header>
+                        <icon-title icon="fa-address-card" title="Contact Me"></icon-title>
+                    </header>
+
+                    <section>
+                        <div class="row">
+                            <div class="col-12 gutter">
+                                <contact-form-template></contact-form-template>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                <br />
+            </main>
+        </div>
+    </div>
+    <ul id="context1" class="context-menu" role='menu'>
+        <li class="context-menu-item" ng-click="print()">
+            <div class="context-menu-item-text">Download CV</div>
+            <div class="context-menu-item-image">
+                <span class="icon"><i class="fa fa-download"></i></span>
+            </div>
+        </li>
+    </ul>
+</script>
+<script type="text/ng-template" id="icon-title.htm">
     <div ng-transclude>
-        <span class="icon"><i class="fa {{icon}}"></i></span>
+        <span class="icon"><i class="fa fas {{icon}}"></i></span>
         <div class="content">
             <h3>{{title}}</h3>
         </div>
@@ -9,7 +539,6 @@
 <script type="text/ng-template" id="about-me.htm">
     <p style="text-align: justify;">
         I am looking to advance my experience yet further and am searching for an opportunity to exploit my professional passion. I am passionate about learning new technologies, the ability to apply my knowledge to practical applications to I have the capability of improving and enhancing any organization.
-        I’ve gained 18+ years’ experience in programming with both enterprise and start up environments.
         <br />
         <br />
         Proficient in many software development methodologies, I have proven expertise in developing and managing complex projects. I have excellent technical and communication skills, am a proactive problem solver, self-motivated and highly driven. Most importantly. I love what I do.
@@ -116,7 +645,7 @@
         </ul>
         <br />
         <h3>Technology</h3>
-        <div class="row">
+        <div class="row page-break-after">
             <div class="col-xs-2 col-md-4">
                 <ul class="technology">
                     <li>Language</li>
@@ -156,7 +685,7 @@
         <span class="icon icon-gold icon-right"><i class="fa fa-trophy"></i></span>
         <h3>Accomplishments</h3>
         <br />
-        <ul class="accomplishments">
+        <ul class="accomplishments avoid-page-break">
             <li>
                 <div class="float-left">First Wi-Fi enabled flight in SA</div>
                 <div class="float-right">2012</div>
@@ -386,10 +915,9 @@
 <script type="text/ng-template" id="contact.htm">
     <div>
         <div ng-show="model.showThankYou()" class="animated fadeInOut thank-you">
-            <h3>Thank You</h3>
-            <p>ksdjvbskdljvksdjvbksdjvbkj</p>
+            <h3>Thank You, {{model.contactMessage.FirstName}}</h3>
         </div>
-        <form id="contactForm" name="contactForm" ng-submit="submitContactForm(contactForm.$valid)" novalidate ng-show="!model.showThankYou()" class="animated">
+        <form id="contactForm" name="contactForm" ng-submit="submitContactForm(contactForm.$valid)" novalidate ng-show="!model.showThankYou()">
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Name" id="name" name="name" ng-model="model.contact.name" required="" ng-class="{'is-invalid':contactForm.name.$invalid && !contactForm.name.$pristine }" />
             </div>
@@ -407,460 +935,5 @@
                 <button type="submit" class="btn btn-default">Submit</button>
             </div>
         </form>
-    </div>
-</script>
-<script type="text/ng-template" id="cv.htm">
-    <ul id="context1" class="context-menu" role='menu'>
-        <li class="context-menu-item">
-            <div class="context-menu-item-text">Download CV</div>
-            <div class="context-menu-item-image">
-                <span class="icon"><i class="fa fa-file-download"></i></span>
-            </div>
-        </li>
-    </ul>
-    @*context="context1" rl-right-click="ShowContextMenu()"*@
-    <div class="container clearfix">
-        <span id="top"></span>
-        <div ng-controller="HomeController" ng-cloak>
-            <header role="banner">
-                <div class="">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div style="float: left;">
-                                <hgroup class="">
-                                    <h1>Ruann LINDE</h1>
-                                    <h2>Software Development</h2>
-                                </hgroup>
-                            </div>
-                            <div style="float: right;">
-                                <figure class="avatar"></figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                            <rl-scrambler scramble-items="titles"></rl-scrambler>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <br />
-            <main>
-
-                @*about*@
-                <article>
-                    <header>
-                        <icon-title icon="fa-user" title="About Me"></icon-title>
-                    </header>
-                    <section>
-                        <div class="row">
-                            <div class="col-12 gutter">
-                                <about-me></about-me>
-                            </div>
-                        </div>
-                    </section>
-                </article>
-                <br />
-                @*experience*@
-                <article>
-                    <header>
-                        <icon-title icon="fa-briefcase" title="Experience"></icon-title>
-                    </header>
-
-                    <section>
-                        @*JSE*@
-                        <div class="row">
-                            <div class="col-12 gutter">
-                                <div class="jse">
-                                    <h2>EOH Highveld<br />Contracting at JSE</h2>
-                                    <h3>Senior Developer</h3>
-                                    <h4>March 2013 – Present</h4>
-                                    <p>
-                                        Contracted to the JSE as senior C# programmer, I’ve worked on two major projects. With these projects, I’ve gained a great
-                                        deal of experience in agile methodologies and working with complex code.
-                                    </p>
-                                    <div class="jse-view-more">
-                                        <div class="list-group filter-wrap">
-                                            <article class="list-group-item">
-                                                <header class="filter-header">
-                                                    <a href="#" data-toggle="collapse" data-target="#collapse-jse" aria-expanded="true" class="view-more">
-                                                        <i class="icon-action fa fa-chevron-down"></i>
-                                                        <span>&nbsp;View more...</span>
-                                                    </a>
-                                                    <div class="filter-content collapse" id="collapse-jse">
-                                                        <jse-more></jse-more>
-                                                    </div>
-                                                </header>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                    <div class="jse-more">
-                                        <jse-more></jse-more>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <hr class="devider" />
-                            </div>
-                        </div>
-                        @*G-Connect*@
-                        <div class="row">
-                            <div class="col-12 gutter">
-                                <div class="g-connect">
-                                    <h2>G-Connect</h2>
-                                    <h3>Software Development Manager</h3>
-                                    <h4>2012 – Feb 2013</h4>
-                                    <h3>Technical Lead</h3>
-                                    <h4>2009 – 2011</h4>
-                                    <h3>Senior Developer</h3>
-                                    <h4>March 2006 – 2009</h4>
-                                    <p>
-                                        Founded in 2002, WirelessG is a South African Wi-Fi Hotspot Service Provider, enabling internet access on a large number of Wi-Fi hotspot locations locally as well as internationally, and also provides Wi-Fi products, on a commercial basis, to the Vodacom subscriber base.
-                                    </p>
-                                    <div class="g-connect-view-more">
-                                        <div class="list-group filter-wrap">
-                                            <article class="list-group-item">
-                                                <header class="filter-header">
-                                                    <a href="#" data-toggle="collapse" data-target="#collapse-g-connect" aria-expanded="true" class="view-more">
-                                                        <i class="icon-action fa fa-chevron-down"></i>
-                                                        <span>&nbsp;View more...</span>
-                                                    </a>
-                                                    <div class="filter-content collapse" id="collapse-g-connect">
-                                                        <gconnect-more></gconnect-more>
-                                                    </div>
-                                                </header>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                    <div class="g-connect-more">
-                                        <gconnect-more></gconnect-more>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <hr class="devider" />
-                            </div>
-                        </div>
-                        @*bytes*@
-                        <div class="row">
-                            <div class="col-12 gutter">
-                                <div class="bytes">
-                                    <h2>Bytes Technology Group</h2>
-                                    <h3>Senior Programmer</h3>
-                                    <h4>2004 – Feb 2006</h4>
-                                    <h3>Programmer</h3>
-                                    <h4>July 2000 - 2004</h4>
-                                    <p>
-                                        Working in the Microsoft department of Bytes Technologies I was contracted out to various companies like Investec, Rand Merchant Bank and E&Y to assist on development projects
-                                    </p>
-                                    <div class="bytes-view-more">
-                                        <div class="list-group filter-wrap">
-                                            <article class="list-group-item">
-                                                <header class="filter-header">
-                                                    <a href="#" data-toggle="collapse" data-target="#collapse-bytes" aria-expanded="true" class="view-more">
-                                                        <i class="icon-action fa fa-chevron-down"></i>
-                                                        <span>&nbsp;View more...</span>
-                                                    </a>
-                                                    <div class="filter-content collapse" id="collapse-bytes">
-                                                        <bytes-more></bytes-more>
-                                                    </div>
-                                                </header>
-                                            </article>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12"><br /></div>
-                                    </div>
-                                    <div id="bytes-more" class="bytes-more">
-                                        <div class="list-group filter-wrap">
-                                            <bytes-more></bytes-more>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <hr class="devider" />
-                            </div>
-                        </div>
-                        @*ITI*@
-                        <div class="row">
-                            <div class="col-12 gutter">
-                                <div class="iti">
-                                    <h2>ITI-Holdings</h2>
-                                    <h3>Programmer</h3>
-                                    <h4>March 2000 – June 2000</h4>
-                                    <p>
-                                        Was part of a small team creating a CRM interface.
-                                        ITI Holdings merged with Idion Solutions and then later was acquired by CS Holdings and then Bytes Technology group
-                                    </p>
-                                    <div class="iti-view-more">
-                                        <div class="list-group filter-wrap">
-                                            <article class="list-group-item">
-                                                <header class="filter-header">
-                                                    <a href="#" data-toggle="collapse" data-target="#collapse-iti" aria-expanded="true" class="view-more">
-                                                        <i class="icon-action fa fa-chevron-down"></i>
-                                                        <span>&nbsp;View more...</span>
-                                                    </a>
-                                                    <div class="filter-content collapse" id="collapse-iti">
-                                                        <iti-more></iti-more>
-                                                    </div>
-                                                </header>
-                                            </article>
-                                        </div>
-                                    </div>
-                                    <div class="iti-more">
-                                        <iti-more></iti-more>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <hr class="devider" />
-                            </div>
-                        </div>
-                        @*CRUX-IT*@
-                        <div class="row">
-                            <div class="col-12 gutter">
-                                <div class="crux-it">
-                                    <h3>Graduate Programmer</h3>
-                                    <h2>Crux-IT</h2>
-                                    <h4>Sept 1999 – Feb 2000</h4>
-                                    <p>
-                                        Was contracted to the South African Post Office developing a point of sale system
-                                    </p>
-                                    <div class="crux-view-more">
-                                        <div class="list-group filter-wrap">
-                                            <article class="list-group-item">
-                                                <header class="filter-header">
-                                                    <a href="#" data-toggle="collapse" data-target="#collapse-crux" aria-expanded="true" class="view-more">
-                                                        <i class="icon-action fa fa-chevron-down"></i>
-                                                        <span>&nbsp;View more...</span>
-                                                    </a>
-                                                    <div class="filter-content collapse" id="collapse-crux">
-                                                        <crux-more></crux-more>
-                                                    </div>
-                                                </header>
-                                            </article>
-                                        </div>
-                                    </div>
-                                    <div class="crux-more">
-                                        <crux-more></crux-more>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </section>
-                </article>
-                <br />
-                @*education*@
-                <article>
-                    <header>
-                        <div class="row">
-                            <icon-title icon="fa-graduation-cap" title="Education"></icon-title>
-                        </div>
-                    </header>
-                    <section>
-                        <div class="row">
-                            <div class="col-12 gutter">
-                                <div class="pluralsight">
-                                    <h2>Pluralsight</h2>
-                                    <h4>2018 - Present</h4>
-                                    <ul>
-                                        <li>
-                                            <h3>AngularJS Displaying Data: Data Binding, Directives, and Pipes</h3>
-                                            <p>
-                                                By John Pappa
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h3>Security Constructs Within AngularJS</h3>
-                                            <p>
-                                                By John Pappa
-                                            </p>
-                                        </li>
-                                    </ul>
-                                    <h4>2017</h4>
-                                    <ul>
-                                        <li>
-                                            <h3>Angular Best Practices</h3>
-                                            <p>
-                                                By Jim Cooper
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h3>Play by Play: Angular 2 Quick Start</h3>
-                                            <p>
-                                                with John Papa and Ward Bell
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h3>C# Best Practices: Collections and Generics</h3>
-                                            <p>
-                                                by Deborah Kurata
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h3>Become a Full-stack .NET Developer</h3>
-                                            <p>
-                                                by Mosh Hamedani
-                                            </p>
-                                        </li>
-                                    </ul>
-                                    <h4>2016</h4>
-                                    <ul>
-                                        <li>
-                                            <h3>SOLID Principles of Object Oriented Design</h3>
-                                            <p>
-                                                by Steve Smith
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h3>C# Generics</h3>
-                                            <p>
-                                                by Scott Allen
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h3>C# Best Practices: Improving on the Basics</h3>
-                                            <p>
-                                                by Deborah Kurata
-                                            </p>
-                                        </li>
-                                    </ul>
-                                    <h4>2014</h4>
-                                    <ul>
-                                        <li>
-                                            <h3>AngularJS for .NET Developers</h3>
-                                            <p>
-                                                by Joe Eames and Jim Cooper
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 gutter">
-                                <div class="microsoft">
-                                    <h2>Microsoft</h2>
-                                    <h4>2002</h4>
-                                    <ul>
-                                        <li>
-                                            <h3>Building XML based web applications</h3>
-                                        </li>
-                                        <li>
-                                            <h3>Designing distributed applications</h3>
-                                        </li>
-                                    </ul>
-                                    <h4>2000</h4>
-                                    <ul>
-                                        <li>
-                                            <h3>Microsoft SQL Server 7 (MCP ID # 2204784)</h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 gutter">
-                                <div class="ultracomp">
-                                    <h2>Ultracomp</h2>
-                                    <h4>1999</h4>
-                                    <ul>
-                                        <li>
-                                            <h3>Certificate in Programming</h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 gutter">
-                                <div class="high-school">
-                                    <h2>Matriculated</h2>
-                                    <h4>1997</h4>
-                                    <ul>
-                                        <li>
-                                            <h3>Brandwag</h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </article>
-                <br />
-                @*professional skills*@
-                <article>
-                    <header>
-                        <div class="row">
-                            <div class="col-12">
-                                <icon-title icon="fa-project-diagram" title="Professional Skills"></icon-title>
-                            </div>
-                        </div>
-                    </header>
-
-                    <section>
-                        <div class="row">
-                            <div class="col-12 gutter">
-                                <p>
-
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </article>
-                <br />
-                @*Hobbies and Interests*@
-                <article>
-                    <header>
-                        <div class="row">
-                            <div class="col-12">
-                                <icon-title icon="fa-golf-ball" title="Hobbies and Interests"></icon-title>
-                            </div>
-                        </div>
-                    </header>
-
-                    <section>
-                        <div class="row">
-                            <div class="col-12 gutter">
-                                <p>
-
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </article>
-                <br />
-                <article>
-                    <header>
-                        <div class="row">
-                            <div class="col-12">
-                                <icon-title icon="fa-address-card" title="Contact Us"></icon-title>
-                            </div>
-                        </div>
-                    </header>
-
-                    <section>
-                        <div class="row">
-                            <div class="col-12 gutter">
-                                <contact-form-template></contact-form-template>
-                            </div>
-                        </div>
-                    </section>
-                </article>
-                <br />
-            </main>
-        </div>
     </div>
 </script>

@@ -58,32 +58,41 @@ body {
 .header-image {
   background-image: none; }
 
-.navbar-brand {
-  text-shadow: 0 0 15px dodgerblue, 0 0 15px indigo !important;
-  box-shadow: 0 0 15px dodgerblue, 0 0 15px indigo !important;
-  border-color: white;
-  border-style: solid;
-  border-width: 3px;
-  min-width: 51px;
-  text-align: center;
-  border-radius: 3px; }
+/*.navbar-brand {
+    text-shadow: 0 0 15px dodgerblue, 0 0 15px indigo !important;
+    box-shadow: 0 0 15px dodgerblue, 0 0 15px indigo !important;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    min-width: 51px;
+    text-align: center;
+    border-radius: 3px;
+}
 
 .nav-item {
-  font-family: 'Share Tech Mono', monospace;
-  color: white;
-  min-width: 99px;
-  text-align: center; }
-  .nav-item a :hover {
+    font-family: 'Share Tech Mono', monospace;
     color: white;
-    text-shadow: 0 0 15px dodgerblue, 0 0 15px indigo !important; }
-  .nav-item :hover {
-    border-bottom: 1px solid dodgerblue;
-    background-color: dodgerblue;
-    border-radius: 3px; }
-  .nav-item .active {
-    background-color: dodgerblue;
-    color: white; }
+    min-width: 99px;
+    text-align: center;
 
+    a {
+        :hover {
+            color: white;
+            text-shadow: 0 0 15px dodgerblue, 0 0 15px indigo !important;
+        }
+    }
+
+    :hover {
+        border-bottom: 1px solid dodgerblue;
+        background-color: dodgerblue;
+        border-radius: 3px;
+    }
+
+    .active {
+        background-color: dodgerblue;
+        color: white;
+    }
+}*/
 .bg-dark {
   background-color: #fff !important;
   border-bottom: 1px solid indigo !important; }

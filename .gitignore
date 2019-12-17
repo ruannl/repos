@@ -13,3 +13,5 @@
 /web/SiteRepository
 /web/Devtracker.Dump
 /web/ruannlinde/log4net.txt
+/web/.vscode
+/.vs

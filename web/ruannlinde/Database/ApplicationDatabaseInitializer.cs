@@ -157,6 +157,10 @@ AS
 				context.Database.ExecuteSqlCommand(TransactionalBehavior.DoNotEnsureTransaction, $"ALTER DATABASE {context.Database.Connection.Database} SET SINGLE_USER WITH ROLLBACK IMMEDIATE");
 			}
 			base.InitializeDatabase(context);
+			if (context.Database.Exists())
+			{
+				context.Database.ExecuteSqlCommand(TransactionalBehavior.DoNotEnsureTransaction, $"ALTER DATABASE {context.Database.Connection.Database} SET MULTI_USER");
+			}
 		}
 
 		protected override void Seed(ApplicationDatabaseContext context) {

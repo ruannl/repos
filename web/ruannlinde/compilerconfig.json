@@ -14,5 +14,9 @@
   {
     "outputFile": "Content/Accounting.css",
     "inputFile": "Content/Accounting.scss"
+  },
+  {
+    "outputFile": "Content/Banking.css",
+    "inputFile": "Content/Banking.scss"
   }
 ]
